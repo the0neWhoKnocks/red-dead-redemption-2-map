@@ -259,10 +259,6 @@ MAP.on('click', ({ latlng: { lat, lng } }) => {
     // console.log(formData);
   });
   
-  // TODO
-  // - Rememeber last location and zoom level
-  // - Figure out odd Mobile scrolling/sizing behavior
-  
   // const marker = L.circle(
   //   [lat, lng],
   //   {

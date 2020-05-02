@@ -1,0 +1,22 @@
+# TODO
+
+---
+
+- [ ] Spin up a simple Server so that I can save user created markers in a
+centralized location.
+- [ ] Figure out odd Mobile scrolling/sizing behavior
+- [ ] Switch from a Modal to a Flyout, so Desktop & Mobile experience is the
+same, and so the vertical size of content doesn't matter.
+- [ ] Add a `control` that allows for enabling Marker placement instead of it
+just always happening on click of the map.
+- [ ] Add a star rating selector for just Animal markers.
+- [ ] Customize Marker icons based on `markerType`.
+- [ ] Allow for choosing base type of Marker. Right now it's just `marker`, but
+it'd be useful to use `circle` for a more general radius of where an animal may
+spawn.
+- [ ] Have Marker popup display this info
+  ```
+  Title - typeIcon markerType: markerSubType|markerCustomSubType
+  Rating (if Animal) - rating
+  Body - markerDescription
+  ```
