@@ -43,10 +43,6 @@ const markerCreatorToggle = L.control.markerCreatorToggle({
   position: 'bottomright',
 }).addTo(MAP);
 
-window.addEventListener('resize', () => {
-  if (window.customDialog) window.customDialog.close();
-});
-
 const saveMapState = () => {
   window.localStorage.setItem(LS_KEY, JSON.stringify({
     latlng: MAP.getCenter(),
@@ -68,19 +64,41 @@ function handleMapClick({ latlng: { lat, lng } }) {
     const MODAL_WIDTH = 300;
     const MODIFIER__PREVIEWING_MARKER = 'is--previewing-marker';
     
-    const dialog = document.createElement('custom-dialog');
-    dialog.content = `
+    const markerFlyout = document.createElement('custom-flyout');
+    markerFlyout.content = `
       <style>
+        :host {
+          opacity: 1;
+          transition: opacity 300ms;
+        }
+        
+        :host(.${MODIFIER__PREVIEWING_MARKER}) {
+          opacity: 0;
+        }
+        
         .marker-creator {
           width: calc(${MODAL_WIDTH}px + 2em);
+          height: 100%;
           margin: 0;
+          display: flex;
+          flex-direction: column;
+        }
+        
+        .marker-creator__body {
+          height: 100%;
+          overflow-x: hidden;
+          overflow-y: auto;
+          padding: 1em;
+        }
+        .marker-creator__body :last-child {
+          margin-bottom: 0;
         }
         
         .marker-creator input,
         .marker-creator select,
         .marker-creator textarea {
-          width: ${MODAL_WIDTH}px;
-          margin: 0 1em;
+          width: 100%;
+          margin-bottom: 1em;
         }
         
         .marker-creator input,
@@ -94,22 +112,16 @@ function handleMapClick({ latlng: { lat, lng } }) {
         }
         
         .marker-creator__label {
-          margin: 1em;
+          margin-bottom: 1em;
           display: block;
         }
         
         .marker-creator hr {
-          margin: 1em;
+          margin-bottom: 1em;
         }
         
-        .marker-creator__type-nav {
-          padding: 0.5em;
-          border-radius: 0.5em;
-          border: inset 2px;
-          border-color: #000 #8b8b8b #fff;
-          margin: 1em;
-          overflow-x: auto;
-          background: #d8d8d8;
+        .marker-creator__sub-type-section {
+          margin-bottom: 1em;
         }
         
         textarea.marker-creator__description {
@@ -127,14 +139,6 @@ function handleMapClick({ latlng: { lat, lng } }) {
           padding: 0.5em 1em;
         }
         
-        .marker-creator__radio {
-          display: none;
-        }
-        .marker-creator__radio:checked + .marker-creator__type {
-          color: #eee;
-          background: #333;
-        }
-        
         .marker-creator__type {
           padding: 0.5em 1em;
           border: solid 1px;
@@ -143,60 +147,53 @@ function handleMapClick({ latlng: { lat, lng } }) {
           cursor: pointer;
           background: #fff;
         }
-        
-        :host {
-          opacity: 1;
-          transition: opacity 300ms;
-        }
-        
-        :host(.${MODIFIER__PREVIEWING_MARKER}) {
-          opacity: 0;
-        }
       </style>
       <form id="markerCreator" class="marker-creator">
-        <label for="markerCreatorType" class="marker-creator__label">
-          Select an appropriate type for the marker
-        </label>
-        ${genSelect({
-          id: 'markerCreatorType',
-          name: 'markerType',
-          opts: ['Animal', 'Fish', 'Hat', 'Plant'],
-        })}
-        <hr />
-        <div>
-          <label for="markerCreatorSubType" class="marker-creator__label">
-            Select an appropriate sub-type for the marker
+        <div class="marker-creator__body">
+          <label for="markerCreatorType" class="marker-creator__label">
+            Select an appropriate type for the marker
           </label>
           ${genSelect({
-            id: 'markerCreatorSubType',
-            name: 'markerSubType',
-            opts: ANIMALS,
+            id: 'markerCreatorType',
+            name: 'markerType',
+            opts: MARKER_TYPES,
           })}
-          <label for="markerCreatorCustomSubType" class="marker-creator__label">
-            Or define a custom sub-type
-          </label>
-          <input id="markerCreatorCustomSubType" type="text" name="markerCustomSubType" />
           <hr />
+          <div class="marker-creator__sub-type-section">
+            <label for="markerCreatorSubType" class="marker-creator__label">
+              Select an appropriate sub-type for the marker
+            </label>
+            ${genSelect({
+              id: 'markerCreatorSubType',
+              name: 'markerSubType',
+              opts: ANIMALS,
+            })}
+            <label for="markerCreatorCustomSubType" class="marker-creator__label">
+              Or define a custom sub-type
+            </label>
+            <input id="markerCreatorCustomSubType" type="text" name="markerCustomSubType" />
+          </div>
+          <hr />
+          <label for="markerCreatorDescription" class="marker-creator__label">
+            Enter a description for your marker
+          </label>
+          <textarea 
+            id="markerCreatorDescription"
+            class="marker-creator__description"
+            name="markerDescription"
+          ></textarea>
         </div>
-        <label for="markerCreatorDescription" class="marker-creator__label">
-          Enter a description for your marker
-        </label>
-        <textarea 
-          id="markerCreatorDescription"
-          class="marker-creator__description"
-          name="markerDescription"
-        ></textarea>
         <nav class="marker-creator__action-nav">
           <button type="button" id="previewMarker">Preview</button>
           <button type="button" id="createMarker">Create</button>
         </nav>
       </form>
     `;
-    dialog.onClose = () => {
+    markerFlyout.onClose = () => {
       if (window.previewMarker) window.previewMarker.remove();
     };
-    dialog.title = 'Marker Creator';
-    dialog.show();
+    markerFlyout.title = 'Marker Creator';
+    markerFlyout.show();
     
     const createMarker = ({
       markerCustomSubType,
@@ -215,19 +212,19 @@ function handleMapClick({ latlng: { lat, lng } }) {
       return marker;
     };
     
-    dialog.shadowRoot.querySelector('#createMarker').addEventListener('click', () => {
-      const formData = formDataToObj(dialog.shadowRoot.querySelector('#markerCreator'));
-      dialog.close();
+    markerFlyout.shadowRoot.querySelector('#createMarker').addEventListener('click', () => {
+      const formData = formDataToObj(markerFlyout.shadowRoot.querySelector('#markerCreator'));
+      markerFlyout.close();
     });
-    dialog.shadowRoot.querySelector('#previewMarker').addEventListener('click', () => {
-      const formData = formDataToObj(dialog.shadowRoot.querySelector('#markerCreator'));
+    markerFlyout.shadowRoot.querySelector('#previewMarker').addEventListener('click', () => {
+      const formData = formDataToObj(markerFlyout.shadowRoot.querySelector('#markerCreator'));
       
       if (window.previewMarker) window.previewMarker.remove();
       window.previewMarker = createMarker(formData);
-      dialog.classList.add(MODIFIER__PREVIEWING_MARKER);
+      markerFlyout.classList.add(MODIFIER__PREVIEWING_MARKER);
       
       document.body.addEventListener('mousemove', () => {
-        dialog.classList.remove(MODIFIER__PREVIEWING_MARKER);
+        markerFlyout.classList.remove(MODIFIER__PREVIEWING_MARKER);
       });
     });
     

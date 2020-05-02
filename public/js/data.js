@@ -297,3 +297,4 @@ const PLANTS = [
   "Wintergreen Berry",
   "Yarrow"
 ];
+const MARKER_TYPES = ['Animal', 'Fish', 'Hat', 'Plant'];

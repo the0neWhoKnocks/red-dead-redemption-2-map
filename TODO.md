@@ -4,8 +4,8 @@
 
 - [ ] Spin up a simple Server so that I can save user created markers in a
 centralized location.
-- [ ] Figure out odd Mobile scrolling/sizing behavior
-- [ ] Switch from a Modal to a Flyout, so Desktop & Mobile experience is the
+- [x] Figure out odd Mobile scrolling/sizing behavior
+- [x] Switch from a Modal to a Flyout, so Desktop & Mobile experience is the
 same, and so the vertical size of content doesn't matter.
 - [x] Add a `control` that allows for enabling Marker placement instead of it
 just always happening on click of the map.
