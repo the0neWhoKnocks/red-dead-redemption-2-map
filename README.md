@@ -14,3 +14,14 @@ Currently everything runs without external requests and without a Server.
 
 ---
 
+## Install
+
+```sh
+npm i
+```
+
+---
+
+## Run
+
+Just open `public/index.html`.

@@ -1,13 +1,14 @@
 {
-  "name": "rdr2-map",
+  "name": "red-dead-redemption-2-map",
   "version": "1.0.0",
-  "description": "",
+  "description": "A dynamic Red Dead Redemption 2 map that allows a user to place custom markers with descriptions.",
   "main": "index.js",
   "scripts": {
+    "postinstall": "./bin/copy-assets-to-public.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Trevor Lemon",
+  "license": "MIT",
   "dependencies": {
     "leaflet": "^1.6.0"
   }

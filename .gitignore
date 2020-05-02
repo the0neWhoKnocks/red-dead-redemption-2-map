@@ -1,5 +1,7 @@
 # Files
 *.log
+public/*/leaflet*
 
 # Folders
 node_modules
+public/css/images
