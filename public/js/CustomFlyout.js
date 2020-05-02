@@ -140,10 +140,10 @@ class CustomFlyout extends HTMLElement {
     this.els.flyoutBGMask.addEventListener('click', this.handleMaskClick);
     window.customFlyout = this;
     
-    window.requestAnimationFrame(() => {
+    setTimeout(() => {
       this.els.flyoutBGMask.classList.add(this.MODIFIER__OPEN);
       this.els.flyout.classList.add(this.MODIFIER__OPEN);
-    });
+    }, 0);
   }
   
   close() {

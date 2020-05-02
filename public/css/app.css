@@ -51,3 +51,26 @@ custom-flyout {
   width: 30px;
   height: 30px;
 }
+
+.marker-popup__nav {
+  text-align: right;
+  padding: 0.25em;
+  border: solid 1px #eee;
+  border-radius: 0.5em;
+}
+.marker-popup__nav label,
+.marker-popup__nav button {
+  font-family: monospace;
+  font-size: 1em;
+  padding: 0.25em 0.5em;
+  border: solid 1px #ddd;
+  border-radius: 0.25em;
+  background: #eee;
+  cursor: pointer;
+}
+.marker-popup__nav label input[type="checkbox"] {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  margin: 0;
+}
