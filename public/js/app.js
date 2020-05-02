@@ -14,11 +14,9 @@ const TILES_ABS_PATH = 'file:./public/imgs/tiles';
 const mapLayers = {
   'default': L.tileLayer(
     `${TILES_ABS_PATH}/{z}/{x}_{y}.jpg`,
-    // 'https://s.rsg.sc/sc/images/games/RDR2/map/game/{z}/{x}/{y}.jpg',
     {
       noWrap: true,
       bounds: mapBoundary,
-      // attribution: '<a href="https://www.rockstargames.com/" target="_blank">Rockstar Games</a>'
     }
   ),
 };
@@ -43,7 +41,6 @@ L.control.zoom({
 
 window.addEventListener('resize', () => {
   if (window.customDialog) window.customDialog.close();
-  // MAP.invalidateSize();
 });
 
 const saveMapState = () => {
@@ -61,10 +58,6 @@ MAP.on('move', saveMapState);
 MAP.on('zoomend', saveMapState);
 
 MAP.on('click', ({ latlng: { lat, lng } }) => {
-  // const radioToggle = ({ id, label, name, value }) => `
-  //   <input id="${id}" class="marker-creator__radio" type="radio" name="${name}" value="${value}" />
-  //   <label for="${id}" class="marker-creator__type">${label}</label>
-  // `;
   const genSelect = ({ id, name, opts } = {}) => `
     <select id="${id}" name="${name}">
       ${opts.map(label => `<option value="${label}">${label}</option>`).join('')}
@@ -72,25 +65,6 @@ MAP.on('click', ({ latlng: { lat, lng } }) => {
   `;
   const MODAL_WIDTH = 300;
   const MODIFIER__PREVIEWING_MARKER = 'is--previewing-marker';
-  
-  // <nav 
-  //   id="markerCreatorType"
-  //   class="marker-creator__type-nav"
-  // >
-  //   ${[
-  //     { id: 'markerTypeAnimal', label: 'Animal', name: 'markerType', value: 'animal' },
-  //     { id: 'markerTypeHat', label: 'Hat', name: 'markerType', value: 'hat' },
-  //   ].map(props => radioToggle(props)).join('')}
-  // </nav>
-  // <nav 
-  //   id="markerCreatorSubType"
-  //   class="marker-creator__type-nav"
-  // >
-  //   ${[
-  //     { id: 'markerSubTypeAnimal', label: 'Cougar', name: 'markerSubType', value: 'cougar' },
-  //     { id: 'markerSubTypeHat', label: 'Grizzly Bear', name: 'markerSubType', value: 'grizzly bear' },
-  //   ].map(props => radioToggle(props)).join('')}
-  // </nav>
   
   const dialog = document.createElement('custom-dialog');
   dialog.content = `
@@ -222,8 +196,6 @@ MAP.on('click', ({ latlng: { lat, lng } }) => {
   dialog.title = 'Marker Creator';
   dialog.show();
   
-  // dialog.shadowRoot.querySelector('#markerCreatorType input:first-of-type').checked = true;
-  
   const createMarker = ({
     markerCustomSubType,
     markerDescription,
@@ -255,8 +227,6 @@ MAP.on('click', ({ latlng: { lat, lng } }) => {
     document.body.addEventListener('mousemove', () => {
       dialog.classList.remove(MODIFIER__PREVIEWING_MARKER);
     });
-    
-    // console.log(formData);
   });
   
   // const marker = L.circle(
@@ -268,13 +238,4 @@ MAP.on('click', ({ latlng: { lat, lng } }) => {
   //     radius: 0.25,
   //   }
   // ).addTo(MAP);
-  // 
-  // open pop-up to allow user to add description & tags for marker
-  // - option #1
-  // marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-  // - option #2
-  // const popup = L.popup()
-  //   .setLatLng([51.5, -0.09])
-  //   .setContent("I am a standalone popup.")
-  //   .openOn(mymap);
 });
