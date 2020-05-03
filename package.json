@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "./bin/copy-assets-to-public.sh",
+    "start": "SERVER_PORT=3000 node ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Trevor Lemon",
   "license": "MIT",
   "dependencies": {
-    "leaflet": "^1.6.0"
+    "leaflet": "^1.6.0",
+    "mime-types": "^2.1.27"
   }
 }

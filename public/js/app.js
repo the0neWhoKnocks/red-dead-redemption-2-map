@@ -11,7 +11,7 @@ document.body.prepend(mapWrapper);
 const lsData = JSON.parse(window.localStorage.getItem(LS_KEY) || '{}');
 const markers = lsData.markers || [];
 const mapBoundary = L.latLngBounds(L.latLng(-144, 0), L.latLng(0, 176));
-const TILES_ABS_PATH = 'file:./imgs/tiles';
+const TILES_ABS_PATH = '/imgs/tiles';
 const mapLayers = {
   'default': L.tileLayer(
     `${TILES_ABS_PATH}/{z}/{x}_{y}.jpg`,

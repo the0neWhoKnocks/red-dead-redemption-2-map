@@ -10,7 +10,7 @@ There are many maps online, but they:
 - Are sprinkled with ads
 - Load slow
 
-Currently everything runs without external requests and without a Server.
+Currently everything runs without external requests.
 
 ---
 
@@ -24,4 +24,6 @@ npm i
 
 ## Run
 
-Just open `public/index.html`.
+```js
+npm start
+```
