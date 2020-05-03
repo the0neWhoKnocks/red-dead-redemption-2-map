@@ -1,6 +1,7 @@
 # Files
 *.log
 public/*/leaflet*
+markers.json
 
 # Folders
 node_modules

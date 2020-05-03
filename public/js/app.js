@@ -1,48 +1,31 @@
-const LS_KEY = 'rdr2';
+const API_BASE = '/api/marker';
 const DOM_ID = 'mapContainer';
-const mapWrapper = document.createElement('div');
-mapWrapper.className = 'map-wrapper';
-const mapEl = document.createElement('div');
-mapEl.className = 'map-container';
-mapEl.id = DOM_ID;
-mapWrapper.appendChild(mapEl);
-document.body.prepend(mapWrapper);
-
-const lsData = JSON.parse(window.localStorage.getItem(LS_KEY) || '{}');
-const markers = lsData.markers || [];
-const mapBoundary = L.latLngBounds(L.latLng(-144, 0), L.latLng(0, 176));
+const LS_KEY = 'rdr2';
 const TILES_ABS_PATH = '/imgs/tiles';
-const mapLayers = {
-  'default': L.tileLayer(
-    `${TILES_ABS_PATH}/{z}/{x}_{y}.jpg`,
-    {
-      noWrap: true,
-      bounds: mapBoundary,
-    }
-  ),
-};
-const viewArgs = (lsData.latlng)
-  ? [lsData.latlng, lsData.zoom]
-  : [{ lat: -70, lng: 111.75 }, 3];
-const MAP = L.map(DOM_ID, {
-  attributionControl: false,
-  crs: L.CRS.Simple,
-  layers: [mapLayers['default']],
-  maxZoom: 7,
-  minZoom: 2,
-  preferCanvas: true,
-  zoomControl: false,
-}).setView(...viewArgs);
+let lsData, mapBoundary, mapInst, mapLayers, markers, markerCreatorToggle;
 
-L.control.zoom({ position: 'bottomright' }).addTo(MAP);
-// L.control.layers(mapLayers).addTo(MAP);
-
-const markerCreatorToggle = L.control.markerCreatorToggle({
-  onChange: ({ currentTarget: toggle }) => {
-    markerCreatorToggle.enabled = toggle.checked;
-  },
-  position: 'bottomright',
-}).addTo(MAP);
+const _fetch = (url, opts = {}) => {
+  const defaultOpts = {
+    method: 'GET',
+    headers: { 'Content-Type': 'application/json' },
+  };
+  return fetch(url, { ...defaultOpts, ...opts, })
+    .then(resp => resp.json())
+    .catch(err => alert(err));
+}
+const deleteMarker = (ndx) => _fetch(
+  `${API_BASE}/delete`,
+  { method: 'DELETE', body: JSON.stringify({ ndx }) }
+);
+const loadMarkers = () => _fetch(`${API_BASE}/load-all`);
+const saveMarker = (marker) => _fetch(
+  `${API_BASE}/save`,
+  { method: 'POST', body: JSON.stringify(marker) }
+);
+const updateMarker = (ndx, data) => _fetch(
+  `${API_BASE}/update`,
+  { method: 'POST', body: JSON.stringify({ data, ndx }) }
+);
 
 function handlePopupOpen(ev) {
   const popup = ev.popup;
@@ -63,9 +46,8 @@ function handlePopupOpen(ev) {
     
     const deleteHandler = () => {
       if (markerNdx !== undefined) {
-        markers.splice(markerNdx, 1);
         marker.remove();
-        saveMapState();
+        deleteMarker(markerNdx);
       }
     };
     const editHandler = () => {
@@ -80,9 +62,6 @@ function handlePopupOpen(ev) {
             const { data, lat, lng } = markers[markerNdx];
             createMarker({ ...data, lat, lng });
           },
-          onUpdate: () => {
-            markers.splice(markerNdx, 1);
-          },
         });
       }
     };
@@ -96,9 +75,9 @@ function handlePopupOpen(ev) {
           
           if (markerNdx !== undefined) {
             const { lat, lng } = marker._latlng;
-            markers[markerNdx].lat = lat;
-            markers[markerNdx].lng = lng;
-            saveMapState();
+            updateMarker(markerNdx, { lat, lng })
+              .then((newMarkers) => { markers = newMarkers; })
+              .catch(err => alert(err));
           }
         };
         marker.on('dragend', dragEndHandler);
@@ -129,7 +108,7 @@ const createMarker = ({
   rating,
   uid
 }) => {
-  const marker = L.marker([lat, lng], { uid }).addTo(MAP);
+  const marker = L.marker([lat, lng], { uid }).addTo(mapInst);
   let navMarkup = '';
   let ratingMarkup = '';
   
@@ -162,9 +141,8 @@ const createMarker = ({
 
 const saveMapState = () => {
   window.localStorage.setItem(LS_KEY, JSON.stringify({
-    latlng: MAP.getCenter(),
-    markers,
-    zoom: MAP.getZoom(),
+    latlng: mapInst.getCenter(),
+    zoom: mapInst.getZoom(),
   }));
 };
 const formDataToObj = (form) => [...(new FormData(form)).entries()].reduce((obj, arr) => {
@@ -335,8 +313,7 @@ function openMarkerCreator({
           id="markerCreatorDescription"
           class="marker-creator__description"
           name="markerDescription"
-          value="${(editData && editData.markerDescription) ? editData.markerDescription : ''}"
-        ></textarea>
+        >${(editData && editData.markerDescription) ? editData.markerDescription : ''}</textarea>
       </div>
       <nav class="marker-creator__action-nav">
         <button type="button" id="previewMarker">Preview</button>
@@ -367,15 +344,16 @@ function openMarkerCreator({
     
     if (window.previewMarker) window.previewMarker.remove();
     
-    createMarker({ ...data, lat, lng });
-    markers.push({ data, lat, lng });
-    
-    if (onUpdate) onUpdate();
-    
-    saveMapState();
-    
-    markerCreated = true;
-    markerFlyout.close();
+    saveMarker({ data, lat, lng })
+      .then((newMarkers) => {
+        createMarker({ ...data, lat, lng });
+        markers = newMarkers;
+        
+        if (onUpdate) onUpdate();
+        
+        markerCreated = true;
+        markerFlyout.close();
+      });
   });
   markerFlyout.shadowRoot.querySelector('#previewMarker').addEventListener('click', () => {
     const formData = formDataToObj(markerFlyout.shadowRoot.querySelector('#markerCreator'));
@@ -438,18 +416,67 @@ function openMarkerCreator({
   //     fillOpacity: 0.5,
   //     radius: 0.25,
   //   }
-  // ).addTo(MAP);
+  // ).addTo(mapInst);
 }
 
 function handleMapClick({ latlng: { lat, lng } }) {
   if (markerCreatorToggle.enabled) openMarkerCreator({ lat, lng });
 }
 
-markers.forEach(({ data, lat, lng }, i) => {
-  createMarker({ ...data, lat, lng });
-});
+function init() {
+  loadMarkers().then((loadedMarkers) => {
+    const mapWrapper = document.createElement('div');
+          mapWrapper.className = 'map-wrapper';
+    const mapEl = document.createElement('div');
+          mapEl.className = 'map-container';
+          mapEl.id = DOM_ID;
+    mapWrapper.appendChild(mapEl);
+    document.body.prepend(mapWrapper);
+    
+    lsData = JSON.parse(window.localStorage.getItem(LS_KEY) || '{}');
+    markers = loadedMarkers;
+    mapBoundary = L.latLngBounds(L.latLng(-144, 0), L.latLng(0, 176));
+    mapLayers = {
+      'default': L.tileLayer(
+        `${TILES_ABS_PATH}/{z}/{x}_{y}.jpg`,
+        {
+          noWrap: true,
+          bounds: mapBoundary,
+        }
+      ),
+    };
+    const viewArgs = (lsData.latlng)
+      ? [lsData.latlng, lsData.zoom]
+      : [{ lat: -70, lng: 111.75 }, 3];
+    mapInst = L.map(DOM_ID, {
+      attributionControl: false,
+      crs: L.CRS.Simple,
+      layers: [mapLayers['default']],
+      maxZoom: 7,
+      minZoom: 2,
+      preferCanvas: true,
+      zoomControl: false,
+    }).setView(...viewArgs);
 
-MAP.on('click', handleMapClick);
-MAP.on('move', saveMapState);
-MAP.on('popupopen', handlePopupOpen);
-MAP.on('zoomend', saveMapState);
+    L.control.zoom({ position: 'bottomright' }).addTo(mapInst);
+    // L.control.layers(mapLayers).addTo(mapInst);
+
+    markerCreatorToggle = L.control.markerCreatorToggle({
+      onChange: ({ currentTarget: toggle }) => {
+        markerCreatorToggle.enabled = toggle.checked;
+      },
+      position: 'bottomright',
+    }).addTo(mapInst);
+    
+    markers.forEach(({ data, lat, lng }, i) => {
+      createMarker({ ...data, lat, lng });
+    });
+
+    mapInst.on('click', handleMapClick);
+    mapInst.on('move', saveMapState);
+    mapInst.on('popupopen', handlePopupOpen);
+    mapInst.on('zoomend', saveMapState);
+  });
+}
+
+init();

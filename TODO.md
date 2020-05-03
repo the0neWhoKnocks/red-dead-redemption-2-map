@@ -2,8 +2,9 @@
 
 ---
 
-- [X] Spin up a simple Server so that I can save user created markers in a
+- [x] Spin up a simple Server so that I can save user created markers in a
 centralized location.
+  - [x] Allow for storing saved marker data in a centralized location.
 - [x] Figure out odd Mobile scrolling/sizing behavior
 - [x] Switch from a Modal to a Flyout, so Desktop & Mobile experience is the
 same, and so the vertical size of content doesn't matter.
