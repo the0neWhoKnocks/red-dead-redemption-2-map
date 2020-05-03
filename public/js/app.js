@@ -279,7 +279,7 @@ function openMarkerCreator({
         ${genSelect({
           id: 'markerCreatorType',
           name: 'markerType',
-          opts: MARKER_TYPES,
+          opts: [...MARKER_TYPES].map(([type]) => type),
           selected: editData && editData.markerType,
         })}
         <hr />
@@ -290,7 +290,7 @@ function openMarkerCreator({
           ${genSelect({
             id: 'markerCreatorSubType',
             name: 'markerSubType',
-            opts: ANIMALS,
+            opts: (editData && editData.markerType) ? MARKER_TYPES.get(editData.markerType) : MARKER_TYPES.values().next().value,
             selected: editData && editData.markerSubType,
           })}
           <label for="markerCreatorCustomSubType" class="marker-creator__label">
@@ -360,6 +360,13 @@ function openMarkerCreator({
     
     document.body.addEventListener('mousemove', () => {
       markerFlyout.classList.remove(MODIFIER__PREVIEWING_MARKER);
+    });
+  });
+  markerFlyout.shadowRoot.querySelector('#markerCreatorType').addEventListener('change', (ev) => {
+      markerFlyout.shadowRoot.querySelector('#markerCreatorSubType').outerHTML = genSelect({
+      id: 'markerCreatorSubType',
+      name: 'markerSubType',
+      opts: MARKER_TYPES.get(ev.currentTarget.value),
     });
   });
   

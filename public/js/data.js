@@ -297,4 +297,9 @@ const PLANTS = [
   "Wintergreen Berry",
   "Yarrow"
 ];
-const MARKER_TYPES = ['Animal', 'Fish', 'Hat', 'Plant'];
+const MARKER_TYPES = new Map([
+  ['Animal', ANIMALS],
+  ['Fish', FISH],
+  ['Hat', HATS],
+  ['Plant', PLANTS],
+]);
