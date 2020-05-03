@@ -72,23 +72,18 @@ function handlePopupOpen(ev) {
       if (markerNdx !== undefined) {
         const { lat, lng } = marker._latlng;
         
-        // temporarily remove current marker so there's no conflicts
-        // markers.splice(markerNdx, 1);
         marker.remove();
         
         openMarkerCreator({
           ...markers[markerNdx],
           onCancel: () => {
-            createMarker({ ...markers[markerNdx] });
+            const { data, lat, lng } = markers[markerNdx];
+            createMarker({ ...data, lat, lng });
           },
           onUpdate: () => {
             markers.splice(markerNdx, 1);
-            console.log('-- update marker', markers);
           },
         });
-        // markers.splice(markerNdx, 1);
-        // marker.remove();
-        // saveMapState();
       }
     };
     const moveHandler = (ev) => {
