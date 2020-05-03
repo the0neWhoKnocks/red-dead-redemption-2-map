@@ -126,10 +126,12 @@ const createMarker = ({
   markerSubType,
   markerType,
   previewing,
+  rating,
   uid
 }) => {
   const marker = L.marker([lat, lng], { uid }).addTo(MAP);
   let navMarkup = '';
+  let ratingMarkup = '';
   
   if (!previewing) navMarkup = `
     <nav class="marker-popup__nav">
@@ -139,8 +141,14 @@ const createMarker = ({
     </nav>
   `;
   
+  if (rating) ratingMarkup = `
+    <span>${Array(+rating).fill('&#9733;').join('')}</span>
+  `;
+  
   const popupContent = `
-    <h4>${markerType}: ${markerCustomSubType || markerSubType}</h4>
+    <h4>
+      ${markerType}: ${ratingMarkup} ${markerCustomSubType || markerSubType}
+    </h4>
     <p>${markerDescription || ''}</p>
     ${navMarkup}
   `;
@@ -265,6 +273,27 @@ function openMarkerCreator({
         cursor: pointer;
         background: #fff;
       }
+      
+      .marker-creator__rating-section label {
+        margin: 0;
+        display: inline-block;
+      }
+      
+      input[name="rating"] {
+        width: 0px;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+      }
+      [name="rating"] + label {
+        cursor: pointer;
+      }
+      [name="rating"]:not(:checked) + label .full-star {
+        display: none;
+      }
+      [name="rating"]:checked + label .empty-star {
+        display: none;
+      }
     </style>
     <form id="markerCreator" class="marker-creator">
       <div class="marker-creator__body">
@@ -324,6 +353,8 @@ function openMarkerCreator({
   markerFlyout.title = 'Marker Creator';
   markerFlyout.show();
   
+  const markerTypeInput = markerFlyout.shadowRoot.querySelector('#markerCreatorType');
+  
   markerFlyout.shadowRoot.querySelector('#createMarker').addEventListener('click', () => {
     const formData = formDataToObj(markerFlyout.shadowRoot.querySelector('#markerCreator'));
     const uid = (editData && editData.uid) || `${performance.now()}`.replace('.', '');
@@ -357,13 +388,47 @@ function openMarkerCreator({
       markerFlyout.classList.remove(MODIFIER__PREVIEWING_MARKER);
     });
   });
-  markerFlyout.shadowRoot.querySelector('#markerCreatorType').addEventListener('change', (ev) => {
-      markerFlyout.shadowRoot.querySelector('#markerCreatorSubType').outerHTML = genSelect({
+  markerTypeInput.addEventListener('change', (ev) => {
+    const markerType = ev.currentTarget.value;
+    
+    markerFlyout.shadowRoot.querySelector('#markerCreatorSubType').outerHTML = genSelect({
       id: 'markerCreatorSubType',
       name: 'markerSubType',
-      opts: MARKER_TYPES.get(ev.currentTarget.value),
+      opts: MARKER_TYPES.get(markerType),
     });
+    
+    let ratingSection;
+    if (markerType === 'Animal') {
+      ratingSection = document.createElement('div');
+      ratingSection.className = 'marker-creator__rating-section';
+      ratingSection.innerHTML = `
+        <hr />
+        <label class="marker-creator__label">
+          Rating for animal:
+        </label>
+        ${[1, 2, 3].map((num) => {
+          const checked = (editData && +editData.rating === num) ? 'checked' : ''
+          return `
+            <input id="starRating${num}" type="radio" name="rating" value="${num}" ${checked} />
+            <label for="starRating${num}">
+              <span class="empty-star">&#9734;</span>
+              <span class="full-star">&#9733;</span>
+            </label>
+          `;
+        }).join('')}
+      `;
+      
+      markerFlyout.shadowRoot
+        .querySelector('#markerCreatorCustomSubType')
+        .after(ratingSection);
+    }
+    else {
+      ratingSection = markerFlyout.shadowRoot.querySelector('.marker-creator__rating-section');
+      if (ratingSection) ratingSection.remove();
+    }
   });
+  
+  markerTypeInput.dispatchEvent(new Event('change'));
   
   // const marker = L.circle(
   //   [lat, lng],

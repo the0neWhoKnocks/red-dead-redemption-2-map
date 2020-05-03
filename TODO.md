@@ -9,7 +9,7 @@ centralized location.
 same, and so the vertical size of content doesn't matter.
 - [x] Add a `control` that allows for enabling Marker placement instead of it
 just always happening on click of the map.
-- [ ] Add a star rating selector for just Animal markers.
+- [x] Add a star rating selector for just Animal markers.
 - [ ] Customize Marker icons based on `markerType`.
   - https://leafletjs.com/reference-1.6.0.html#icon
 - [ ] Allow for choosing base type of Marker. Right now it's just `marker`, but
