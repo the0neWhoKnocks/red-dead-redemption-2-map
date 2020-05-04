@@ -172,8 +172,14 @@ function openMarkerCreator({
       `).join('')}
     </select>
   `;
+  const addBackLayerGroups = () => {
+    visibleTypeLayerGroups.forEach(lg => mapInst.addLayer(lg));
+  };
   const FLYOUT_WIDTH = 300;
   const MODIFIER__PREVIEWING_MARKER = 'is--previewing-marker';
+  const visibleTypeLayerGroups = [...MARKER_TYPES.keys()]
+    .filter(type => hiddenOverlays[type] === undefined)
+    .map(type => typesLayerGroups[type]);
   let markerCreated = false;
   
   const markerFlyout = document.createElement('custom-flyout');
@@ -333,10 +339,13 @@ function openMarkerCreator({
     if (!markerCreated) {
       if (window.previewMarker) window.previewMarker.remove();
       if (onCancel) onCancel();
+      addBackLayerGroups();
     }
   };
   markerFlyout.title = 'Marker Creator';
   markerFlyout.show();
+  
+  visibleTypeLayerGroups.forEach(lg => mapInst.removeLayer(lg));
   
   const markerTypeInput = markerFlyout.shadowRoot.querySelector('#markerCreatorType');
   
@@ -358,6 +367,8 @@ function openMarkerCreator({
         markers = newMarkers;
         
         if (onUpdate) onUpdate();
+        
+        addBackLayerGroups();
         
         markerCreated = true;
         markerFlyout.close();

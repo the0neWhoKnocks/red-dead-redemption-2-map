@@ -26,9 +26,10 @@ spawn.
   - https://leafletjs.com/reference-1.6.0.html#control-layers
   - [x] Hide/Show by `markerType`
   - [ ] Hide/Show by `*SubType`
-- [ ] On click of Marker Creator toggle
-  - [ ] Hide all Markers
+- On click of Marker Creator toggle
   - [x] Change the cursor to a crosshair
+- On open/close of Marker Creator
+  - [x] Hide all Markers
 - [ ] Combine custom subTypes with default subTypes so a User can select them later.
 - [ ] Have a list of `default-markers.json` and `user-markers.json`, and combine
 those together during `loadMarkers`.
