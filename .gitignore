@@ -5,5 +5,6 @@ public/*/leaflet*
 markers.json
 
 # Folders
+.ignore
 node_modules
 public/css/images
