@@ -24,3 +24,11 @@ spawn.
   ```
 - [ ] Add Filter option to filter by `markerType` & `*SubType`
   - https://leafletjs.com/reference-1.6.0.html#control-layers
+- [ ] On click of Marker Creator toggle
+  - [ ] Hide all Markers
+  - [ ] Change the cursor to a crosshair
+- [ ] Combine custom subTypes with default subTypes so a User can select them later.
+- [ ] Have a list of `default-markers.json` and `user-markers.json`, and combine
+those together during `loadMarkers`.
+
+- [ ] On edit of Marker, the subtype dropdown doesn't reflect what's being edited.
