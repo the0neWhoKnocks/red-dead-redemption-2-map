@@ -31,4 +31,8 @@ spawn.
 - [ ] Have a list of `default-markers.json` and `user-markers.json`, and combine
 those together during `loadMarkers`.
 
-- [ ] On edit of Marker, the subtype dropdown doesn't reflect what's being edited.
+---
+
+## Bugs
+
+- [x] On edit of Marker, the subtype dropdown doesn't reflect what's being edited.

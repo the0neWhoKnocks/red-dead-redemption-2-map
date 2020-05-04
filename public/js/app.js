@@ -373,6 +373,7 @@ function openMarkerCreator({
       id: 'markerCreatorSubType',
       name: 'markerSubType',
       opts: MARKER_TYPES.get(markerType),
+      selected: editData && editData.markerSubType,
     });
     
     let ratingSection;
