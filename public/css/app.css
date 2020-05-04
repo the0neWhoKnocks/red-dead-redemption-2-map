@@ -17,6 +17,10 @@ custom-flyout {
   height: 100%;
 }
 
+.map-container.marker-creator-enabled {
+  cursor: crosshair;
+}
+
 .leaflet-popup-content {
   font-family: monospace;
   font-size: 1.5em;

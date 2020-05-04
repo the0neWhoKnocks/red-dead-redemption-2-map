@@ -465,6 +465,9 @@ function init() {
     markerCreatorToggle = L.control.markerCreatorToggle({
       onChange: ({ currentTarget: toggle }) => {
         markerCreatorToggle.enabled = toggle.checked;
+        
+        if (markerCreatorToggle.enabled) mapEl.classList.add('marker-creator-enabled');
+        else mapEl.classList.remove('marker-creator-enabled');
       },
       position: 'bottomright',
     }).addTo(mapInst);
