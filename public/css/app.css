@@ -25,6 +25,33 @@ custom-flyout {
   font-family: monospace;
   font-size: 1.5em;
 }
+.leaflet-control-layers {
+  text-align: right;
+  border: none !important;
+  background: none;
+}
+.leaflet-control-layers-toggle,
+.leaflet-control-layers-list {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+}
+.leaflet-control-layers-expanded {
+  padding: 0;
+}
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+  background-color: #333;
+  display: inline-block;
+}
+.leaflet-control-layers-expanded .leaflet-control-layers-list {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: left;
+  padding: 0.75em;
+}
+.leaflet-control-layers-overlays label {
+  font-size: 1em;
+}
 
 .marker-creator-toggle {
   border-radius: 4px;
@@ -35,7 +62,8 @@ custom-flyout {
   display: none;
 }
 .marker-creator-toggle input:checked + label {
-  color: #007eff;
+  color: #59abff;
+  background: #333;
 }
 .marker-creator-toggle label {
   width: 26px;

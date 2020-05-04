@@ -2,7 +2,8 @@ const API_BASE = '/api/marker';
 const DOM_ID = 'mapContainer';
 const LS_KEY = 'rdr2';
 const TILES_ABS_PATH = '/imgs/tiles';
-let lsData, mapBoundary, mapInst, mapLayers, markers, markerCreatorToggle;
+const hiddenOverlays = {};
+let lsData, mapBoundary, mapInst, mapLayers, markers, markerCreatorToggle, typesLayerGroups;
 
 const _fetch = (url, opts = {}) => {
   const defaultOpts = {
@@ -46,6 +47,8 @@ function handlePopupOpen(ev) {
     
     const deleteHandler = () => {
       if (markerNdx !== undefined) {
+        const { markerType } = markers[markerNdx].data;
+        typesLayerGroups[markerType].removeLayer(marker);
         marker.remove();
         deleteMarker(markerNdx);
       }
@@ -108,7 +111,7 @@ const createMarker = ({
   rating,
   uid
 }) => {
-  const marker = L.marker([lat, lng], { uid }).addTo(mapInst);
+  const marker = L.marker([lat, lng], { uid });
   let navMarkup = '';
   let ratingMarkup = '';
   
@@ -134,13 +137,18 @@ const createMarker = ({
   
   marker.bindPopup(popupContent);
   
-  if (previewing) marker.openPopup();
+  if (previewing) {
+    marker.addTo(mapInst);
+    marker.openPopup();
+  }
+  else typesLayerGroups[markerType].addLayer(marker);
   
   return marker;
 };
 
 const saveMapState = () => {
   window.localStorage.setItem(LS_KEY, JSON.stringify({
+    hiddenOverlays,
     latlng: mapInst.getCenter(),
     zoom: mapInst.getZoom(),
   }));
@@ -424,6 +432,13 @@ function handleMapClick({ latlng: { lat, lng } }) {
   if (markerCreatorToggle.enabled) openMarkerCreator({ lat, lng });
 }
 
+function handleOverlayToggle({ name, type }) {
+  if (type === 'overlayadd') delete hiddenOverlays[name];
+  else hiddenOverlays[name] = true;
+  
+  saveMapState();
+}
+
 function init() {
   loadMarkers().then((loadedMarkers) => {
     const mapWrapper = document.createElement('div');
@@ -458,9 +473,14 @@ function init() {
       preferCanvas: true,
       zoomControl: false,
     }).setView(...viewArgs);
-
+    
+    typesLayerGroups = [...MARKER_TYPES].reduce((obj, [type]) => {
+      obj[type] = L.layerGroup([]).addTo(mapInst);
+      return obj;
+    }, {});
+    
     L.control.zoom({ position: 'bottomright' }).addTo(mapInst);
-    // L.control.layers(mapLayers).addTo(mapInst);
+    L.control.layers({}, typesLayerGroups).addTo(mapInst);
 
     markerCreatorToggle = L.control.markerCreatorToggle({
       onChange: ({ currentTarget: toggle }) => {
@@ -478,8 +498,15 @@ function init() {
 
     mapInst.on('click', handleMapClick);
     mapInst.on('move', saveMapState);
+    mapInst.on('overlayadd', handleOverlayToggle);
+    mapInst.on('overlayremove', handleOverlayToggle);
     mapInst.on('popupopen', handlePopupOpen);
     mapInst.on('zoomend', saveMapState);
+    
+    Object.keys(lsData.hiddenOverlays).forEach((hiddenOverlay) => {
+      const layerGroup = typesLayerGroups[hiddenOverlay];
+      if (layerGroup) mapInst.removeLayer(layerGroup);
+    });
   });
 }
 
