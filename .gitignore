@@ -1,4 +1,5 @@
 # Files
+.dockercreds
 *.log
 public/*/leaflet*
 markers.json
