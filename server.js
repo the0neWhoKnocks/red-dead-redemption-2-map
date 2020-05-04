@@ -160,9 +160,10 @@ const handleRequests = (req, res) => {
   }
 }
 
+const SERVER_PORT = 3000;
 const server = http.createServer(handleRequests);
 
-server.listen(process.env.SERVER_PORT, (err) => {
+server.listen(SERVER_PORT, (err) => {
   if (err) console.error('[ERROR]', err);
-  else console.log(`Server running at http://localhost:${process.env.SERVER_PORT}`);
+  else console.log(`Server running at http://localhost:${SERVER_PORT}`);
 });

@@ -16,14 +16,30 @@ Currently everything runs without external requests.
 
 ## Install
 
+Without Docker
 ```sh
 npm i
+```
+
+With Docker
+```sh
+docker-compose build
 ```
 
 ---
 
 ## Run
 
+Without Docker
 ```js
 npm start
+```
+
+With Docker
+```sh
+# start
+docker-compose up
+# stop - CTRL+C or CMD+C
+# or in another terminal
+docker-compose down
 ```

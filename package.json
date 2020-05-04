@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "./bin/copy-assets-to-public.sh",
-    "start": "SERVER_PORT=3000 node ./server.js",
+    "start": "node ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the0neWhoKnocks/red-dead-redemption-2-map.git"
   },
   "author": "Trevor Lemon",
   "license": "MIT",

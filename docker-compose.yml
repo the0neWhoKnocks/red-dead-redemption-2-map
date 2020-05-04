@@ -1,0 +1,17 @@
+version: "3.4"
+
+services:
+  "rdr2-map":
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: rdr2-map
+    image: theonewhoknocks/rdr2-map
+    environment:
+      NODE_ENV: production
+    ports:
+      # Map local 3000 to Container's 3000
+      - "3000:3000"
+    volumes:
+      # Map local markers data to location reachable by the Container
+      - "${PWD}/public/markers.json:/home/node/app/public/markers.json"
