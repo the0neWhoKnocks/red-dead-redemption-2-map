@@ -127,14 +127,17 @@ class CustomAutoCompleteInput extends HTMLElement {
   }
   
   setupListItems() {
-    this.els.list.innerHTML = this.data.items.map((item) => `
-      <li
-        class="${this.classes.LIST_ITEM}"
-        data-autocomplete-item="${item.toLowerCase()}"
-      >
-        <button type="button" value="${item}">${item}</button>
-      </li>
-    `).join('');
+    this.els.list.innerHTML = this.data.items.map(({ attributes, label }) => {
+      const atts = Object.keys(attributes).map(att => `${att}="${attributes[att]}"`).join(' ');
+      return `
+        <li
+          class="${this.classes.LIST_ITEM}"
+          data-autocomplete-item="${label.toLowerCase()}"
+        >
+          <button type="button" value="${label}" ${atts}>${label}</button>
+        </li>
+      `;
+    }).join('');
   }
   
   handleInputChange(ev) {
@@ -226,10 +229,9 @@ class CustomAutoCompleteInput extends HTMLElement {
   
   handleItemSelection(ev) {
     const item = ev.target;
-    const value = item.value;
     this.els.input.value = '';
     this.els.input.dispatchEvent(new CustomEvent('closeList'));
-    if (this._onSelect) this._onSelect(value);
+    if (this._onSelect) this._onSelect(item);
     item.blur();
   }
   

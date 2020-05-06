@@ -25,7 +25,7 @@ spawn.
 - [ ] Add Filter option to filter by `markerType` & `*SubType`
   - https://leafletjs.com/reference-1.6.0.html#control-layers
   - [x] Hide/Show by `markerType`
-  - [ ] Hide/Show by `*SubType`
+  - [x] Hide/Show by `*SubType`
 - On click of Marker Creator toggle
   - [x] Change the cursor to a crosshair
 - On open/close of Marker Creator

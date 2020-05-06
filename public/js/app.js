@@ -3,7 +3,9 @@ const DOM_ID = 'mapContainer';
 const LS_KEY = 'rdr2';
 const TILES_ABS_PATH = '/imgs/tiles';
 const hiddenOverlays = {};
-let lsData, mapBoundary, mapInst, mapLayers, markers, markerCreatorToggle, typesLayerGroups;
+let filteredSubTypes = [];
+let lsData, mapBoundary, mapInst, mapLayers, markers, markerCreatorToggle, 
+  subTypeFilterWrapper, typesLayerGroups;
 
 const _fetch = (url, opts = {}) => {
   const defaultOpts = {
@@ -142,6 +144,11 @@ const createMarker = ({
     marker.openPopup();
   }
   else typesLayerGroups[markerType].addLayer(marker);
+  
+  marker.customData = {
+    markerSubType,
+    markerType,
+  };
   
   return marker;
 };
@@ -450,6 +457,69 @@ function handleOverlayToggle({ name, type }) {
   saveMapState();
 }
 
+function renderMarkers(filter) {
+  const clearedGroups = [];
+  
+  if (filter) {
+    markers.forEach(({ data, lat, lng }, i) => {
+      const { markerSubType, markerType } = data;
+      // clear out all layers based on marker types that have been added
+      if (!clearedGroups.includes(markerType)) {
+        typesLayerGroups[markerType].clearLayers();
+        clearedGroups.push(markerType);
+      }
+      // add a reference to the filter
+      if (
+        markerSubType === filter
+        && !filteredSubTypes.includes(markerSubType)
+      ) filteredSubTypes.push(markerSubType);
+      // only add Markers that are filtered
+      if (filteredSubTypes.includes(markerSubType)) createMarker({ ...data, lat, lng });
+    });
+  }
+  else {
+    filteredSubTypes = [];
+    markers.forEach(({ data, lat, lng }, i) => {
+      createMarker({ ...data, lat, lng });
+    });
+  }
+}
+
+function handleFilterSelect(filter) {
+  const { subType, type } = filter.dataset;
+  
+  if (!filteredSubTypes.includes(subType)) {
+    renderMarkers(subType);
+    
+    const filterTag = document.createElement('button');
+          filterTag.className = 'filter-tag';
+          filterTag.innerHTML = `${type}: ${subType} <span>&#10005;</span>`;
+          filterTag.dataset.subType = subType;
+          filterTag.dataset.type = type;
+    
+    subTypeFilterWrapper.appendChild(filterTag);
+  }
+}
+
+function handleFilterRemoval(ev) {
+  const el = ev.target;
+  
+  if (el.classList.contains('filter-tag')) {
+    const { subType, type } = el.dataset;
+    const filterNdx = filteredSubTypes.indexOf(subType);
+    
+    filteredSubTypes.splice(filterNdx, 1);
+    el.remove();
+    typesLayerGroups[type].eachLayer((marker) => {
+      typesLayerGroups[type].removeLayer(marker);
+      marker.remove();
+    });
+    
+    // if no more filters are applied, show all Markers
+    if (!filteredSubTypes.length) renderMarkers();
+  }
+}
+
 function init() {
   loadMarkers().then((loadedMarkers) => {
     const mapWrapper = document.createElement('div');
@@ -503,22 +573,27 @@ function init() {
       position: 'bottomright',
     }).addTo(mapInst);
     
-    markers.forEach(({ data, lat, lng }, i) => {
-      createMarker({ ...data, lat, lng });
-    });
+    renderMarkers();
     
+    subTypeFilterWrapper = document.createElement('div');
+    subTypeFilterWrapper.className = 'filter-input-wrapper';
     const subTypeFilterInput = document.createElement('custom-auto-complete-input');
     subTypeFilterInput.placeholder = 'Filter Markers';
     subTypeFilterInput.items = markers
-      .reduce((arr, { data: { markerSubType } }) => {
-        if (!arr.includes(markerSubType)) arr.push(markerSubType);
+      .reduce((arr, { data: { markerSubType, markerType } }) => {
+        if (!arr.includes(markerSubType)) arr.push({
+          attributes: {
+            'data-sub-type': markerSubType,
+            'data-type': markerType,
+          },
+          label: `${markerType}: ${markerSubType}`,
+        });
         return arr;
       }, []);
-    subTypeFilterInput.onSelect = (val) => {
-      // TODO - just display items by selected subType
-      console.log(val);
-    };
-    document.body.appendChild(subTypeFilterInput);
+    subTypeFilterInput.onSelect = handleFilterSelect;
+    subTypeFilterWrapper.appendChild(subTypeFilterInput);
+    subTypeFilterWrapper.addEventListener('click', handleFilterRemoval);
+    document.body.appendChild(subTypeFilterWrapper);
 
     mapInst.on('click', handleMapClick);
     mapInst.on('move', saveMapState);
