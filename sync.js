@@ -11,9 +11,11 @@ create().init({
   ],
   ghostMode: false, // don't mirror interactions in other browsers
   // logLevel: 'debug',
+  notify: false, // Don't show any notifications in the browser.
   open: false,
   port: PORT + 1,
   proxy: `localhost:${PORT}`,
+  reloadDebounce: 300, // Wait for a specified window of event-silence before sending any reload events.
   snippetOptions: {
     rule: {
       match: /<\/body>/i,
