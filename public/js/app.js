@@ -506,6 +506,19 @@ function init() {
     markers.forEach(({ data, lat, lng }, i) => {
       createMarker({ ...data, lat, lng });
     });
+    
+    const subTypeFilterInput = document.createElement('custom-auto-complete-input');
+    subTypeFilterInput.placeholder = 'Filter Markers';
+    subTypeFilterInput.items = markers
+      .reduce((arr, { data: { markerSubType } }) => {
+        if (!arr.includes(markerSubType)) arr.push(markerSubType);
+        return arr;
+      }, []);
+    subTypeFilterInput.onSelect = (val) => {
+      // TODO - just display items by selected subType
+      console.log(val);
+    };
+    document.body.appendChild(subTypeFilterInput);
 
     mapInst.on('click', handleMapClick);
     mapInst.on('move', saveMapState);
