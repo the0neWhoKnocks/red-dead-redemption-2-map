@@ -31,8 +31,10 @@ docker-compose build
 ## Run
 
 Without Docker
-```js
+```sh
 npm start
+# or for Dev (starts a BrowserSync watcher)
+npm run start:dev
 ```
 
 With Docker

@@ -6,6 +6,7 @@
   "scripts": {
     "postinstall": "./bin/copy-assets-to-public.sh",
     "start": "node ./server.js",
+    "start:dev": "concurrently --kill-others -p {name} -n \"[ SERVER ]\",\"[ SYNC ]\" -c black.bgGreen,black.bgMagenta \"npm run start\" \"node ./sync.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +18,9 @@
   "dependencies": {
     "leaflet": "^1.6.0",
     "mime-types": "^2.1.27"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "concurrently": "^5.2.0"
   }
 }
