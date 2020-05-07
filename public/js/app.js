@@ -578,10 +578,22 @@ function handleFilterRemoval(ev) {
 
 function setFilterItems() {
   const added = [];
-  subTypeFilterInput.items = markers
-    .reduce((arr, { data: { markerSubType, markerType } }) => {
-      if (!added.includes(markerSubType)) {
-        arr.push({
+  const itemGroups = {};
+  
+  markers.forEach(({ data: { markerSubType, markerType } }) => {
+    if (!added.includes(`${markerType}_${markerSubType}`)) {
+      if (!itemGroups[markerType]) itemGroups[markerType] = [];
+      itemGroups[markerType].push(markerSubType);
+      added.push(`${markerType}_${markerSubType}`);
+    }
+  });
+  
+  subTypeFilterInput.items = Object.keys(itemGroups)
+    .sort()
+    .reduce((arr, markerType) => itemGroups[markerType]
+      .sort()
+      .reduce((combined, markerSubType) => {
+        combined.push({
           attributes: {
             'data-sub-type': markerSubType,
             'data-type': markerType,
@@ -589,12 +601,9 @@ function setFilterItems() {
           label: `<span class="filter-icon"></span><span class="filter-label">${markerSubType}</span>`,
           value: markerSubType,
         });
-        
-        added.push(markerSubType);
-      }
-      
-      return arr;
-    }, []);
+        return combined;
+      }, arr)
+    , []);
 }
 
 function init() {
