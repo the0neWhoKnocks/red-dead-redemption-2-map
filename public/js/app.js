@@ -5,7 +5,7 @@ const TILES_ABS_PATH = '/imgs/tiles';
 const hiddenOverlays = {};
 let filteredSubTypes = [];
 let lsData, mapBoundary, mapInst, mapLayers, markers, markerCreatorToggle, 
-  subTypeFilterWrapper, typesLayerGroups;
+  subTypeFilterInput, subTypeFilterWrapper, typesLayerGroups;
 
 const svgMarker = ({ markerSubType, markerType }) => `
   <svg
@@ -77,13 +77,21 @@ function handlePopupOpen(ev) {
         const { markerType } = markers[markerNdx].data;
         typesLayerGroups[markerType].removeLayer(marker);
         marker.remove();
-        deleteMarker(markerNdx);
+        
+        deleteMarker(markerNdx)
+          .then((newMarkers) => {
+            markers = newMarkers;
+            setFilterItems();
+          })
+          .catch((err) => { alert(err); });
       }
     };
     const editHandler = () => {
       if (markerNdx !== undefined) {
+        const { markerType } = marker.customData;
         const { lat, lng } = marker._latlng;
         
+        typesLayerGroups[markerType].removeLayer(marker);
         marker.remove();
         
         openMarkerCreator({
@@ -107,7 +115,7 @@ function handlePopupOpen(ev) {
             const { lat, lng } = marker._latlng;
             updateMarker(markerNdx, { lat, lng })
               .then((newMarkers) => { markers = newMarkers; })
-              .catch(err => alert(err));
+              .catch((err) => { alert(err); });
           }
         };
         marker.on('dragend', dragEndHandler);
@@ -216,14 +224,14 @@ function openMarkerCreator({
       `).join('')}
     </select>
   `;
-  const addBackLayerGroups = () => {
-    visibleTypeLayerGroups.forEach(lg => mapInst.addLayer(lg));
-  };
   const FLYOUT_WIDTH = 300;
   const MODIFIER__PREVIEWING_MARKER = 'is--previewing-marker';
   const visibleTypeLayerGroups = [...MARKER_TYPES.keys()]
     .filter(type => hiddenOverlays[type] === undefined)
     .map(type => typesLayerGroups[type]);
+  const addBackLayerGroups = () => {
+    visibleTypeLayerGroups.forEach(lg => mapInst.addLayer(lg));
+  };
   let markerCreated = false;
   
   const markerFlyout = document.createElement('custom-flyout');
@@ -409,6 +417,7 @@ function openMarkerCreator({
       .then((newMarkers) => {
         createMarker({ ...data, lat, lng });
         markers = newMarkers;
+        setFilterItems();
         
         if (onUpdate) onUpdate();
         
@@ -567,6 +576,27 @@ function handleFilterRemoval(ev) {
   }
 }
 
+function setFilterItems() {
+  const added = [];
+  subTypeFilterInput.items = markers
+    .reduce((arr, { data: { markerSubType, markerType } }) => {
+      if (!added.includes(markerSubType)) {
+        arr.push({
+          attributes: {
+            'data-sub-type': markerSubType,
+            'data-type': markerType,
+          },
+          label: `<span class="filter-icon"></span><span class="filter-label">${markerSubType}</span>`,
+          value: markerSubType,
+        });
+        
+        added.push(markerSubType);
+      }
+      
+      return arr;
+    }, []);
+}
+
 function init() {
   loadMarkers().then((loadedMarkers) => {
     const mapWrapper = document.createElement('div');
@@ -624,20 +654,9 @@ function init() {
     
     subTypeFilterWrapper = document.createElement('div');
     subTypeFilterWrapper.className = 'filter-input-wrapper';
-    const subTypeFilterInput = document.createElement('custom-auto-complete-input');
+    subTypeFilterInput = document.createElement('custom-auto-complete-input');
     subTypeFilterInput.placeholder = 'Filter Markers';
-    subTypeFilterInput.items = markers
-      .reduce((arr, { data: { markerSubType, markerType } }) => {
-        if (!arr.includes(markerSubType)) arr.push({
-          attributes: {
-            'data-sub-type': markerSubType,
-            'data-type': markerType,
-          },
-          label: `<span class="filter-icon"></span><span class="filter-label">${markerSubType}</span>`,
-          value: markerSubType,
-        });
-        return arr;
-      }, []);
+    setFilterItems();
     subTypeFilterInput.onSelect = handleFilterSelect;
     subTypeFilterInput.styles = `
       .custom-autocomplete__list-item button {

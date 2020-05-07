@@ -1,6 +1,9 @@
 class CustomAutoCompleteInput extends HTMLElement {
   set items(items) {
     this.data.items = items;
+    if (this.initialized) {
+      this.setupListItems();
+    }
   }
   
   set onSelect(fn) {
@@ -126,6 +129,7 @@ class CustomAutoCompleteInput extends HTMLElement {
     if (this.data.items && Array.isArray(this.data.items)) {
       this.setupListItems();
       this.addListeners();
+      this.initialized = true;
     }
     else {
       console.error('No `items` provided for autocomplete-input');
