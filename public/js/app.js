@@ -7,6 +7,31 @@ let filteredSubTypes = [];
 let lsData, mapBoundary, mapInst, mapLayers, markers, markerCreatorToggle, 
   subTypeFilterWrapper, typesLayerGroups;
 
+const svgMarker = ({ markerSubType, markerType }) => `
+  <svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px"
+    y="0px"
+    height="100%"
+    viewBox="-30 -30 435.963 455.963"
+    xml:space="preserve"
+    class="marker-icon"
+    data-sub-type="${markerSubType}"
+    data-type="${markerType}"
+  >
+    <path
+      stroke-width="2em"
+      d="M213.285,0h-0.608C139.114,0,79.268,59.826,79.268,133.361c0,48.202,21.952,111.817,65.246,189.081
+      c32.098,57.281,64.646,101.152,64.972,101.588c0.906,1.217,2.334,1.934,3.847,1.934c0.043,0,0.087,0,0.13-0.002
+      c1.561-0.043,3.002-0.842,3.868-2.143c0.321-0.486,32.637-49.287,64.517-108.976c43.03-80.563,64.848-141.624,64.848-181.482
+      C346.693,59.825,286.846,0,213.285,0z M274.865,136.62c0,34.124-27.761,61.884-61.885,61.884
+      c-34.123,0-61.884-27.761-61.884-61.884s27.761-61.884,61.884-61.884C247.104,74.736,274.865,102.497,274.865,136.62z"
+    />
+  </svg>
+`;
+
 const _fetch = (url, opts = {}) => {
   const defaultOpts = {
     method: 'GET',
@@ -41,7 +66,7 @@ function handlePopupOpen(ev) {
     let markerNdx;
     
     for (let i=0; i<markers.length; i++) {
-      if (markers[i].data.uid === marker.options.uid) {
+      if (markers[i].data.uid === marker.customData.uid) {
         markerNdx = i;
         break;
       }
@@ -113,7 +138,18 @@ const createMarker = ({
   rating,
   uid
 }) => {
-  const marker = L.marker([lat, lng], { uid });
+  const iconRadius = 30;
+  const icon = L.divIcon({
+    className: 'marker-icon',
+    html: svgMarker({
+      markerSubType,
+      markerType,
+    }),
+    iconAnchor: [iconRadius/2, iconRadius],
+    iconSize: [iconRadius, iconRadius],
+    popupAnchor: [0, -iconRadius],
+  });
+  const marker = L.marker([lat, lng], { icon });
   let navMarkup = '';
   let ratingMarkup = '';
   
@@ -148,6 +184,7 @@ const createMarker = ({
   marker.customData = {
     markerSubType,
     markerType,
+    uid,
   };
   
   return marker;
@@ -493,7 +530,15 @@ function handleFilterSelect(filter) {
     
     const filterTag = document.createElement('button');
           filterTag.className = 'filter-tag';
-          filterTag.innerHTML = `${type}: ${subType} <span>&#10005;</span>`;
+          filterTag.innerHTML = `
+            <span 
+              class="filter-tag__icon"
+              data-sub-type="${subType}"
+              data-type="${type}"
+            ></span>
+            ${subType}
+            <span class="filter-tag__close">&#10005;</span>
+          `;
           filterTag.dataset.subType = subType;
           filterTag.dataset.type = type;
     
@@ -511,8 +556,10 @@ function handleFilterRemoval(ev) {
     filteredSubTypes.splice(filterNdx, 1);
     el.remove();
     typesLayerGroups[type].eachLayer((marker) => {
-      typesLayerGroups[type].removeLayer(marker);
-      marker.remove();
+      if (marker.customData.markerSubType === subType) {
+        typesLayerGroups[type].removeLayer(marker);
+        marker.remove();
+      }
     });
     
     // if no more filters are applied, show all Markers
@@ -586,11 +633,48 @@ function init() {
             'data-sub-type': markerSubType,
             'data-type': markerType,
           },
-          label: `${markerType}: ${markerSubType}`,
+          label: `<span class="filter-icon"></span><span class="filter-label">${markerSubType}</span>`,
+          value: markerSubType,
         });
         return arr;
       }, []);
     subTypeFilterInput.onSelect = handleFilterSelect;
+    subTypeFilterInput.styles = `
+      .custom-autocomplete__list-item button {
+        margin: 0;
+        display: flex;
+        align-items: center;
+      }
+      .custom-autocomplete__list-item button * {
+        pointer-events: none;
+      }
+      
+      .filter-icon {
+        width: 2em;
+        height: 1em;
+        border: solid 3px;
+        border-radius: 0.25em;
+        margin-right: 1em;
+        display: inline-block;
+        box-shadow: 0 0 0px 1px #776245;
+      }
+      
+      button[data-sub-type*="Legendary"] .filter-icon {
+        border-color: var(--color__legendary);
+      }
+      button[data-type="Animal"] .filter-icon {
+        background: var(--color__animal);
+      }
+      button[data-type="Fish"] .filter-icon {
+        background: var(--color__fish);
+      }
+      button[data-type="Hat"] .filter-icon {
+        background: var(--color__hat);
+      }
+      button[data-type="Plant"] .filter-icon {
+        background: var(--color__plant);
+      }
+    `,
     subTypeFilterWrapper.appendChild(subTypeFilterInput);
     subTypeFilterWrapper.addEventListener('click', handleFilterRemoval);
     document.body.appendChild(subTypeFilterWrapper);

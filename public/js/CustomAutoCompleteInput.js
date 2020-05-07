@@ -11,6 +11,10 @@ class CustomAutoCompleteInput extends HTMLElement {
     this.els.input.placeholder = text;
   }
   
+  set styles(styles) {
+    this.els.userStyles.textContent = styles;
+  }
+  
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -91,7 +95,8 @@ class CustomAutoCompleteInput extends HTMLElement {
           background: #eee;
         }
       </style>
-      <style id="autocompleteStyle"></style>
+      <style id="userStyles"></style>
+      <style id="autocompleteStyles"></style>
       
       <div class="${this.ROOT_CLASS}">
         <input class="${this.ROOT_CLASS}__input" type="text">
@@ -102,7 +107,8 @@ class CustomAutoCompleteInput extends HTMLElement {
     this.els = {
       input: shadowRoot.querySelector(`.${this.ROOT_CLASS}__input`),
       list: shadowRoot.querySelector(`.${this.classes.LIST}`),
-      listStyle: shadowRoot.querySelector('#autocompleteStyle'),
+      listStyles: shadowRoot.querySelector('#autocompleteStyles'),
+      userStyles: shadowRoot.querySelector('#userStyles'),
       wrapper: shadowRoot.querySelector(`.${this.ROOT_CLASS}`),
     };
     
@@ -127,14 +133,14 @@ class CustomAutoCompleteInput extends HTMLElement {
   }
   
   setupListItems() {
-    this.els.list.innerHTML = this.data.items.map(({ attributes, label }) => {
+    this.els.list.innerHTML = this.data.items.map(({ attributes, label, value }) => {
       const atts = Object.keys(attributes).map(att => `${att}="${attributes[att]}"`).join(' ');
       return `
         <li
           class="${this.classes.LIST_ITEM}"
-          data-autocomplete-item="${label.toLowerCase()}"
+          data-autocomplete-item="${value.toLowerCase()}"
         >
-          <button type="button" value="${label}" ${atts}>${label}</button>
+          <button type="button" value="${value}" ${atts}>${label}</button>
         </li>
       `;
     }).join('');
@@ -165,7 +171,7 @@ class CustomAutoCompleteInput extends HTMLElement {
       `;
     }
       
-    this.els.listStyle.textContent = rules;
+    this.els.listStyles.textContent = rules;
   }
   
   handleMenuSelectionFromInput(ev) {
