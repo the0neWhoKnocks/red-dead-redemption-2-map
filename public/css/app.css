@@ -250,6 +250,7 @@ custom-flyout {
   font-family: monospace;
   font-size: 1em;
   text-align: center;
+  white-space: nowrap;
   padding: 0.25em 0.5em;
   border: solid 1px #ddd;
   background: #eee;
