@@ -81,6 +81,9 @@ custom-flyout {
   z-index: 401;
 }
 
+.marker-icon-wrapper {
+  text-align: center;
+}
 .marker-icon {
   stroke: #000;
 }
@@ -99,6 +102,9 @@ custom-flyout {
 .marker-icon[data-type="Plant"] {
   fill: var(--color__plant);
 }
+.marker-icon.is--completed {
+  opacity: 0.3;
+}
 
 .map-wrapper,
 .map-container {
@@ -116,7 +122,7 @@ custom-flyout {
 
 .leaflet-popup-content {
   font-family: monospace;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 .leaflet-control-layers {
   text-align: right;
@@ -179,19 +185,73 @@ custom-flyout {
   height: 30px;
 }
 
+.marker-popup__title {
+  margin: 0;
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.marker-popup__rating {
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+.marker-popup__completed,
+.marker-popup__completed input {
+  cursor: pointer;
+}
+.marker-popup__completed {
+  display: flex;
+  align-items: center;
+}
+.marker-popup__completed input {
+  width: 2em;
+  height: 2em;
+  margin: 0;
+  margin-right: 0.25em;
+}
+
+.marker-popup__icon {
+  width: 1em;
+  height: 1em;
+  border: solid 3px;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  display: inline-block;
+  box-shadow: 0 0 0px 1px #776245;
+}
+.marker-popup__icon[data-sub-type*="Legendary"] {
+  border-color: var(--color__legendary);
+}
+.marker-popup__icon[data-type="Animal"] {
+  background: var(--color__animal);
+}
+.marker-popup__icon[data-type="Fish"] {
+  background: var(--color__fish);
+}
+.marker-popup__icon[data-type="Hat"] {
+  background: var(--color__hat);
+}
+.marker-popup__icon[data-type="Plant"] {
+  background: var(--color__plant);
+}
+
 .marker-popup__nav {
   text-align: right;
   padding: 0.25em;
-  border: solid 1px #eee;
+  border: solid 1px #b6b6b6;
   border-radius: 0.5em;
+  display: flex;
 }
 .marker-popup__nav label,
 .marker-popup__nav button {
+  width: 100%;
   font-family: monospace;
   font-size: 1em;
+  text-align: center;
   padding: 0.25em 0.5em;
   border: solid 1px #ddd;
-  border-radius: 0.25em;
   background: #eee;
   cursor: pointer;
 }
@@ -200,4 +260,10 @@ custom-flyout {
   height: 1em;
   vertical-align: middle;
   margin: 0;
+}
+.marker-popup__nav :first-child {
+  border-radius: 0.25em 0 0 0.25em;
+}
+.marker-popup__nav :last-child {
+  border-radius: 0 0.25em 0.25em 0;
 }

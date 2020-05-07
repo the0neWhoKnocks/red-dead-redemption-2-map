@@ -1,13 +1,15 @@
 const API_BASE = '/api/marker';
 const DOM_ID = 'mapContainer';
 const LS_KEY = 'rdr2';
+const MODIFIER__COMPLETED = 'is--completed';
 const TILES_ABS_PATH = '/imgs/tiles';
+const completedMarkers = [];
 const hiddenOverlays = {};
 let filteredSubTypes = [];
 let lsData, mapBoundary, mapInst, mapLayers, markers, markerCreatorToggle, 
   subTypeFilterInput, subTypeFilterWrapper, typesLayerGroups;
 
-const svgMarker = ({ markerSubType, markerType }) => `
+const svgMarker = ({ markerSubType, markerType, uid }) => `
   <svg
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -15,11 +17,12 @@ const svgMarker = ({ markerSubType, markerType }) => `
     x="0px"
     y="0px"
     height="100%"
-    viewBox="-30 -30 435.963 455.963"
+    viewBox="0 0 435.963 455.963"
     xml:space="preserve"
-    class="marker-icon"
+    class="marker-icon ${(lsData.completedMarkers.includes(uid)) ? MODIFIER__COMPLETED : ''}"
     data-sub-type="${markerSubType}"
     data-type="${markerType}"
+    data-uid="${uid}"
   >
     <path
       stroke-width="2em"
@@ -60,6 +63,7 @@ function handlePopupOpen(ev) {
   const marker = popup._source;
   
   if (popup._wrapper.querySelector('.marker-popup__nav')) {
+    const completedToggle = popup._wrapper.querySelector('.marker-popup__completed input');
     const deleteBtn = popup._wrapper.querySelector('.marker-popup__delete-btn');
     const editBtn = popup._wrapper.querySelector('.marker-popup__edit-btn');
     const moveToggle = popup._wrapper.querySelector('[name="moveMarker"]');
@@ -72,6 +76,20 @@ function handlePopupOpen(ev) {
       }
     }
     
+    const completedHandler = ({ currentTarget: { checked, value: uid } }) => {
+      const { markerType } = marker.customData;
+      const { data, lat, lng } = markers[markerNdx];
+      
+      (checked)
+        ? completedMarkers.push(uid)
+        : completedMarkers.splice(completedMarkers.indexOf(uid), 1);
+      
+      saveMapState();
+      
+      typesLayerGroups[markerType].removeLayer(marker);
+      marker.remove();
+      createMarker({ ...data, lat, lng });
+    };
     const deleteHandler = () => {
       if (markerNdx !== undefined) {
         const { markerType } = markers[markerNdx].data;
@@ -126,10 +144,12 @@ function handlePopupOpen(ev) {
     };
     
     // ensure events don't get bound multiple times
+    completedToggle.removeEventListener('change', completedHandler);
     deleteBtn.removeEventListener('click', deleteHandler);
     editBtn.removeEventListener('click', editHandler);
     moveToggle.removeEventListener('change', moveHandler);
     // add fresh handlers
+    completedToggle.addEventListener('change', completedHandler);
     deleteBtn.addEventListener('click', deleteHandler);
     editBtn.addEventListener('click', editHandler);
     moveToggle.addEventListener('change', moveHandler);
@@ -148,10 +168,11 @@ const createMarker = ({
 }) => {
   const iconRadius = 30;
   const icon = L.divIcon({
-    className: 'marker-icon',
+    className: 'marker-icon-wrapper',
     html: svgMarker({
       markerSubType,
       markerType,
+      uid,
     }),
     iconAnchor: [iconRadius/2, iconRadius],
     iconSize: [iconRadius, iconRadius],
@@ -170,13 +191,21 @@ const createMarker = ({
   `;
   
   if (rating) ratingMarkup = `
-    <span>${Array(+rating).fill('&#9733;').join('')}</span>
+    <span class="marker-popup__rating">${Array(+rating).fill('&#9733;').join('')}</span>
   `;
   
   const popupContent = `
-    <h4>
-      ${markerType}: ${ratingMarkup} ${markerCustomSubType || markerSubType}
+    <h4 class="marker-popup__title">
+      <span
+        class="marker-popup__icon"
+        data-sub-type="${markerSubType}"
+        data-type="${markerType}"
+      ></span>
+      ${ratingMarkup} ${markerCustomSubType || markerSubType}
     </h4>
+    <label class="marker-popup__completed">
+      <input type="checkbox" value="${uid}" ${lsData.completedMarkers.includes(uid) ? 'checked' : ''} /> Completed
+    </label>
     <p>${markerDescription || ''}</p>
     ${navMarkup}
   `;
@@ -199,11 +228,14 @@ const createMarker = ({
 };
 
 const saveMapState = () => {
-  window.localStorage.setItem(LS_KEY, JSON.stringify({
+  const data = {
+    completedMarkers,
     hiddenOverlays,
     latlng: mapInst.getCenter(),
     zoom: mapInst.getZoom(),
-  }));
+  };
+  window.localStorage.setItem(LS_KEY, JSON.stringify(data));
+  lsData = data;
 };
 const formDataToObj = (form) => [...(new FormData(form)).entries()].reduce((obj, arr) => {
   obj[arr[0]] = arr[1];

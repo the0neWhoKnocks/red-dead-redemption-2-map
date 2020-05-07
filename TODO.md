@@ -33,6 +33,7 @@ spawn.
 - [ ] Combine custom subTypes with default subTypes so a User can select them later.
 - [ ] Have a list of `default-markers.json` and `user-markers.json`, and combine
 those together during `loadMarkers`.
+- [x] Have a checkbox on a Marker popup so that a marker can act as a todo item.
 
 ---
 
