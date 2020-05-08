@@ -426,6 +426,8 @@ function openMarkerCreator({
     </form>
   `;
   markerFlyout.onClose = () => {
+    window.removeEventListener('beforeunload', handleUnload);
+    
     if (!markerCreated) {
       if (window.previewMarker) window.previewMarker.remove();
       if (onCancel) onCancel();
@@ -517,17 +519,15 @@ function openMarkerCreator({
     }
   });
   
-  markerTypeInput.dispatchEvent(new Event('change'));
+  const handleUnload = (ev) => {
+    markerFlyout.close();
+    
+    ev.preventDefault(); // Cancel the event as stated by the standard.
+    ev.returnValue = undefined; // Chrome requires returnValue to be set.
+  };
+  window.addEventListener('beforeunload', handleUnload);
   
-  // const marker = L.circle(
-  //   [lat, lng],
-  //   {
-  //     color: 'red',
-  //     fillColor: '#f03',
-  //     fillOpacity: 0.5,
-  //     radius: 0.25,
-  //   }
-  // ).addTo(mapInst);
+  markerTypeInput.dispatchEvent(new Event('change'));
 }
 
 function handleMapClick({ latlng: { lat, lng } }) {

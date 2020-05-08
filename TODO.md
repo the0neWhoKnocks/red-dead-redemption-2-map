@@ -13,9 +13,6 @@ just always happening on click of the map.
 - [x] Add a star rating selector for just Animal markers.
 - [x] Customize Marker icons based on `markerType`.
   - https://leafletjs.com/reference-1.6.0.html#icon
-- [ ] Allow for choosing base type of Marker. Right now it's just `marker`, but
-it'd be useful to use `circle` for a more general radius of where an animal may
-spawn.
 - [x] Have Marker popup display this info
   ```
   Title - typeIcon markerType: markerSubType|markerCustomSubType
@@ -44,5 +41,5 @@ sort of submit button for Mobile.
 ## Bugs
 
 - [x] On edit of Marker, the subtype dropdown doesn't reflect what's being edited.
-- [ ] If you refresh the page while in Edit Marker mode, all the layers
+- [x] If you refresh the page while in Edit Marker mode, all the layers
 will be off on load. Add a `beforeunload` to reset layers.
