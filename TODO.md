@@ -35,7 +35,7 @@ spawn.
 those together during `loadMarkers`.
 - [x] Have a checkbox on a Marker popup so that a marker can act as a todo item.
 - [x] Add a toggle in Layers to 'Toggle All'.
-- [ ] Add ability to type a partial item in the Filter input, and after hitting
+- [x] Add ability to type a partial item in the Filter input, and after hitting
 ENTER, all items that were filtered down, are returned. May have to add some
 sort of submit button for Mobile.
 

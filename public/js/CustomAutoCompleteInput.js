@@ -25,6 +25,7 @@ class CustomAutoCompleteInput extends HTMLElement {
     const { shadowRoot } = this;
     this.ROOT_CLASS = 'custom-autocomplete';
     this.data = {};
+    this.visibleListItems = [];
     
     this.classes = {
       LIST: `${this.ROOT_CLASS}__list`,
@@ -116,13 +117,14 @@ class CustomAutoCompleteInput extends HTMLElement {
     };
     
     this.KEY_CODE__DOWN = 40;
+    this.KEY_CODE__ENTER = 13;
     this.KEY_CODE__UP = 38;
     
     this.handleArrowKeysInList = this.handleArrowKeysInList.bind(this);
     this.handleBlur = this.handleBlur.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleItemSelection = this.handleItemSelection.bind(this);
-    this.handleMenuSelectionFromInput = this.handleMenuSelectionFromInput.bind(this);
+    this.handleInputKeyDown = this.handleInputKeyDown.bind(this);
   }
   
   connectedCallback() {
@@ -176,29 +178,36 @@ class CustomAutoCompleteInput extends HTMLElement {
     }
       
     this.els.listStyles.textContent = rules;
-  }
-  
-  handleMenuSelectionFromInput(ev) {
-    if (ev.keyCode !== this.KEY_CODE__DOWN) return;
-  
-    ev.preventDefault();
-  
+    
     if (this.els.list.offsetHeight !== 0) {
       // find the first visible item in the drop down to select
-      const items = this.els.list.querySelectorAll(`.${this.classes.LIST_ITEM} button`);
-      let firstVisibleItem;
-      
-      this.visibleListItems = [];
-      this.itemIndex = 0;
-      
-      [...items].forEach((item) => {
-        if (item.offsetHeight !== 0) {
-          if (!firstVisibleItem) firstVisibleItem = item;
-          this.visibleListItems.push(item);
-        }
-      });
+      const items = [...this.els.list.querySelectorAll(`.${this.classes.LIST_ITEM} button`)];
+      this.visibleListItems = items.reduce((arr, item) => {
+        if (item.offsetHeight !== 0) arr.push(item);
+        return arr;
+      }, []);
+    }
+  }
   
-      firstVisibleItem.focus();
+  handleInputKeyDown(ev) {
+    if (
+      ev.keyCode !== this.KEY_CODE__DOWN
+      & ev.keyCode !== this.KEY_CODE__ENTER
+    ) return;
+  
+    ev.preventDefault();
+    
+    switch (ev.keyCode) {
+      case this.KEY_CODE__DOWN:
+        if (this.visibleListItems.length) {
+          this.itemIndex = 0;
+          this.visibleListItems[0].focus();
+        }
+        break;
+      
+      case this.KEY_CODE__ENTER:
+        this.handleItemSelection(ev);
+        break;
     }
   }
   
@@ -238,11 +247,22 @@ class CustomAutoCompleteInput extends HTMLElement {
   }
   
   handleItemSelection(ev) {
-    const item = ev.target;
+    const target = ev.target;
+    const value = target.value;
+    let elements, item;
+    
+    if (target.nodeName === 'INPUT') {
+      elements = [...this.visibleListItems];
+    }
+    else {
+      item = target;
+      elements = [item];
+    }
+    
     this.els.input.value = '';
     this.els.input.dispatchEvent(new CustomEvent('closeList'));
-    if (this._onSelect) this._onSelect(item);
-    item.blur();
+    if (this._onSelect) this._onSelect({ elements, value });
+    if (item) item.blur();
   }
   
   addListeners() {
@@ -250,7 +270,7 @@ class CustomAutoCompleteInput extends HTMLElement {
     this.els.input.addEventListener('closeList', this.handleInputChange);
     this.els.input.addEventListener('focus', this.handleInputChange);
     this.els.input.addEventListener('input', this.handleInputChange);
-    this.els.input.addEventListener('keydown', this.handleMenuSelectionFromInput);
+    this.els.input.addEventListener('keydown', this.handleInputKeyDown);
     this.els.list.addEventListener('keydown', this.handleArrowKeysInList);
     this.els.list.addEventListener('click', this.handleItemSelection);
     window.addEventListener('click', this.handleBlur);

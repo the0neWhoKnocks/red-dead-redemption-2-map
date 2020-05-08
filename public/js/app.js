@@ -569,27 +569,52 @@ function renderMarkers(filter) {
   }
 }
 
-function handleFilterSelect(filter) {
-  const { subType, type } = filter.dataset;
+function renderFilterTag({
+  label,
+  markerItems,
+  subType,
+  type,
+} = {}) {
+  const iconDataAtts = (subType)
+    ? `data-sub-type="${subType}" data-type="${type}"`
+    : '';
+  const filterTag = document.createElement('button');
+        filterTag.className = 'filter-tag';
+        filterTag.innerHTML = `
+          <span class="filter-tag__icon" ${iconDataAtts}>${(markerItems) ? '&#10033;' : ''}</span>
+          ${label || subType}
+          <span class="filter-tag__close">&#10005;</span>
+        `;
   
-  if (!filteredSubTypes.includes(subType)) {
-    renderMarkers(subType);
-    
-    const filterTag = document.createElement('button');
-          filterTag.className = 'filter-tag';
-          filterTag.innerHTML = `
-            <span 
-              class="filter-tag__icon"
-              data-sub-type="${subType}"
-              data-type="${type}"
-            ></span>
-            ${subType}
-            <span class="filter-tag__close">&#10005;</span>
-          `;
-          filterTag.dataset.subType = subType;
-          filterTag.dataset.type = type;
-    
-    subTypeFilterWrapper.appendChild(filterTag);
+  if (markerItems) {
+    filterTag.dataset.markerItems = JSON.stringify(markerItems);
+  }
+  else {
+    filterTag.dataset.subType = subType;
+    filterTag.dataset.type = type;
+  }
+  
+  subTypeFilterWrapper.appendChild(filterTag);
+}
+
+function handleFilterSelect({ elements: filters, value }) {
+  if (filters.length) {
+    if (filters.length > 1) {
+      const markerItems = [];
+      
+      filters.forEach((filter) => {
+        const { subType, type } = filter.dataset;
+        renderMarkers(subType);
+        markerItems.push({ subType, type });
+      });
+      
+      renderFilterTag({ label: value, markerItems });
+    }
+    else {
+      const { subType, type } = filters[0].dataset;
+      renderMarkers(subType);
+      renderFilterTag({ subType, type });
+    }
   }
 }
 
@@ -597,20 +622,33 @@ function handleFilterRemoval(ev) {
   const el = ev.target;
   
   if (el.classList.contains('filter-tag')) {
-    const { subType, type } = el.dataset;
-    const filterNdx = filteredSubTypes.indexOf(subType);
+    function removeFilter({ subType, type } = {}) {
+      const filterNdx = filteredSubTypes.indexOf(subType);
+      
+      filteredSubTypes.splice(filterNdx, 1);
+      typesLayerGroups[type].eachLayer((marker) => {
+        if (marker.customData.markerSubType === subType) {
+          typesLayerGroups[type].removeLayer(marker);
+          marker.remove();
+        }
+      });
+      
+      // if no more filters are applied, show all Markers
+      if (!filteredSubTypes.length) renderMarkers();
+    };
     
-    filteredSubTypes.splice(filterNdx, 1);
+    if (el.dataset.subType) {
+      const { subType, type } = el.dataset;
+      removeFilter({ subType, type });
+    }
+    else if (el.dataset.markerItems) {
+      const markerItems = JSON.parse(el.dataset.markerItems);
+      markerItems.forEach(({ subType, type }) => {
+        removeFilter({ subType, type });
+      });
+    }
+    
     el.remove();
-    typesLayerGroups[type].eachLayer((marker) => {
-      if (marker.customData.markerSubType === subType) {
-        typesLayerGroups[type].removeLayer(marker);
-        marker.remove();
-      }
-    });
-    
-    // if no more filters are applied, show all Markers
-    if (!filteredSubTypes.length) renderMarkers();
   }
 }
 
