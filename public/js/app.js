@@ -687,7 +687,29 @@ function init() {
     
     L.control.zoom({ position: 'bottomright' }).addTo(mapInst);
     L.control.layers({}, typesLayerGroups).addTo(mapInst);
-
+    
+    const layersControlList = document.querySelector('.leaflet-control-layers-list');
+    const allLayersToggle = document.createElement('button');
+          allLayersToggle.type = 'button';
+          allLayersToggle.className = 'leaflet-control-layers-list__toggle-all-btn';
+          allLayersToggle.innerText = 'Toggle All';
+          allLayersToggle.title = 'Click to toggle all layers on or off';
+    layersControlList.prepend(allLayersToggle);
+    allLayersToggle.addEventListener('click', () => {
+      const checkboxLabels = [...layersControlList.querySelectorAll('label')];
+      const layerCheckboxes = [...layersControlList.querySelectorAll('input[type="checkbox"]')];
+      const numberOfVisibleLayers = layerCheckboxes.reduce((count, checkbox) => {
+        count += (checkbox.checked) ? 1 : 0;
+        return count;
+      }, 0);
+      
+      checkboxLabels.forEach((label) => {
+        const checkbox = label.querySelector('input[type="checkbox"]');
+        if (numberOfVisibleLayers > 0 && checkbox.checked) label.click();
+        else if (numberOfVisibleLayers === 0 && !checkbox.checked) label.click();
+      });
+    });
+    
     markerCreatorToggle = L.control.markerCreatorToggle({
       onChange: ({ currentTarget: toggle }) => {
         markerCreatorToggle.enabled = toggle.checked;

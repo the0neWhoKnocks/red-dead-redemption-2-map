@@ -34,7 +34,7 @@ spawn.
 - [x] Have a list of `default-markers.json` and `user-markers.json`, and combine
 those together during `loadMarkers`.
 - [x] Have a checkbox on a Marker popup so that a marker can act as a todo item.
-- [ ] Add a toggle in Layers to 'Toggle All'.
+- [x] Add a toggle in Layers to 'Toggle All'.
 - [ ] Add ability to type a partial item in the Filter input, and after hitting
 ENTER, all items that were filtered down, are returned. May have to add some
 sort of submit button for Mobile.
@@ -44,3 +44,5 @@ sort of submit button for Mobile.
 ## Bugs
 
 - [x] On edit of Marker, the subtype dropdown doesn't reflect what's being edited.
+- [ ] If you refresh the page while in Edit Marker mode, all the layers
+will be off on load. Add a `beforeunload` to reset layers.
