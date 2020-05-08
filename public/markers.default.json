@@ -1,0 +1,3466 @@
+[
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerSubType": "High Stakes Treasure Map 1",
+      "uid": "4676737134999945"
+    },
+    "lat": -69.526611328125,
+    "lng": 93.83819580078125
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerSubType": "High Stakes Treasure Map 2",
+      "uid": "4676737199999974"
+    },
+    "lat": -56.703125,
+    "lng": 95.59620666503906
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerSubType": "High Stakes Treasure Map 3",
+      "uid": "4676737239999987"
+    },
+    "lat": -38.3072509765625,
+    "lng": 96.49267578125
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerSubType": "Jack Hall Treasure Map 1",
+      "uid": "4676737274999963"
+    },
+    "lat": -69.39837646484375,
+    "lng": 100.78874206542969
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerSubType": "Jack Hall Gang Treasure Map 2",
+      "uid": "4676737309999997"
+    },
+    "lat": -59.1046142578125,
+    "lng": 105.28273010253906
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerSubType": "Jack Hall Gang Treasure Map 3",
+      "uid": "4676737339999992"
+    },
+    "lat": -35.10720825195408,
+    "lng": 113.25490188598681
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerSubType": "The Poisonous Trail Map 1",
+      "uid": "4676737369999988"
+    },
+    "lat": -29.90203857421875,
+    "lng": 96.56253051757812
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerSubType": "Poisonous Trail Treasure Map 2",
+      "uid": "4676737394999946"
+    },
+    "lat": -73.9798583984375,
+    "lng": 128.11358642578125
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerSubType": "Poisonous Trail Treasure Map 3",
+      "uid": "4676737424999999"
+    },
+    "lat": -56.67398071289158,
+    "lng": 153.0167999267578
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerSubType": "Torn Treasure Map 1",
+      "uid": "46767374549999945"
+    },
+    "lat": -36.418701171875,
+    "lng": 157.96484375
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerSubType": "Torn Treasure Map 2 ",
+      "uid": "467673748999997"
+    },
+    "lat": -45.47674560546875,
+    "lng": 71.96784210205173
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerSubType": "Les Tresor Des Morts Map 1 (Pre-Order Bonus Treasure Map)",
+      "uid": "4676737524999946"
+    },
+    "lat": -66.04678344726658,
+    "lng": 106.25487518310452
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerSubType": "Les Tresor Des Morts Map 2 (Pre-Order Treasure Map)",
+      "uid": "4676737549999962"
+    },
+    "lat": -86.8499755859375,
+    "lng": 147.67291259765625
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Scarecrow Derby Hat",
+      "uid": "4676737584999995"
+    },
+    "lat": -95.16192626953125,
+    "lng": 127.973876953125
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Cat Skull Mask",
+      "uid": "4676737609999953"
+    },
+    "lat": -74.90956115722705,
+    "lng": 146.7968177795415
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Civil War Hat",
+      "uid": "4676737639999948"
+    },
+    "lat": -59.08421325683546,
+    "lng": 149.2140827178948
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Miners Hat",
+      "uid": "4676737674999982"
+    },
+    "lat": -62.21722412109375,
+    "lng": 74.89591979980469
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Morion Helmet",
+      "uid": "4676737714999996"
+    },
+    "lat": -42.78089904785204,
+    "lng": 86.03192901611423
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Nevada Hat",
+      "uid": "4676737744999992"
+    },
+    "lat": -36.791748046875,
+    "lng": 108.76382446289062
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Pagan Ritual Mask",
+      "uid": "4676737774999987"
+    },
+    "lat": -67.7080078125,
+    "lng": 66.129150390625
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Pig Mask",
+      "uid": "4676737804999983"
+    },
+    "lat": -51.247314453125,
+    "lng": 150.784358978271
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Ram Skull Mask",
+      "uid": "4676737829999998"
+    },
+    "lat": -96.58416748046875,
+    "lng": 31.283279418945312
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Scarecrow's Hat",
+      "uid": "4676737864999974"
+    },
+    "lat": -56.41459655761671,
+    "lng": 128.9780387878413
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Scarecrow Hat",
+      "uid": "467673789499997"
+    },
+    "lat": -100.62356567382812,
+    "lng": 75.35579681396484
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Tricorn Hat",
+      "uid": "4676737924999965"
+    },
+    "lat": -83.41677856445408,
+    "lng": 117.49566650390625
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Viking Helmet",
+      "uid": "4676737954999961"
+    },
+    "lat": -37.4912109375,
+    "lng": 148.2899627685547
+  },
+  {
+    "data": {
+      "markerType": "Hat",
+      "markerSubType": "Purple Scarecrow Hat",
+      "uid": "4676737979999976"
+    },
+    "lat": -84.58255004882908,
+    "lng": 135.96933364868212
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Alligator",
+      "uid": "467673801999999"
+    },
+    "lat": -75.775146484375,
+    "lng": 144.20346069335938
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Grizzly Bear",
+      "uid": "4676738044999948"
+    },
+    "lat": -37.39503479003954,
+    "lng": 134.4965629577632
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Beaver",
+      "uid": "4676738079999981"
+    },
+    "lat": -53.9752197265625,
+    "lng": 148.9419403076172
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Beaver",
+      "uid": "4676738109999977"
+    },
+    "lat": -53.9285888671875,
+    "lng": 148.9419403076172
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Boar",
+      "uid": "4676738134999992"
+    },
+    "lat": -67.80126953125,
+    "lng": 148.69744873046875
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Buck",
+      "uid": "4676738164999988"
+    },
+    "lat": -63.278076171875,
+    "lng": 71.70588684082031
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Cougar",
+      "uid": "46767381949999835"
+    },
+    "lat": -111.2379150390625,
+    "lng": 18.069091796875
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Coyote",
+      "uid": "46767382299999595"
+    },
+    "lat": -71.625,
+    "lng": 123.2237548828125
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Elk",
+      "uid": "4676738254999975"
+    },
+    "lat": -37.80596923828125,
+    "lng": 121.9197998046875
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Fox",
+      "uid": "4676738289999951"
+    },
+    "lat": -79.2491455078125,
+    "lng": 131.65289306640625
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Moose",
+      "uid": "4676738314999966"
+    },
+    "lat": -28.822242736815692,
+    "lng": 155.0644168853762
+  },
+  {
+    "data": {
+      "markerDescription": "Available only after completing all hunting challenges",
+      "markerType": "Animal",
+      "markerSubType": "Legendary Panther",
+      "uid": "4676738344999962"
+    },
+    "lat": -94.987060546875,
+    "lng": 136.42630004882812
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Pronghorn",
+      "uid": "4676738374999957"
+    },
+    "lat": -119.4915771484375,
+    "lng": 52.38232040405226
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Ram",
+      "uid": "4676738399999972"
+    },
+    "lat": -49.615234375,
+    "lng": 92.90679931640625
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Tatanka Bison",
+      "uid": "4676738429999968"
+    },
+    "lat": -106.2017822265625,
+    "lng": 79.99531555175781
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary White Bison",
+      "uid": "4676738459999964"
+    },
+    "lat": -36.34001159667921,
+    "lng": 83.60738754272413
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Legendary Wolf",
+      "uid": "467673848499998"
+    },
+    "lat": -33.88606262207079,
+    "lng": 114.78006362915087
+  },
+  {
+    "data": {
+      "markerType": "Treasure",
+      "markerSubType": "High Stakes Treasure",
+      "uid": "4676738539999992"
+    },
+    "lat": -38.563720703125,
+    "lng": 117.71105194091702
+  },
+  {
+    "data": {
+      "markerType": "Treasure",
+      "markerSubType": "Jack Hall Gang Treasure 3",
+      "uid": "4676738569999987"
+    },
+    "lat": -40.428955078125,
+    "lng": 136.3637218475349
+  },
+  {
+    "data": {
+      "markerType": "Treasure",
+      "markerSubType": "Jack Hall Gang Treasure 1",
+      "uid": "4676738599999983"
+    },
+    "lat": -59.03466796875,
+    "lng": 105.55050659179688
+  },
+  {
+    "data": {
+      "markerType": "Treasure",
+      "markerSubType": "Poisonous Trail Final Treasure",
+      "uid": "4676738624999998"
+    },
+    "lat": -47.96566772460842,
+    "lng": 147.78933715820312
+  },
+  {
+    "data": {
+      "markerType": "Treasure",
+      "markerSubType": "Poisonous Trail Treasure 1",
+      "uid": "4676738659999974"
+    },
+    "lat": -73.4669189453125,
+    "lng": 128.18344116210938
+  },
+  {
+    "data": {
+      "markerType": "Treasure",
+      "markerSubType": "Torn Treasure",
+      "uid": "467673868999997"
+    },
+    "lat": -97.2020263671875,
+    "lng": 43.44964599609375
+  },
+  {
+    "data": {
+      "markerDescription": "Under floorboard",
+      "markerType": "Treasure",
+      "markerSubType": "Special Snake Oil Pamphlet",
+      "uid": "4676738744999981"
+    },
+    "lat": -71.0741729736333,
+    "lng": 133.9260826110835
+  },
+  {
+    "data": {
+      "markerDescription": "Gold Nugget & Volatile Fire Bottle Recipe",
+      "markerType": "Treasure",
+      "markerSubType": "Lockbox",
+      "uid": "4676738774999976"
+    },
+    "lat": -61.9957275390625,
+    "lng": 107.20955657958889
+  },
+  {
+    "data": {
+      "markerDescription": "on windowsill of Saloon upstairs",
+      "markerType": "Treasure",
+      "markerSubType": "Valerian Root",
+      "uid": "4676738804999972"
+    },
+    "lat": -65.43475341796875,
+    "lng": 105.620361328125
+  },
+  {
+    "data": {
+      "markerType": "Rare Item",
+      "markerSubType": "Chelonia Camp (Jewelry Bag)",
+      "uid": "4676738839999948"
+    },
+    "lat": -101.29264336824417,
+    "lng": 37.38855381309986
+  },
+  {
+    "data": {
+      "markerType": "Rare Item",
+      "markerSubType": "Abalone Shell Fragment",
+      "uid": "4676738864999963"
+    },
+    "lat": -83.0641326904292,
+    "lng": 132.342708587646
+  },
+  {
+    "data": {
+      "markerType": "Rare Item",
+      "markerSubType": "Catherine's Brooch",
+      "uid": "4676738889999978"
+    },
+    "lat": -91.03800964355469,
+    "lng": 127.14726257324219
+  },
+  {
+    "data": {
+      "markerType": "Rare Item",
+      "markerSubType": "Cobalt Petrified Wood",
+      "uid": "4676738919999974"
+    },
+    "lat": -34.60884094238329,
+    "lng": 80.96163940429688
+  },
+  {
+    "data": {
+      "markerType": "Rare Item",
+      "markerSubType": "Gold Earring",
+      "uid": "4676738949999969"
+    },
+    "lat": -53.43896484375,
+    "lng": 83.1737060546875
+  },
+  {
+    "data": {
+      "markerType": "Rare Item",
+      "markerSubType": "Gold Nugget",
+      "uid": "4676738979999965"
+    },
+    "lat": -58.84814453125,
+    "lng": 149.209716796875
+  },
+  {
+    "data": {
+      "markerType": "Rare Item",
+      "markerSubType": "Fertility Statue hidden in chimney",
+      "uid": "4676739009999961"
+    },
+    "lat": -105.07535552978443,
+    "lng": 89.329654693604
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Bear",
+      "uid": "4676739044999994"
+    },
+    "lat": -46.73286437988329,
+    "lng": 155.6188888549795
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Bear",
+      "uid": "4676739069999952"
+    },
+    "lat": -56.330078125,
+    "lng": 74.46514892578125
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Bear",
+      "uid": "46767390999999475"
+    },
+    "lat": -59.8740234375,
+    "lng": 70.40193176269531
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Black Bear",
+      "uid": "4676739129999943"
+    },
+    "lat": -30.076904296875,
+    "lng": 151.8292694091797
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Grizzly Bear",
+      "uid": "4676739154999959"
+    },
+    "lat": -62.59027099609375,
+    "lng": 67.84641265869236
+  },
+  {
+    "data": {
+      "markerType": "Weapon",
+      "markerSubType": "Ancient Tomahawk",
+      "uid": "4676739184999955"
+    },
+    "lat": -27.9085693359375,
+    "lng": 123.81169891357327
+  },
+  {
+    "data": {
+      "markerType": "Weapon",
+      "markerSubType": "Antler Knife",
+      "uid": "46767392149999505"
+    },
+    "lat": -49.54091644287181,
+    "lng": 75.0632801055901
+  },
+  {
+    "data": {
+      "markerType": "Weapon",
+      "markerSubType": "Broken Pirate Sword",
+      "uid": "4676739244999946"
+    },
+    "lat": -89.25729370117092,
+    "lng": 144.71572875976562
+  },
+  {
+    "data": {
+      "markerType": "Weapon",
+      "markerSubType": "Civil War Knife",
+      "uid": "4676739275"
+    },
+    "lat": -59.13375854492092,
+    "lng": 149.192253112792
+  },
+  {
+    "data": {
+      "markerType": "Weapon",
+      "markerSubType": "Double Bit Hatchet",
+      "uid": "4676739304999996"
+    },
+    "lat": -55.36831665039158,
+    "lng": 87.62985610961962
+  },
+  {
+    "data": {
+      "markerType": "Weapon",
+      "markerSubType": "Hewing Hatchet",
+      "uid": "4676739334999992"
+    },
+    "lat": -45.54377746582079,
+    "lng": 130.71858596801806
+  },
+  {
+    "data": {
+      "markerType": "Weapon",
+      "markerSubType": "Hunter Hatchet",
+      "uid": "4676739359999949"
+    },
+    "lat": -40.33860778808546,
+    "lng": 108.90062332153369
+  },
+  {
+    "data": {
+      "markerType": "Weapon",
+      "markerSubType": "Rare Shotgun",
+      "uid": "4676739394999983"
+    },
+    "lat": -36.14474487304592,
+    "lng": 158.21515655517675
+  },
+  {
+    "data": {
+      "markerType": "Weapon",
+      "markerSubType": "Rusted Double-Bit Hatchet",
+      "uid": "4676739419999998"
+    },
+    "lat": -41.56558227539158,
+    "lng": 156.86172103881788
+  },
+  {
+    "data": {
+      "markerType": "Weapon",
+      "markerSubType": "Rusted Hunter Hatchet",
+      "uid": "4676739449999994"
+    },
+    "lat": -45.15615844726658,
+    "lng": 141.93027114868212
+  },
+  {
+    "data": {
+      "markerDescription": "In basement of the cabin",
+      "markerType": "Weapon",
+      "markerSubType": "Semi-Auto Shotgun",
+      "uid": "4676739479999989"
+    },
+    "lat": -53.42730712890625,
+    "lng": 82.95541000366163
+  },
+  {
+    "data": {
+      "markerType": "Weapon",
+      "markerSubType": "Stone Hatchet",
+      "uid": "4676739504999947"
+    },
+    "lat": -65.1986846923833,
+    "lng": 70.98987579345798
+  },
+  {
+    "data": {
+      "markerType": "Weapon",
+      "markerSubType": "Viking Hatchet",
+      "uid": "46767395399999805"
+    },
+    "lat": -37.817626953125,
+    "lng": 148.464599609375
+  },
+  {
+    "data": {
+      "markerType": "Weapon",
+      "markerSubType": "Wide-Blade Knife",
+      "uid": "4676739569999976"
+    },
+    "lat": -62.24053955078125,
+    "lng": 74.82897567748975
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Marko Dragic's Robot (Easter Egg)",
+      "uid": "4676739599999972"
+    },
+    "lat": -25.437703013420105,
+    "lng": 87.90047499537468
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Murder Mystery",
+      "uid": "4676739624999987"
+    },
+    "lat": -55.83316802978444,
+    "lng": 108.9661121368401
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Abandoned Church",
+      "uid": "4676739654999983"
+    },
+    "lat": -92.31161499023342,
+    "lng": 135.83835601806737
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Abandoned Trading Post",
+      "uid": "4676739684999978"
+    },
+    "lat": -30.88711547851658,
+    "lng": 149.25628662109375
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Barrel Rider",
+      "uid": "4676739709999994"
+    },
+    "lat": -35.98153686523342,
+    "lng": 119.73101806640625
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Bolger Glade",
+      "uid": "467673973999999"
+    },
+    "lat": -92.20669555664158,
+    "lng": 134.55477523803663
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Braithwaites' Secret",
+      "uid": "4676739769999986"
+    },
+    "lat": -94.2642822265625,
+    "lng": 125.15931320190381
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Brush Fire",
+      "uid": "4676739794999943"
+    },
+    "lat": -62.14727783203125,
+    "lng": 107.09895324707031
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Circus Wagons",
+      "uid": "4676739824999997"
+    },
+    "lat": -89.04454040527295,
+    "lng": 84.09928131103611
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Crashed Airship",
+      "uid": "4676739854999993"
+    },
+    "lat": -51.86517333984375,
+    "lng": 71.40027236938525
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Davey Callander grave",
+      "uid": "46767398799999505"
+    },
+    "lat": -25.28849792480421,
+    "lng": 90.8955650329585
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Defaced Grave",
+      "uid": "4676739909999946"
+    },
+    "lat": -37.54075622558546,
+    "lng": 95.87271499633837
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Donkey Lady",
+      "uid": "46767399399999995"
+    },
+    "lat": -110.05465698242092,
+    "lng": 52.00394058227587
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Face in Cliff",
+      "uid": "4676739969999995"
+    },
+    "lat": -43.53865051269579,
+    "lng": 130.8437423706045
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Faces in Trees",
+      "uid": "4676739999999991"
+    },
+    "lat": -70.08035278320408,
+    "lng": 69.566585540771
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Flying Machine",
+      "uid": "4676740029999986"
+    },
+    "lat": -104.22579956054592,
+    "lng": 43.92698669433594
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Fossilized Man",
+      "uid": "4676740059999982"
+    },
+    "lat": -33.89480590820408,
+    "lng": 144.67498016357325
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Frozen Settler",
+      "uid": "4676740084999997"
+    },
+    "lat": -42.7138671875,
+    "lng": 86.05812454223681
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Giant Remains",
+      "uid": "4676740119999973"
+    },
+    "lat": -64.1407470703125,
+    "lng": 81.64272308349514
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Grave Site",
+      "uid": "4676740144999988"
+    },
+    "lat": -33.71702575683546,
+    "lng": 119.32353210449219
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Grave Site",
+      "uid": "4676740174999984"
+    },
+    "lat": -74.06146240234375,
+    "lng": 150.72905731201075
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Gray's Secret",
+      "uid": "46767402"
+    },
+    "lat": -84.7982177734375,
+    "lng": 138.8537521362295
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Hermit Woman",
+      "uid": "4676740234999975"
+    },
+    "lat": -45.3485107421875,
+    "lng": 71.95619964599514
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Hidden Tunnel",
+      "uid": "4676740259999991"
+    },
+    "lat": -52.90853881835842,
+    "lng": 70.00026702880764
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Jenny Kirk Grave Site",
+      "uid": "4676740289999987"
+    },
+    "lat": -18.6290283203125,
+    "lng": 91.43984985351562
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Jesuit Missionary",
+      "uid": "4676740324999962"
+    },
+    "lat": -117.5797119140625,
+    "lng": 13.295684814453125
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Mammoth",
+      "uid": "4676740354999958"
+    },
+    "lat": -29.64556884765625,
+    "lng": 84.47183990478611
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Manmade Mutant",
+      "uid": "4676740384999953"
+    },
+    "lat": -55.41203308105421,
+    "lng": 154.44882202148438
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Manmade Mutant",
+      "uid": "4676740409999969"
+    },
+    "lat": -55.41203308105421,
+    "lng": 154.45464324951075
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Meteor House",
+      "uid": "4676740439999965"
+    },
+    "lat": -32.60954284667921,
+    "lng": 149.599739074708
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Meteorite",
+      "uid": "4676740469999961"
+    },
+    "lat": -31.42045593261671,
+    "lng": 146.86667251586962
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Mysterious Hill Home",
+      "uid": "4676740499999956"
+    },
+    "lat": -35.21212768554592,
+    "lng": 122.73186111450244
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Native Burial",
+      "uid": "467674053499999"
+    },
+    "lat": -65.16079711914158,
+    "lng": 71.08883666992188
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Obelisk",
+      "uid": "46767405649999855"
+    },
+    "lat": -65.74368286132908,
+    "lng": 65.59359741210938
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Oil Rig",
+      "uid": "4676740594999981"
+    },
+    "lat": -64.05914306640625,
+    "lng": 116.90190124511719
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Old Tomb",
+      "uid": "4676740624999977"
+    },
+    "lat": -37.40960693359375,
+    "lng": 148.295783996583
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Old World Scripts",
+      "uid": "4676740654999972"
+    },
+    "lat": -40.86903381347704,
+    "lng": 161.33242416381788
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Pagan Ritual",
+      "uid": "4676740684999968"
+    },
+    "lat": -67.53314208984375,
+    "lng": 66.19900512695312
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Phonograph",
+      "uid": "46767407149999635"
+    },
+    "lat": -68.8358917236333,
+    "lng": 147.20721435546875
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Pleasance",
+      "uid": "4676740749999997"
+    },
+    "lat": -70.30184936523342,
+    "lng": 138.25125503540087
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Meditating Monk",
+      "uid": "4676740779999993"
+    },
+    "lat": -39.1466064453125,
+    "lng": 127.2200279235835
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Register Rock",
+      "uid": "4676740809999988"
+    },
+    "lat": -57.04119873046875,
+    "lng": 122.36803436279202
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Serpent Mound",
+      "uid": "4676740839999984"
+    },
+    "lat": -56.92170715332079,
+    "lng": 153.25547027587987
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Sperm Whale Bones",
+      "uid": "4676740865"
+    },
+    "lat": -116.87442016601658,
+    "lng": 38.66459655761719
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Strange Statues",
+      "uid": "4676740899999975"
+    },
+    "lat": -33.73451232910204,
+    "lng": 123.98924636840869
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Strange Statues (Cave Painting)",
+      "uid": "4676740929999971"
+    },
+    "lat": -38.92510986328125,
+    "lng": 108.84532165527344
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Tiny Church",
+      "uid": "4676740954999987"
+    },
+    "lat": -75.16311645507908,
+    "lng": 148.79058837890625
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Trading Post",
+      "uid": "4676740984999983"
+    },
+    "lat": -70.0716094970708,
+    "lng": 114.23868942260694
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Trail Trees (I)",
+      "uid": "4676741014999978"
+    },
+    "lat": -47.09425354003954,
+    "lng": 144.3548126220703
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Trial Trees (II)",
+      "uid": "4676741044999974"
+    },
+    "lat": -46.22283935546875,
+    "lng": 144.68953323364306
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Trail Trees (III)",
+      "uid": "4676741069999989"
+    },
+    "lat": -46.03923034667921,
+    "lng": 145.5598068237295
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Trail Trees (IV)",
+      "uid": "4676741099999985"
+    },
+    "lat": -45.03375244140625,
+    "lng": 146.18267822265625
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Strange Message",
+      "uid": "4676741134999961"
+    },
+    "lat": -84.27362060546875,
+    "lng": 155.1590118408203
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Warped Tree",
+      "uid": "4676741159999976"
+    },
+    "lat": -59.93814086914158,
+    "lng": 125.95391082763577
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Whale Bones",
+      "uid": "4676741189999972"
+    },
+    "lat": -70.50294494628955,
+    "lng": 68.1694908142085
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Wickiup",
+      "uid": "46767412249999475"
+    },
+    "lat": -86.92137908935523,
+    "lng": 69.8620128631599
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Withered Arm",
+      "uid": "4676741249999963"
+    },
+    "lat": -90.24237060546875,
+    "lng": 142.66374588012744
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Strange Message",
+      "uid": "4676741279999958"
+    },
+    "lat": -84.28236389160205,
+    "lng": 155.153190612792
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Bait Shop",
+      "uid": "4676741309999954"
+    },
+    "lat": -73.54852294921875,
+    "lng": 145.0999298095703
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Heartbroken Woman's Corpse (Suicide)",
+      "uid": "4676741334999969"
+    },
+    "lat": -75.5419921875,
+    "lng": 95.4681396484375
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "Mysterious Writing",
+      "uid": "4676741369999945"
+    },
+    "lat": -83.982177734375,
+    "lng": 98.59413909912014
+  },
+  {
+    "data": {
+      "markerType": "Point of Interest",
+      "markerSubType": "The Old Bacchus Place",
+      "uid": "46767413999999985"
+    },
+    "lat": -105.21670532226658,
+    "lng": 89.36167144775486
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Cougar",
+      "uid": "467674145999999"
+    },
+    "lat": -63.837646484375,
+    "lng": 68.2713623046875
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Cougar",
+      "uid": "4676741489999985"
+    },
+    "lat": -34.087158203125,
+    "lng": 154.2509002685547
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Cougar",
+      "uid": "4676741519999981"
+    },
+    "lat": -82.16065979003955,
+    "lng": 86.70137023925781
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Cougar",
+      "uid": "46767415499999765"
+    },
+    "lat": -46.76200866699171,
+    "lng": 155.76441955566406
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Legendary Bluegill",
+      "uid": "4676741579999972"
+    },
+    "lat": -87.619384765625,
+    "lng": 122.99090576171875
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Legendary Bullhead Catfish",
+      "uid": "4676741609999968"
+    },
+    "lat": -74.6006317138667,
+    "lng": 160.53200531005763
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Legendary Chain Pickerel",
+      "uid": "4676741639999963"
+    },
+    "lat": -66.0059814453125,
+    "lng": 103.25694274902344
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Legendary Gar",
+      "uid": "4676741669999959"
+    },
+    "lat": -74.46365356445408,
+    "lng": 146.07498550415087
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Legendary Largemouth Bass",
+      "uid": "4676741699999955"
+    },
+    "lat": -116.29736328125,
+    "lng": 64.21978759765625
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Legendary muskie",
+      "uid": "4676741724999971"
+    },
+    "lat": -56.96833801269579,
+    "lng": 158.39852523803663
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Legendary Perch",
+      "uid": "4676741754999966"
+    },
+    "lat": -48.28042602539158,
+    "lng": 147.93486785888575
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Legendary Redfin Pickerel",
+      "uid": "4676741784999962"
+    },
+    "lat": -101.62030029296875,
+    "lng": 82.80696868896389
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Legendary Rock Bass",
+      "uid": "4676741814999958"
+    },
+    "lat": -86.16217041015625,
+    "lng": 71.35661315917969
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Legendary Smallmouth Bass",
+      "uid": "4676741899999965"
+    },
+    "lat": -70.35430908203125,
+    "lng": 74.25558471679688
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Legendary Sockeye Salmon",
+      "uid": "4676741934999999"
+    },
+    "lat": -37.90505981445408,
+    "lng": 85.25188446044827
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Legendary Steelhead Trout",
+      "uid": "4676741964999994"
+    },
+    "lat": -27.558837890625,
+    "lng": 155.58978271484375
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Legendary Sturgeon",
+      "uid": "467674199499999"
+    },
+    "lat": -87.4794921875,
+    "lng": 144.41302490234375
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Annesburg Crossing Dreamcatchers",
+      "uid": "46767420249999855"
+    },
+    "lat": -42.09017944335842,
+    "lng": 149.83840942382812
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Annesburg Dreamcatchers",
+      "uid": "4676742054999981"
+    },
+    "lat": -43.51824951171875,
+    "lng": 152.37646484375
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Bluewater Marsh Dreamcatchers",
+      "uid": "4676742084999977"
+    },
+    "lat": -66.92111206054592,
+    "lng": 141.99721527099513
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Cotorra Springs Dreamcatchers",
+      "uid": "4676742114999972"
+    },
+    "lat": -35.77752685546875,
+    "lng": 115.79586791992188
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Elysian Pool Dreamcatchers",
+      "uid": "4676742139999988"
+    },
+    "lat": -50.44293212890625,
+    "lng": 147.4284210205078
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Grizzlies West Campfire Dreamcatchers",
+      "uid": "46767421749999635"
+    },
+    "lat": -42.24755859375,
+    "lng": 103.40829467773438
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Grizzlies West Snowy Peak Dreamcatchers",
+      "uid": "4676742199999979"
+    },
+    "lat": -47.796630859375,
+    "lng": 96.64402770996094
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Heartland Overflow Dreamcatchers",
+      "uid": "4676742229999974"
+    },
+    "lat": -55.51986694335842,
+    "lng": 130.8582954406743
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Horseshoe Overlook Dreamcatchers",
+      "uid": "467674225999997"
+    },
+    "lat": -60.2470703125,
+    "lng": 110.76632690429688
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Lonnie's Shack Dreamcatchers",
+      "uid": "4676742284999985"
+    },
+    "lat": -67.18341064453125,
+    "lng": 135.35519409179688
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Lucky's Cabin Dreamcatchers",
+      "uid": "4676742314999981"
+    },
+    "lat": -55.03024291992092,
+    "lng": 102.72138977050781
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "North Roanoke Ridge Dreamcatchers",
+      "uid": "4676742339999997"
+    },
+    "lat": -38.4005126953125,
+    "lng": 150.699951171875
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Northeast Heartland Dreamcatchers",
+      "uid": "467674238499999"
+    },
+    "lat": -52.459716796875,
+    "lng": 137.62256240844775
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Northern Heartlands Dreamcatchers",
+      "uid": "4676742414999986"
+    },
+    "lat": -53.66629028320408,
+    "lng": 112.95510864257812
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Roanoke Ridge Hill Dreamcatchers",
+      "uid": "4676742444999982"
+    },
+    "lat": -45.4884033203125,
+    "lng": 151.0841522216797
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Scarlett Meadows Dreamcatchers",
+      "uid": "4676742469999997"
+    },
+    "lat": -63.51123046875,
+    "lng": 136.4495849609375
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Southwest of Limpany Dreamcatchers",
+      "uid": "4676742499999993"
+    },
+    "lat": -67.98779296875,
+    "lng": 103.12887573242188
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "Heartland Hills Dreamcatcher",
+      "uid": "4676742529999988"
+    },
+    "lat": -63.30722045898342,
+    "lng": 122.30982208252048
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "The Loft Dreamcatchers",
+      "uid": "4676742554999946"
+    },
+    "lat": -33.64999389648342,
+    "lng": 140.43130493164062
+  },
+  {
+    "data": {
+      "markerType": "Dreamcatcher",
+      "markerSubType": "West of Caliban's Seat Dreamcatchers",
+      "uid": "4676742585"
+    },
+    "lat": -59.53594970703125,
+    "lng": 102.98916625976562
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Cumberland Forest Bacchus Station Bone",
+      "uid": "4676742619999975"
+    },
+    "lat": -38.4471435546875,
+    "lng": 118.08943176269531
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Big Valley Beryl's Dream Overlook Bone",
+      "uid": "4676742649999971"
+    },
+    "lat": -63.89593505859375,
+    "lng": 75.29758453369236
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Big Valley Northern Cave Bone",
+      "uid": "4676742674999987"
+    },
+    "lat": -52.11581420898342,
+    "lng": 87.77829742431736
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Big Valley Northern Cave Bone",
+      "uid": "4676742704999982"
+    },
+    "lat": -52.11581420898342,
+    "lng": 87.75210189819288
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Big Valley Rocky Slope Bone",
+      "uid": "4676742734999978"
+    },
+    "lat": -58.614990234375,
+    "lng": 74.12169647216702
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Cholla Springs High Desert Bone",
+      "uid": "4676742759999994"
+    },
+    "lat": -98.15213012695408,
+    "lng": 42.38436126708889
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Cholla Springs Jorge's Gap Bone",
+      "uid": "4676742794999969"
+    },
+    "lat": -108.4866943359375,
+    "lng": 45.92948913574219
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Gaptooth Ridge North Tumbleweed Bone",
+      "uid": "4676742824999965"
+    },
+    "lat": -105.50814819335842,
+    "lng": 29.29824066162014
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Gaptooth Ridge South Tumbleweed Bone",
+      "uid": "4676742845000001"
+    },
+    "lat": -111.04556274414158,
+    "lng": 27.499481201171875
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "The Heartlands Grassy Field Dinosaur Bone",
+      "uid": "4676742874999996"
+    },
+    "lat": -70.4825439453125,
+    "lng": 115.56301879882812
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Grizzlies Calumet Ravine Bone",
+      "uid": "4676742904999992"
+    },
+    "lat": -32.1519775390625,
+    "lng": 122.51356506347656
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Grizzlies Dakota River Ledge Bone",
+      "uid": "46767429349999875"
+    },
+    "lat": -39.05917358398342,
+    "lng": 113.56633758544827
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Grizzlies Northern Boundary Bone",
+      "uid": "4676742959999945"
+    },
+    "lat": -31.98876953125,
+    "lng": 136.03336715698194
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Grizzlies O'Creagh's Run Overlook Bone",
+      "uid": "4676742989999998"
+    },
+    "lat": -41.14590454101658,
+    "lng": 132.29031753540087
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Grizzlies Rock Wall Bone",
+      "uid": "4676743019999994"
+    },
+    "lat": -48.80793762207079,
+    "lng": 102.40995407104444
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Heartlands Abandoned Shack Bone",
+      "uid": "46767430449999515"
+    },
+    "lat": -51.16862487792921,
+    "lng": 136.6475067138672
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Heartlands Cliff Face Bone",
+      "uid": "4676743069999968"
+    },
+    "lat": -61.91412353515625,
+    "lng": 96.32968139648438
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Heartlands Dewberry Creek Bone",
+      "uid": "4676743104999943"
+    },
+    "lat": -67.38742065429592,
+    "lng": 125.47657012939548
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Heartlands Northern Boundary Bone",
+      "uid": "4676743129999959"
+    },
+    "lat": -50.44876098632908,
+    "lng": 101.78126144409131
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Heartlands South Gorge Bone",
+      "uid": "46767431599999545"
+    },
+    "lat": -66.2478790283208,
+    "lng": 118.14182281494236
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Hennigan's Stead Pike's Basin Bone",
+      "uid": "4676744384999969"
+    },
+    "lat": -99.18966674804592,
+    "lng": 64.02186584472656
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Hennigan's Stead San Luis River Bone",
+      "uid": "4676744459999958"
+    },
+    "lat": -113.28384399414158,
+    "lng": 69.45598220825244
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Heartlands Oil Field Bone",
+      "uid": "46767445099999895"
+    },
+    "lat": -63.84638977050829,
+    "lng": 116.83495712280225
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Rio Bravo Del Lobo Rock Bone",
+      "uid": "4676744554999983"
+    },
+    "lat": -119.71307373046875,
+    "lng": 55.840129852294446
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Rio Bravo San Luis River Bone",
+      "uid": "4676744584999979"
+    },
+    "lat": -120.63111877441455,
+    "lng": 42.40764617919827
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Roanoke Ridge Kamassa River Bone",
+      "uid": "4676744614999974"
+    },
+    "lat": -46.57257080078125,
+    "lng": 147.6234321594243
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Roanoke Ridge Overlook Bone",
+      "uid": "467674464499997"
+    },
+    "lat": -37.16188049316454,
+    "lng": 143.40304183959913
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Roanoke Ridge Valley Overlook Bone",
+      "uid": "4676744669999985"
+    },
+    "lat": -35.04891967773342,
+    "lng": 154.57106781005763
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Roanoke Ridge Van Horn Bone",
+      "uid": "4676744699999981"
+    },
+    "lat": -52.38102722167921,
+    "lng": 154.7777214050288
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Scarlett Meadows Dewberry Creek Bone",
+      "uid": "4676744729999976"
+    },
+    "lat": -70.44174194335842,
+    "lng": 124.61502838134861
+  },
+  {
+    "data": {
+      "markerType": "Dino Bones",
+      "markerSubType": "Cumberland Forest Six Point Overlook Bone",
+      "uid": "4676744759999972"
+    },
+    "lat": -45.72738647460842,
+    "lng": 109.11891937255764
+  },
+  {
+    "data": {
+      "markerType": "Rock Carving",
+      "markerSubType": "Rock Carving Coordinates 1",
+      "uid": "4676744784999988"
+    },
+    "lat": -43.45413208007908,
+    "lng": 85.87184524536181
+  },
+  {
+    "data": {
+      "markerType": "Rock Carving",
+      "markerSubType": "Rock Carving Coordinates 10",
+      "uid": "4676744814999984"
+    },
+    "lat": -48.63890075683546,
+    "lng": 149.599739074708
+  },
+  {
+    "data": {
+      "markerType": "Rock Carving",
+      "markerSubType": "Rock Carving Coordinates 2",
+      "uid": "4676744844999979"
+    },
+    "lat": -35.77752685546875,
+    "lng": 107.61704254150486
+  },
+  {
+    "data": {
+      "markerType": "Rock Carving",
+      "markerSubType": "Rock Carving Coordinates 3",
+      "uid": "4676744869999995"
+    },
+    "lat": -38.21690368652296,
+    "lng": 117.80710220336962
+  },
+  {
+    "data": {
+      "markerType": "Rock Carving",
+      "markerSubType": "Rock Carving Coordinates 4",
+      "uid": "4676744899999991"
+    },
+    "lat": -43.02862548828125,
+    "lng": 107.70145034790087
+  },
+  {
+    "data": {
+      "markerType": "Rock Carving",
+      "markerSubType": "Rock Craving Coordinates 5",
+      "uid": "4676744924999949"
+    },
+    "lat": -70.61077880859375,
+    "lng": 71.13540649414062
+  },
+  {
+    "data": {
+      "markerType": "Rock Carving",
+      "markerSubType": "Rock Carving Coordinates 6",
+      "uid": "4676744954999944"
+    },
+    "lat": -64.41470336914158,
+    "lng": 81.82318115234375
+  },
+  {
+    "data": {
+      "markerType": "Rock Carving",
+      "markerSubType": "Rock Craving Coordinates 7",
+      "uid": "46767449799999595"
+    },
+    "lat": -67.58851623535205,
+    "lng": 104.68314361572361
+  },
+  {
+    "data": {
+      "markerType": "Rock Carving",
+      "markerSubType": "Rock Craving Coordinates 8",
+      "uid": "4676745014999993"
+    },
+    "lat": -48.83708190917921,
+    "lng": 131.8100662231455
+  },
+  {
+    "data": {
+      "markerType": "Rock Carving",
+      "markerSubType": "Rock Carving Coordinates 9",
+      "uid": "4676745039999951"
+    },
+    "lat": -37.31634521484375,
+    "lng": 152.85671615600538
+  },
+  {
+    "data": {
+      "markerDescription": "on top of crate, on side of shack",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Mentzelia Lindleyi Card",
+      "uid": "4676745069999946"
+    },
+    "lat": -52.61709594726658,
+    "lng": 153.42428588867188
+  },
+  {
+    "data": {
+      "markerDescription": "Card #5",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Marvels of Travel & Locomotion",
+      "uid": "467674510499998"
+    },
+    "lat": -59.44851684570408,
+    "lng": 134.22005462646388
+  },
+  {
+    "data": {
+      "markerDescription": "Inside the abandoned house, on the eastern side of the large wooden crate.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Agnes Guyon",
+      "uid": "4676745134999976"
+    },
+    "lat": -45.71864318847704,
+    "lng": 89.79826354980469
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the table, between two armchairs on the front porch.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Aldous Bramley",
+      "uid": "4676745164999971"
+    },
+    "lat": -86.90243530273342,
+    "lng": 98.79788208007812
+  },
+  {
+    "data": {
+      "markerDescription": "Sitting on top of a crate, just underneath the Cotton Mill.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "American Paint",
+      "uid": "4676745194999967"
+    },
+    "lat": -83.6936492919917,
+    "lng": 133.13730621337987
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the desk inside the young boy's bedroom.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "American Standardbred",
+      "uid": "4676745219999982"
+    },
+    "lat": -99.17218017578125,
+    "lng": 131.76349639892675
+  },
+  {
+    "data": {
+      "markerDescription": "On the back wall of the stable.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Andalusian",
+      "uid": "4676745249999978"
+    },
+    "lat": -64.76734924316455,
+    "lng": 101.54259109497119
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the barrel that sits on the minecart track.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Annesburg",
+      "uid": "4676745279999973"
+    },
+    "lat": -42.33499145507908,
+    "lng": 155.44425201416112
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a barrel at the Southeastern corner of the pier.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Appaloosa ",
+      "uid": "4676745309999969"
+    },
+    "lat": -88.12940979003955,
+    "lng": 150.85712432861425
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the shelves at the Train Station.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Ardennes Card",
+      "uid": "4676745339999964"
+    },
+    "lat": -57.34429931640625,
+    "lng": 91.0993080139165
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a barrel, inside the pig pen.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Armadillo",
+      "uid": "4676745374999998"
+    },
+    "lat": -103.84109497070408,
+    "lng": 53.25841522216702
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the windmill.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Augusta Tremlow",
+      "uid": "4676745399999956"
+    },
+    "lat": -52.27902221679592,
+    "lng": 76.55788040161181
+  },
+  {
+    "data": {
+      "markerDescription": "Back Courtyard of the Bastille Salon, sitting on top of a crate next to a wrought-iron fence.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Axel McCormack",
+      "uid": "4676745424999972"
+    },
+    "lat": -83.0583038330083,
+    "lng": 152.3677330017085
+  },
+  {
+    "data": {
+      "markerDescription": "Directly South of the last \"S\" in Saint Denis. Sitting on top of the Eastern windowsill of the blue booth at the end of the dock.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Balener Whaling Vessel",
+      "uid": "46767454549999675"
+    },
+    "lat": -85.88384246826148,
+    "lng": 155.38749504089427
+  },
+  {
+    "data": {
+      "markerDescription": "On the half-wall, next to the lounge.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Bart Love",
+      "uid": "4676745484999963"
+    },
+    "lat": -52.50634765625,
+    "lng": 77.47472381591702
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the windmill.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Billy Midnight",
+      "uid": "4676745514999959"
+    },
+    "lat": -109.8856201171875,
+    "lng": 27.115280151367188
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a crate, next to the wrought-iron fence.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Black Belle",
+      "uid": "4676745539999975"
+    },
+    "lat": -83.15447998046875,
+    "lng": 100.06690979003906
+  },
+  {
+    "data": {
+      "markerDescription": "On the bench of the Northwest side of the Train Station.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Black Mangrove",
+      "uid": "46767455699999705"
+    },
+    "lat": -56.8663330078125,
+    "lng": 134.86038970947362
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the table inside the cabin.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Black Widow Spider",
+      "uid": "4676745594999986"
+    },
+    "lat": -56.29219055175829,
+    "lng": 74.51171875
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the Theatre roof.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Blackwater",
+      "uid": "4676745629999962"
+    },
+    "lat": -83.6324462890625,
+    "lng": 98.35546875
+  },
+  {
+    "data": {
+      "markerDescription": "Top of the railing of the front porch.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Blazing Star",
+      "uid": "4676745679999992"
+    },
+    "lat": -56.23681640625,
+    "lng": 74.49134445190381
+  },
+  {
+    "data": {
+      "markerDescription": "Inside the fireplace of the old burnt down building.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Bloodhound",
+      "uid": "4676745709999988"
+    },
+    "lat": -90.44346618652295,
+    "lng": 134.0250434875493
+  },
+  {
+    "data": {
+      "markerType": "Cigarette Card",
+      "markerSubType": "Bluejay",
+      "uid": "4676745739999983"
+    },
+    "lat": -54.24334716796875,
+    "lng": 142.59098052978612
+  },
+  {
+    "data": {
+      "markerDescription": "On the porch of the Butcher Brothers house.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Butcher Brothers",
+      "uid": "4676745765"
+    },
+    "lat": -51.72819519042921,
+    "lng": 151.04631423950244
+  },
+  {
+    "data": {
+      "markerDescription": "Directly East of the Gunsmith, sitting on top of a table next to a clothesline.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Camel Caravan",
+      "uid": "4676745794999995"
+    },
+    "lat": -84.43099975585842,
+    "lng": 132.15060806274462
+  },
+  {
+    "data": {
+      "markerDescription": "Sitting on top of a table on a balcony just South of the Photo Studio.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Camera",
+      "uid": "4676745824999991"
+    },
+    "lat": -81.2688446044917,
+    "lng": 153.73281097412013
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the windowsill, inside the cabin.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Capt. Jack Page",
+      "uid": "46767458549999865"
+    },
+    "lat": -47.48770141601658,
+    "lng": 100.62283706665087
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the Sheriff Station's roof.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Carolina Lupine",
+      "uid": "4676745879999944"
+    },
+    "lat": -109.5125732421875,
+    "lng": 25.4271240234375
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a barrel at the end of the dock.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Catfish",
+      "uid": "4676745909999998"
+    },
+    "lat": -82.55702209472705,
+    "lng": 146.4242591857915
+  },
+  {
+    "data": {
+      "markerDescription": "Chadwick Farm Front Porch",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Charles Chatenay",
+      "uid": "4676745939999994"
+    },
+    "lat": -49.4287109375,
+    "lng": 105.24198150634861
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the windmill in the Southern end of Emerald Ranch.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Chicago",
+      "uid": "4676745964999951"
+    },
+    "lat": -59.19058990478444,
+    "lng": 133.82275581359792
+  },
+  {
+    "data": {
+      "markerType": "Cigarette Card",
+      "markerSubType": "Louis Durand",
+      "uid": "4676745994999947"
+    },
+    "lat": -55.49946594238329,
+    "lng": 154.63801193237256
+  },
+  {
+    "data": {
+      "markerType": "Cigarette Card",
+      "markerSubType": "Qleander Sage",
+      "uid": "4676746019999962"
+    },
+    "lat": -82.64154052734375,
+    "lng": 153.75027465820312
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the table, on the back porch of the house.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Coastal Redwood",
+      "uid": "4676746044999978"
+    },
+    "lat": -70.4271697998042,
+    "lng": 83.85478973388577
+  },
+  {
+    "data": {
+      "markerDescription": "On a table along the Western wall of the house.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Coral Snake",
+      "uid": "4676746074999973"
+    },
+    "lat": -75.8829803466792,
+    "lng": 146.18849945068263
+  },
+  {
+    "data": {
+      "markerDescription": "Saloon",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Cylinder Phonograph",
+      "uid": "4676746104999969"
+    },
+    "lat": -51.23274230957079,
+    "lng": 106.42660140991163
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the table, on the front porch of the house.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Desert Fan Palm",
+      "uid": "4676746134999964"
+    },
+    "lat": -109.38433837890625,
+    "lng": 24.02420806884861
+  },
+  {
+    "data": {
+      "markerType": "Cigarette Card",
+      "markerSubType": "Dutch Warmblood (fireplace mantle)",
+      "uid": "4676746159999981"
+    },
+    "lat": -58.1953125,
+    "lng": 98.541748046875
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the railing of the back porch.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Dynamite Cigarette Card",
+      "uid": "4676746184999997"
+    },
+    "lat": -92.655517578125,
+    "lng": 140.929019927979
+  },
+  {
+    "data": {
+      "markerType": "Cigarette Card",
+      "markerSubType": "E.D. Ewing \"Walker\"",
+      "uid": "4676746214999992"
+    },
+    "lat": -65.22491455078125,
+    "lng": 129.62128448486425
+  },
+  {
+    "data": {
+      "markerDescription": "Underneath the table next to the clothesline.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Edith Corinne",
+      "uid": "4676746244999988"
+    },
+    "lat": -92.09886169433545,
+    "lng": 127.40921783447361
+  },
+  {
+    "data": {
+      "markerDescription": "On the top of the windowsill inside the cabin.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Edwin A. Rowe",
+      "uid": "4676746274999984"
+    },
+    "lat": -47.42795562744069,
+    "lng": 100.60100746154808
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the Coal Mining Facility Tower.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Edwin Singerly",
+      "uid": "4676746299999999"
+    },
+    "lat": -42.12223815917921,
+    "lng": 156.0060005187993
+  },
+  {
+    "data": {
+      "markerDescription": "On the crate next to the back door of the Doverhill building.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Electric Light Bulb",
+      "uid": "46767463299999945"
+    },
+    "lat": -28.07469177246046,
+    "lng": 150.4030685424795
+  },
+  {
+    "data": {
+      "markerDescription": "Underneath the bunk bed of the second floor.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Electrical Execution Apparatus",
+      "uid": "4676746354999952"
+    },
+    "lat": -52.58212280273342,
+    "lng": 77.44852828979444
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the staircase at the back of the Trackers Hotel building.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Elephant Carriage",
+      "uid": "4676746384999948"
+    },
+    "lat": -69.4246063232417,
+    "lng": 83.82859420776319
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the coffee table, on the second floor.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Elsie Rose",
+      "uid": "4676746409999963"
+    },
+    "lat": -69.4654083251958,
+    "lng": 83.06019210815381
+  },
+  {
+    "data": {
+      "markerDescription": "On the table, under the lean-to that is directly across from the two opposite white tents.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Emmet Granger",
+      "uid": "4676746434999979"
+    },
+    "lat": -40.4989013671875,
+    "lng": 116.19171142578125
+  },
+  {
+    "data": {
+      "markerDescription": "On the table inside the shack.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Emmet Granger",
+      "uid": "4676746464999975"
+    },
+    "lat": -70.1707000732417,
+    "lng": 149.97811889648438
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the table, next to the clothesline.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Evelyn Miller",
+      "uid": "4676746489999991"
+    },
+    "lat": -83.33517456054592,
+    "lng": 96.17832946777344
+  },
+  {
+    "data": {
+      "markerDescription": "Southern Most Barn, Second Floor Windowsill",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Fay Delaro",
+      "uid": "46767465199999865"
+    },
+    "lat": -53.77703857421875,
+    "lng": 107.296875
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the table inside the cabin.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Felix Hawley",
+      "uid": "4676746549999982"
+    },
+    "lat": -37.35714721679592,
+    "lng": 95.44194412231494
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the Rhodes Bank.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Flaco Hernandez",
+      "uid": "4676746574999997"
+    },
+    "lat": -83.8043975830083,
+    "lng": 131.30361938476562
+  },
+  {
+    "data": {
+      "markerDescription": "On the desk inside the derelict schoolhouse.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Fountain Pen",
+      "uid": "4676746604999993"
+    },
+    "lat": -70.95468139648342,
+    "lng": 138.90323257446337
+  },
+  {
+    "data": {
+      "markerDescription": "Valentine Cemetery",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Frank Heck",
+      "uid": "4676746634999989"
+    },
+    "lat": -50.97335815429592,
+    "lng": 107.4744224548335
+  },
+  {
+    "data": {
+      "markerDescription": "Found at the bottom of the Oil Well tower.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "General Quincy Harris",
+      "uid": "4676746664999984"
+    },
+    "lat": -52.62875366210842,
+    "lng": 120.49359893798923
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the bed inside the Southern bedroom.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "George Dixie",
+      "uid": "46767466899999995"
+    },
+    "lat": -56.06486511230421,
+    "lng": 128.68115615844775
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the crate at the back wall of the second floor of the barn.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Geraldine Emerson",
+      "uid": "4676746719999995"
+    },
+    "lat": -52.20033264160204,
+    "lng": 76.7383384704585
+  },
+  {
+    "data": {
+      "markerType": "Cigarette Card",
+      "markerSubType": "Goat Carriage",
+      "uid": "4676746744999953"
+    },
+    "lat": -58.11953735351658,
+    "lng": 132.6192169189453
+  },
+  {
+    "data": {
+      "markerDescription": "On a shelf inside the first shack upon entering the small community.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Golden Currant",
+      "uid": "4676746774999948"
+    },
+    "lat": -75.5186767578125,
+    "lng": 146.3398513793955
+  },
+  {
+    "data": {
+      "markerDescription": "On a barrel at the back of the large wooden boat.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Grouper",
+      "uid": "4676746799999964"
+    },
+    "lat": -73.163818359375,
+    "lng": 143.74940490722656
+  },
+  {
+    "data": {
+      "markerDescription": "H. T. Slocum",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Oarsman",
+      "uid": "467674682999996"
+    },
+    "lat": -70.16778564453125,
+    "lng": 150.06252670288038
+  },
+  {
+    "data": {
+      "markerDescription": "Inside the Fright Hall, on top of the workbench along the Southern wall of the building.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Harvey Griggs",
+      "uid": "4676746859999956"
+    },
+    "lat": -86.48275756835842,
+    "lng": 148.00472259521388
+  },
+  {
+    "data": {
+      "markerDescription": "On the small end table inside the Meteor House.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Hattie Langtry",
+      "uid": "4676746889999951"
+    },
+    "lat": -32.60808563232398,
+    "lng": 149.59828376769948
+  },
+  {
+    "data": {
+      "markerDescription": "Located on top of the table on the front porch of the house.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Henrietta Beatrice Woods",
+      "uid": "4676746914999967"
+    },
+    "lat": -78.07171630859375,
+    "lng": 152.16399002075244
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the workbench, underneath the shack's lean-to.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Horse Grippler Cactus",
+      "uid": "4676746944999963"
+    },
+    "lat": -83.04373168945408,
+    "lng": 139.58140563964844
+  },
+  {
+    "data": {
+      "markerDescription": "Just North of the last \"I\" in Saint Denis, sitting on a shelf at the back of the saloon.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Hot Air Balloon",
+      "uid": "4676746974999959"
+    },
+    "lat": -81.7526397705083,
+    "lng": 154.71077728271388
+  },
+  {
+    "data": {
+      "markerDescription": "In the hole of the Blacksmith's front door.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Hungarian Halfbred",
+      "uid": "4676747039999988"
+    },
+    "lat": -103.4971923828125,
+    "lng": 54.02681732177639
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the old wooden desk in the small alley-way",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Ilga Ulmer",
+      "uid": "46767470699999835"
+    },
+    "lat": -82.65611267089795,
+    "lng": 153.7619171142578
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a crate that sits along the Western side of the house.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Indian Tobacco",
+      "uid": "4676747104999959"
+    },
+    "lat": -77.08663940429592,
+    "lng": 148.03382873535156
+  },
+  {
+    "data": {
+      "markerDescription": "On the bench at the Train Station.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Irene Grubb",
+      "uid": "4676747134999954"
+    },
+    "lat": -101.32302856445408,
+    "lng": 72.56742858886719
+  },
+  {
+    "data": {
+      "markerDescription": "On the shelf inside the Abandoned Trading Post.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Isabelle Barlow",
+      "uid": "467674716499995"
+    },
+    "lat": -31.06781005859375,
+    "lng": 149.33487319946337
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the table inside the large open area within the mine.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Isabelle Standish",
+      "uid": "4676747189999966"
+    },
+    "lat": -43.14228820800829,
+    "lng": 153.9481964111328
+  },
+  {
+    "data": {
+      "markerDescription": "On the back of the wagon that is located in front of the large tree.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Isadore Reid",
+      "uid": "4676747219999962"
+    },
+    "lat": -52.43057250976658,
+    "lng": 105.41661834716702
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the table inside the Gazebo.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "J. D. McKnight",
+      "uid": "4676747244999977"
+    },
+    "lat": -85.41607666015625,
+    "lng": 133.25955200195312
+  },
+  {
+    "data": {
+      "markerDescription": "On the windowsill of the small cabin.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Jack Hall Gang",
+      "uid": "4676747269999992"
+    },
+    "lat": -36.72471618652296,
+    "lng": 104.68314361572361
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a barrel, directly across from the Post Office.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Jennie Willetts",
+      "uid": "4676747304999968"
+    },
+    "lat": -54.82623291015625,
+    "lng": 157.06837463378906
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the windowsill, in the Southwestern corner of the burnt out building.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Jesse Raymond",
+      "uid": "4676747329999983"
+    },
+    "lat": -108.46920776367092,
+    "lng": 25.735649108885767
+  },
+  {
+    "data": {
+      "markerDescription": "In the NW section of the Graveyard, inside a mausoleum with stained glass.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Jim 'Boy' Calloway",
+      "uid": "4676747359999979"
+    },
+    "lat": -80.15261840820408,
+    "lng": 153.18270492553663
+  },
+  {
+    "data": {
+      "markerDescription": "Sitting on the bench on the front porch.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Jim Cobb",
+      "uid": "4676747384999995"
+    },
+    "lat": -69.91131591796875,
+    "lng": 130.94852447509862
+  },
+  {
+    "data": {
+      "markerDescription": "On a barrel at the back of the building that faces towards the undertaker.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Landon Ricketts",
+      "uid": "467674741999997"
+    },
+    "lat": -104.593017578125,
+    "lng": 54.66133117675781
+  },
+  {
+    "data": {
+      "markerDescription": "Located underneath the lounge inside the shack.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Large Mouth Bass",
+      "uid": "4676747444999986"
+    },
+    "lat": -73.96820068359375,
+    "lng": 116.55844879150486
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the barrel in front of the house.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Mittie Comstock",
+      "uid": "4676747474999982"
+    },
+    "lat": -59.48348999023342,
+    "lng": 125.16222381591702
+  },
+  {
+    "data": {
+      "markerDescription": "Directly beneath the last \"S\" in Saint Denis, sitting on top of a table in the back-alley of the marketplace.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Laurence Carson",
+      "uid": "4676747499999998"
+    },
+    "lat": -83.11659240722705,
+    "lng": 155.29581069946337
+  },
+  {
+    "data": {
+      "markerDescription": "Sitting on top of the mantelpiece inside the house.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Laurence Dunn",
+      "uid": "4676747524999956"
+    },
+    "lat": -78.86444091796875,
+    "lng": 128.887809753417
+  },
+  {
+    "data": {
+      "markerDescription": "In the Southwestern house, the card will be sitting upon the windowsill next to the fireplace.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Leila Stetson",
+      "uid": "4676747559999989"
+    },
+    "lat": -50.53619384765625,
+    "lng": 123.32853698730469
+  },
+  {
+    "data": {
+      "markerDescription": "On the windowsill of the top floor of the Fort Wallace Southeast Tower.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Leviticus Cornwall",
+      "uid": "4676747589999985"
+    },
+    "lat": -40.73497009277296,
+    "lng": 116.94556045532275
+  },
+  {
+    "data": {
+      "markerDescription": "Front porch of shack outside Valentine",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Leviticus Cornwall",
+      "uid": "4676747615"
+    },
+    "lat": -53.39816284179592,
+    "lng": 104.98293685913038
+  },
+  {
+    "data": {
+      "markerDescription": "On a barrel on the Northeast side of the building.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Lillian Powell",
+      "uid": "4676747639999958"
+    },
+    "lat": -69.60821533203125,
+    "lng": 137.73025512695312
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the small wooden crate at the mine entrance.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Longleaf Pine",
+      "uid": "4676747674999991"
+    },
+    "lat": -43.31423950195408,
+    "lng": 153.50869369506788
+  },
+  {
+    "data": {
+      "markerDescription": "On the Eastern side balcony of the house.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Louis Durand",
+      "uid": "4676747699999949"
+    },
+    "lat": -55.50820922851658,
+    "lng": 154.64674377441406
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a crate on the Eastern most dock at Saint Denis.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Luther Covington",
+      "uid": "4676747729999945"
+    },
+    "lat": -87.3162841796875,
+    "lng": 146.5901641845703
+  },
+  {
+    "data": {
+      "markerDescription": "Sitting on top of a table in the Western corridor of the Theatre.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Mabel Potter",
+      "uid": "467674775499996"
+    },
+    "lat": -83.69656372070408,
+    "lng": 150.6184539794922
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the workbench inside the barn.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Manned Glider",
+      "uid": "4676747784999955"
+    },
+    "lat": -84.50677490234375,
+    "lng": 140.58265686035156
+  },
+  {
+    "data": {
+      "markerDescription": "Find the card outside the shack on the North side table, next to the Cornwall Kerosene & Tar Train Station.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Maud Engel",
+      "uid": "4676747814999951"
+    },
+    "lat": -53.96356201171875,
+    "lng": 119.02664947509861
+  },
+  {
+    "data": {
+      "markerType": "Cigarette Card",
+      "markerSubType": "Miss Maud Delancey",
+      "uid": "4676747839999967"
+    },
+    "lat": -68.8650360107417,
+    "lng": 147.19848251342725
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the desk inside the young boys bedroom.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Missouri Fox Trotter",
+      "uid": "4676747869999963"
+    },
+    "lat": -99.05560302734375,
+    "lng": 131.76640701293994
+  },
+  {
+    "data": {
+      "markerType": "Cigarette Card",
+      "markerSubType": "Mustang (in hay loft)",
+      "uid": "4676747894999979"
+    },
+    "lat": -58.51298522949171,
+    "lng": 97.84902191162014
+  },
+  {
+    "data": {
+      "markerDescription": "Inside theater under projector",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Nettie Palmer",
+      "uid": "4676747924999975"
+    },
+    "lat": -52.82693481445408,
+    "lng": 105.85612106323194
+  },
+  {
+    "data": {
+      "markerDescription": "On the front porch of the second house towards the Southern on of Caliga.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "New York",
+      "uid": "467674795499997"
+    },
+    "lat": -85.754150390625,
+    "lng": 139.73275756835938
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the workbench that is inside the small stable that is directly behind the Gunsmith.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Nokota",
+      "uid": "4676747984999966"
+    },
+    "lat": -84.73992919921875,
+    "lng": 131.64125061035156
+  },
+  {
+    "data": {
+      "markerDescription": "On the back of the sky blue wagon, in the Eastern end of the camp.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Otis Miller Boys",
+      "uid": "46767480149999615"
+    },
+    "lat": -44.51789855957079,
+    "lng": 110.98462295532275
+  },
+  {
+    "data": {
+      "markerDescription": "Underneath the covered area, on top of the far back right crate.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Packet Ship",
+      "uid": "4676748039999977"
+    },
+    "lat": -42.67306518554592,
+    "lng": 158.14530181884862
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a table, inside the burnt down building.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Panther",
+      "uid": "4676748069999972"
+    },
+    "lat": -59.11335754394579,
+    "lng": 149.2009849548335
+  },
+  {
+    "data": {
+      "markerDescription": "On a barrel next to several crates on the dock.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Parrot",
+      "uid": "4676748099999968"
+    },
+    "lat": -75.69937133789158,
+    "lng": 140.44876861572362
+  },
+  {
+    "data": {
+      "markerDescription": "On the railing of the back porch of the second shack just East of the graveyard.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Patsey Hill",
+      "uid": "4676748129999964"
+    },
+    "lat": -80.19924926757908,
+    "lng": 154.82720184326075
+  },
+  {
+    "data": {
+      "markerDescription": "On the crate at the Northern end of the Train Station",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Pauline Henderson",
+      "uid": "4676748154999979"
+    },
+    "lat": -37.41543579101658,
+    "lng": 120.16469955444288
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the nearby well at Huron Glen.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Percy Wood",
+      "uid": "4676748184999974"
+    },
+    "lat": -52.5762939453125,
+    "lng": 150.65629196166944
+  },
+  {
+    "data": {
+      "markerType": "Cigarette Card",
+      "markerSubType": "Pheasant",
+      "uid": "467674821499997"
+    },
+    "lat": -54.29289245605421,
+    "lng": 142.62299728393506
+  },
+  {
+    "data": {
+      "markerDescription": "Inside the Bastille Saloon, on top of the piano at the back of the room.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Player Piano",
+      "uid": "4676748239999986"
+    },
+    "lat": -82.7930908203125,
+    "lng": 152.12906265258837
+  },
+  {
+    "data": {
+      "markerDescription": "On the Southeast windowsill of Crawdad Willies.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "President Alfred MacAlister ",
+      "uid": "4676748269999982"
+    },
+    "lat": -92.5243682861333,
+    "lng": 143.4306926727302
+  },
+  {
+    "data": {
+      "markerDescription": "Located on top of a barrel on the loading dock.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "President Fisher",
+      "uid": "4676748299999977"
+    },
+    "lat": -81.13186645507908,
+    "lng": 127.61587142944288
+  },
+  {
+    "data": {
+      "markerDescription": "Sitting on top of the railing, directly opposite two broken wagon wheels in the Northeastern corner of the jetty.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "President Hardin",
+      "uid": "4676748324999994"
+    },
+    "lat": -73.46109008789158,
+    "lng": 144.52944946289062
+  },
+  {
+    "data": {
+      "markerType": "Cigarette Card",
+      "markerSubType": "Preston T. Stephenson",
+      "uid": "4676748354999989"
+    },
+    "lat": -42.02606201171875,
+    "lng": 156.4862518310547
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the table, on the Eastern side of the house.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "R.S. Harradon",
+      "uid": "4676748379999947"
+    },
+    "lat": -65.96517944335842,
+    "lng": 146.02841567993212
+  },
+  {
+    "data": {
+      "markerDescription": "On the back terrace of the Gunsmith.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Revolver",
+      "uid": "467674841"
+    },
+    "lat": -43.19766235351658,
+    "lng": 157.17897796630763
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the gravestone, closest to the fence.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Rhodes",
+      "uid": "4676748439999996"
+    },
+    "lat": -82.56576538085842,
+    "lng": 131.5102729797368
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a table, Southeast of the Gazebo.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Richard McCullough",
+      "uid": "4676748464999953"
+    },
+    "lat": -79.70379638671875,
+    "lng": 151.78269958496094
+  },
+  {
+    "data": {
+      "markerDescription": "Located on top of the yellow windmill.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Rio Bravo",
+      "uid": "4676748499999987"
+    },
+    "lat": -68.8038330078125,
+    "lng": 106.2723388671875
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a crate next to the yellow house.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Robert Elliot Patchen",
+      "uid": "4676748529999983"
+    },
+    "lat": -81.38833618164158,
+    "lng": 131.37638473510694
+  },
+  {
+    "data": {
+      "markerDescription": "Sitting on top of the side table that is found on the stage of the show. Watch all 5 shows in order to access the card.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Robin Koninsky",
+      "uid": "4676748554999998"
+    },
+    "lat": -84.0608673095708,
+    "lng": 150.92988967895556
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a barrel, inside the chicken pen.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Sadie Russell",
+      "uid": "4676748584999993"
+    },
+    "lat": -84.60003662109375,
+    "lng": 98.36711120605469
+  },
+  {
+    "data": {
+      "markerDescription": "Just outside the Post Office in Southern Saint Denis, sitting on top of a four-wheeled cart.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Saint Denis",
+      "uid": "4676748614999989"
+    },
+    "lat": -85.2965850830083,
+    "lng": 154.21306228637744
+  },
+  {
+    "data": {
+      "markerDescription": "On the top floor of the Southeast tower.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "San Francisco",
+      "uid": "4676748644999985"
+    },
+    "lat": -59.34359741210842,
+    "lng": 149.51824188232325
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the boat, underneath the hammock.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Schooner",
+      "uid": "467674867499998"
+    },
+    "lat": -56.190185546875,
+    "lng": 157.8891677856455
+  },
+  {
+    "data": {
+      "markerType": "Cigarette Card",
+      "markerSubType": "Senator Thaddeus Waxman",
+      "uid": "4676748704999976"
+    },
+    "lat": -69.29345703125,
+    "lng": 136.43503189086962
+  },
+  {
+    "data": {
+      "markerDescription": "On to of a crate, on the Northern side of the balcony.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Slick Hutton",
+      "uid": "4676748729999992"
+    },
+    "lat": -59.30279541015625,
+    "lng": 155.153190612792
+  },
+  {
+    "data": {
+      "markerDescription": "On the barrel at the entrance of Fairwale Shanty.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Slim Grant",
+      "uid": "4676748764999967"
+    },
+    "lat": -29.55230712890625,
+    "lng": 135.9082107543955
+  },
+  {
+    "data": {
+      "markerDescription": "Inside the wooden dresser at the foot of the bed.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Snapping Turtle",
+      "uid": "4676748789999983"
+    },
+    "lat": -48.34162902832079,
+    "lng": 114.71603012084913
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a bench at the Train Station.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Stagecoach",
+      "uid": "4676748819999979"
+    },
+    "lat": -72.65670776367092,
+    "lng": 94.25150299072361
+  },
+  {
+    "data": {
+      "markerDescription": "Inside the bird's nest at the top of the old abandoned Church.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Steam Locomotive",
+      "uid": "46767488499999745"
+    },
+    "lat": -92.26498413085842,
+    "lng": 136.04792022705175
+  },
+  {
+    "data": {
+      "markerDescription": "Found on the collapsed wall of the ruin.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Steam Locomotive II",
+      "uid": "4676748874999991"
+    },
+    "lat": -78.80906677246045,
+    "lng": 123.02583312988281
+  },
+  {
+    "data": {
+      "markerDescription": "Located on a crate at the back of the Train Station.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Tall Trees",
+      "uid": "4676748904999986"
+    },
+    "lat": -69.34300231933545,
+    "lng": 106.21703720092725
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the bench at the abandoned Train Station.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Telegraph",
+      "uid": "4676748934999982"
+    },
+    "lat": -53.89944458007908,
+    "lng": 156.23011779785156
+  },
+  {
+    "data": {
+      "markerDescription": "On the table, inside the small cabin.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "The Grizzlies",
+      "uid": "4676748959999997"
+    },
+    "lat": -110.4539337158208,
+    "lng": 56.15156555175781
+  },
+  {
+    "data": {
+      "markerDescription": "Directly South of the \"D\" in Saint Denis, on top of a table along the Eastern side of the pier.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "The Showboat",
+      "uid": "4676748989999993"
+    },
+    "lat": -87.98951721191455,
+    "lng": 152.86835861206006
+  },
+  {
+    "data": {
+      "markerDescription": "On the shelf of the front porch.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Theobald Getzin",
+      "uid": "467674901499995"
+    },
+    "lat": -57.8922119140625,
+    "lng": 133.68741226196337
+  },
+  {
+    "data": {
+      "markerDescription": "Found in the back of the wagon, just West of the Station.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Thoroughbred",
+      "uid": "4676749049999984"
+    },
+    "lat": -83.56832885742092,
+    "lng": 130.00839614868212
+  },
+  {
+    "data": {
+      "markerDescription": "On top of the mantlepiece, on the second floor of the burnt down Sheriff's building.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Turkey",
+      "uid": "467674907999998"
+    },
+    "lat": -55.9337158203125,
+    "lng": 157.61557006835938
+  },
+  {
+    "data": {
+      "markerDescription": "On the crate at the Northwest tower of Fort Wallace.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Turkoman",
+      "uid": "4676749109999975"
+    },
+    "lat": -40.23077392578125,
+    "lng": 116.28776168823194
+  },
+  {
+    "data": {
+      "markerDescription": "On the work bench at the back of the cabin.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Turkoman",
+      "uid": "4676749139999971"
+    },
+    "lat": -40.19288635253954,
+    "lng": 137.7564506530757
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a barrel, next to the Warehouse door.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Typewriter",
+      "uid": "4676749164999986"
+    },
+    "lat": -84.1453857421875,
+    "lng": 96.46356964111423
+  },
+  {
+    "data": {
+      "markerDescription": "Inside the boathouse, on top of the workbench.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "U.S. Frigate",
+      "uid": "4676749194999982"
+    },
+    "lat": -91.47225952148342,
+    "lng": 125.27573776245069
+  },
+  {
+    "data": {
+      "markerDescription": "On the small table inside the Train Stain.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Valentine Cigarette Card",
+      "uid": "4676749219999998"
+    },
+    "lat": -53.81201171875,
+    "lng": 108.47276306152344
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a table, on the side porch of the house.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Velocipede",
+      "uid": "4676749254999973"
+    },
+    "lat": -80.83168029785205,
+    "lng": 149.80639266967725
+  },
+  {
+    "data": {
+      "markerType": "Cigarette Card",
+      "markerSubType": "W. G. Hoyt",
+      "uid": "4676749279999989"
+    },
+    "lat": -50.99667358398342,
+    "lng": 133.917350769042
+  },
+  {
+    "data": {
+      "markerDescription": "Find the card outside the shack on the North side table, next to the Cornwall Kerosene & Tar Train Station.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "William Sleicher",
+      "uid": "4676749309999985"
+    },
+    "lat": -53.96356201171875,
+    "lng": 119.08486175537014
+  },
+  {
+    "data": {
+      "markerDescription": "Found on the Southern windowsill of the house.",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Yarrow",
+      "uid": "467674933999998"
+    },
+    "lat": -77.0574951171875,
+    "lng": 148.1007728576665
+  },
+  {
+    "data": {
+      "markerDescription": "America's Card Set",
+      "markerType": "Cigarette Card",
+      "markerSubType": "General Cornelius Palmer",
+      "uid": "4676749369999976"
+    },
+    "lat": -76.75439453125,
+    "lng": 132.8986358642578
+  },
+  {
+    "data": {
+      "markerDescription": "On top of a crate outside the hut",
+      "markerType": "Cigarette Card",
+      "markerSubType": "Hummingbird Sage",
+      "uid": "46767493999999715"
+    },
+    "lat": -52.64041137695408,
+    "lng": 153.45921325683594
+  }
+]

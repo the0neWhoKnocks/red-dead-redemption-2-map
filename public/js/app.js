@@ -3,8 +3,8 @@ const DOM_ID = 'mapContainer';
 const LS_KEY = 'rdr2';
 const MODIFIER__COMPLETED = 'is--completed';
 const TILES_ABS_PATH = '/imgs/tiles';
-const completedMarkers = [];
 const hiddenOverlays = {};
+let completedMarkers = [];
 let filteredSubTypes = [];
 let lsData, mapBoundary, mapInst, mapLayers, markers, markerCreatorToggle, 
   subTypeFilterInput, subTypeFilterWrapper, typesLayerGroups;
@@ -17,7 +17,7 @@ const svgMarker = ({ markerSubType, markerType, uid }) => `
     x="0px"
     y="0px"
     height="100%"
-    viewBox="0 0 435.963 455.963"
+    viewBox="0 -16 435.963 455.963"
     xml:space="preserve"
     class="marker-icon ${(lsData.completedMarkers.includes(uid)) ? MODIFIER__COMPLETED : ''}"
     data-sub-type="${markerSubType}"
@@ -42,66 +42,72 @@ const _fetch = (url, opts = {}) => {
   };
   return fetch(url, { ...defaultOpts, ...opts, })
     .then(resp => resp.json())
-    .catch(err => alert(err));
+    .catch(err => alert(`fetch: ${err.stack}`));
 }
-const deleteMarker = (ndx) => _fetch(
+const deleteMarker = (uid) => _fetch(
   `${API_BASE}/delete`,
-  { method: 'DELETE', body: JSON.stringify({ ndx }) }
+  { method: 'DELETE', body: JSON.stringify({ uid }) }
 );
 const loadMarkers = () => _fetch(`${API_BASE}/load-all`);
 const saveMarker = (marker) => _fetch(
   `${API_BASE}/save`,
   { method: 'POST', body: JSON.stringify(marker) }
 );
-const updateMarker = (ndx, data) => _fetch(
+const updateMarker = (uid, data) => _fetch(
   `${API_BASE}/update`,
-  { method: 'POST', body: JSON.stringify({ data, ndx }) }
+  { method: 'POST', body: JSON.stringify({ data, uid }) }
 );
 
 function handlePopupOpen(ev) {
   const popup = ev.popup;
   const marker = popup._source;
+  const completedToggle = popup._wrapper.querySelector('.marker-popup__completed input');
+  let markerNdx;
+  
+  for (let i=0; i<markers.length; i++) {
+    if (markers[i].data.uid === marker.customData.uid) {
+      markerNdx = i;
+      break;
+    }
+  }
+  
+  const completedHandler = ({ currentTarget: { checked, value: uid } }) => {
+    const { markerType } = marker.customData;
+    const { data, lat, lng } = markers[markerNdx];
+    
+    (checked)
+      ? completedMarkers.push(uid)
+      : completedMarkers.splice(completedMarkers.indexOf(uid), 1);
+    
+    saveMapState();
+    
+    typesLayerGroups[markerType].removeLayer(marker);
+    marker.remove();
+    createMarker({ ...data, lat, lng });
+  };
+  
+  // ensure events don't get bound multiple times
+  completedToggle.removeEventListener('change', completedHandler);
+  // add fresh handlers
+  completedToggle.addEventListener('change', completedHandler);
   
   if (popup._wrapper.querySelector('.marker-popup__nav')) {
-    const completedToggle = popup._wrapper.querySelector('.marker-popup__completed input');
     const deleteBtn = popup._wrapper.querySelector('.marker-popup__delete-btn');
     const editBtn = popup._wrapper.querySelector('.marker-popup__edit-btn');
     const moveToggle = popup._wrapper.querySelector('[name="moveMarker"]');
-    let markerNdx;
     
-    for (let i=0; i<markers.length; i++) {
-      if (markers[i].data.uid === marker.customData.uid) {
-        markerNdx = i;
-        break;
-      }
-    }
-    
-    const completedHandler = ({ currentTarget: { checked, value: uid } }) => {
-      const { markerType } = marker.customData;
-      const { data, lat, lng } = markers[markerNdx];
-      
-      (checked)
-        ? completedMarkers.push(uid)
-        : completedMarkers.splice(completedMarkers.indexOf(uid), 1);
-      
-      saveMapState();
-      
-      typesLayerGroups[markerType].removeLayer(marker);
-      marker.remove();
-      createMarker({ ...data, lat, lng });
-    };
     const deleteHandler = () => {
       if (markerNdx !== undefined) {
-        const { markerType } = markers[markerNdx].data;
+        const { markerType, uid } = markers[markerNdx].data;
         typesLayerGroups[markerType].removeLayer(marker);
         marker.remove();
         
-        deleteMarker(markerNdx)
+        deleteMarker(uid)
           .then((newMarkers) => {
             markers = newMarkers;
             setFilterItems();
           })
-          .catch((err) => { alert(err); });
+          .catch((err) => { alert(`deleteMarker: ${err.stack}`); });
       }
     };
     const editHandler = () => {
@@ -131,9 +137,10 @@ function handlePopupOpen(ev) {
           
           if (markerNdx !== undefined) {
             const { lat, lng } = marker._latlng;
-            updateMarker(markerNdx, { lat, lng })
+            const { uid } = marker.customData;
+            updateMarker(uid, { lat, lng })
               .then((newMarkers) => { markers = newMarkers; })
-              .catch((err) => { alert(err); });
+              .catch((err) => { alert(`updateMarker: ${err.stack}`); });
           }
         };
         marker.on('dragend', dragEndHandler);
@@ -144,18 +151,17 @@ function handlePopupOpen(ev) {
     };
     
     // ensure events don't get bound multiple times
-    completedToggle.removeEventListener('change', completedHandler);
     deleteBtn.removeEventListener('click', deleteHandler);
     editBtn.removeEventListener('click', editHandler);
     moveToggle.removeEventListener('change', moveHandler);
     // add fresh handlers
-    completedToggle.addEventListener('change', completedHandler);
     deleteBtn.addEventListener('click', deleteHandler);
     editBtn.addEventListener('click', editHandler);
     moveToggle.addEventListener('change', moveHandler);
   }
 }
 const createMarker = ({
+  editable,
   lat,
   lng,
   markerCustomSubType,
@@ -182,7 +188,7 @@ const createMarker = ({
   let navMarkup = '';
   let ratingMarkup = '';
   
-  if (!previewing) navMarkup = `
+  if (!previewing && editable) navMarkup = `
     <nav class="marker-popup__nav">
       <label><input type="checkbox" name="moveMarker" /> Move</label>
       <button type="button" class="marker-popup__edit-btn">Edit</button>
@@ -436,7 +442,7 @@ function openMarkerCreator({
   markerFlyout.shadowRoot.querySelector('#createMarker').addEventListener('click', () => {
     const formData = formDataToObj(markerFlyout.shadowRoot.querySelector('#markerCreator'));
     const uid = (editData && editData.uid) || `${performance.now()}`.replace('.', '');
-    const data = { ...formData, uid };
+    const data = { ...formData, editable: true, uid };
     
     (data.markerCustomSubType)
       ? delete data.markerSubType
@@ -649,6 +655,7 @@ function init() {
     document.body.prepend(mapWrapper);
     
     lsData = JSON.parse(window.localStorage.getItem(LS_KEY) || '{}');
+    completedMarkers = lsData.completedMarkers;
     markers = loadedMarkers;
     mapBoundary = L.latLngBounds(L.latLng(-144, 0), L.latLng(0, 176));
     mapLayers = {
@@ -719,21 +726,20 @@ function init() {
         box-shadow: 0 0 0px 1px #776245;
       }
       
-      button[data-sub-type*="Legendary"] .filter-icon {
-        border-color: var(--color__legendary);
-      }
-      button[data-type="Animal"] .filter-icon {
-        background: var(--color__animal);
-      }
-      button[data-type="Fish"] .filter-icon {
-        background: var(--color__fish);
-      }
-      button[data-type="Hat"] .filter-icon {
-        background: var(--color__hat);
-      }
-      button[data-type="Plant"] .filter-icon {
-        background: var(--color__plant);
-      }
+      button[data-sub-type*="Legendary"] .filter-icon { border-color: var(--color__legendary); }
+      button[data-type="Animal"] .filter-icon { background: var(--color__animal); }
+      button[data-type="Cigarette Card"] .filter-icon { background: var(--color__cig-card); }
+      button[data-type="Dino Bones"] .filter-icon { background: var(--color__dino-bones); }
+      button[data-type="Dreamcatcher"] .filter-icon { background: var(--color__dreamcatcher); }
+      button[data-type="Fish"] .filter-icon { background: var(--color__fish); }
+      button[data-type="Hat"] .filter-icon { background: var(--color__hat); }
+      button[data-type="Plant"] .filter-icon { background: var(--color__plant); }
+      button[data-type="Point of Interest"] .filter-icon { background: var(--color__poi); }
+      button[data-type="Rare Item"] .filter-icon { background: var(--color__rare-item); }
+      button[data-type="Rock Carving"] .filter-icon { background: var(--color__rock-carving); }
+      button[data-type="Treasure"] .filter-icon { background: var(--color__treasure); }
+      button[data-type="Treasure Map"] .filter-icon { background: var(--color__treasure-map); }
+      button[data-type="Weapon"] .filter-icon { background: var(--color__weapon); }
     `,
     subTypeFilterWrapper.appendChild(subTypeFilterInput);
     subTypeFilterWrapper.addEventListener('click', handleFilterRemoval);

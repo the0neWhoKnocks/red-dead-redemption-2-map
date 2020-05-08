@@ -31,9 +31,13 @@ spawn.
 - On open/close of Marker Creator
   - [x] Hide all Markers
 - [ ] Combine custom subTypes with default subTypes so a User can select them later.
-- [ ] Have a list of `default-markers.json` and `user-markers.json`, and combine
+- [x] Have a list of `default-markers.json` and `user-markers.json`, and combine
 those together during `loadMarkers`.
 - [x] Have a checkbox on a Marker popup so that a marker can act as a todo item.
+- [ ] Add a toggle in Layers to 'Toggle All'.
+- [ ] Add ability to type a partial item in the Filter input, and after hitting
+ENTER, all items that were filtered down, are returned. May have to add some
+sort of submit button for Mobile.
 
 ---
 

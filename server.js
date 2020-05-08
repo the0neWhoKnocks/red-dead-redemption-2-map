@@ -5,21 +5,26 @@ const url = require('url');
 
 const ROOT_PATH = resolve(__dirname, './');
 const PUBLIC_PATH = `${ROOT_PATH}/public`;
-const MARKERS_PATH = `${PUBLIC_PATH}/markers.json`;
+const DEFAULT_MARKERS_PATH = `${PUBLIC_PATH}/markers.default.json`;
+const USER_MARKERS_PATH = `${PUBLIC_PATH}/markers.json`;
+let defaultMarkers;
 
-const loadMarkers = () => new Promise((resolve, reject) => {
-  if (existsSync(MARKERS_PATH)) {
-    readFile(MARKERS_PATH, (err, markers) => {
+const loadMarkers = (filePath) => new Promise((resolve, reject) => {
+  const promises = [];
+  
+  if (existsSync(filePath)) {
+    readFile(filePath, (err, markers) => {
       if (err) reject(err);
       else resolve(JSON.parse(markers));
     });
   }
   else resolve([]);
 });
+
 const saveMarkers = (markers) => new Promise((resolve, reject) => {
   const jsonData = JSON.stringify(markers, null, 2);
   
-  writeFile(MARKERS_PATH, jsonData, (err) => {
+  writeFile(USER_MARKERS_PATH, jsonData, (err) => {
     if (err) reject(err);
     else resolve(jsonData);
   });
@@ -38,6 +43,21 @@ const parseReq = (req) => new Promise((resolve, reject) => {
     });
   }
 });
+
+const getMarkerById = (markers, uid) => {
+  let marker;
+  let ndx;
+  
+  for (let i=0; i<markers.length; i++) {
+    if (markers[i].data.uid === uid) {
+      marker = markers[i];
+      ndx = i;
+      break;
+    }
+  }
+  
+  return { marker, ndx };
+};
 
 const handleRequests = (req, res) => {
   const {
@@ -83,17 +103,20 @@ const handleRequests = (req, res) => {
     const contentTypeJSON = ['Content-Type', 'application/json'];
     
     if (urlPath.endsWith('/delete')) {
-      parseReq(req).then(({ ndx }) => {
-        loadMarkers()
+      parseReq(req).then(({ uid }) => {
+        loadMarkers(USER_MARKERS_PATH)
           .then((loadedMarkers) => {
-            const marker = loadedMarkers[ndx];
+            const { marker, ndx } = getMarkerById(loadedMarkers, uid);
             loadedMarkers.splice(ndx, 1);
             
             saveMarkers(loadedMarkers)
               .then((savedMarkers) => {
                 console.log('[DELETED] Marker', marker);
                 res.setHeader(...contentTypeJSON);
-                res.end(savedMarkers);
+                res.end(JSON.stringify([
+                  ...defaultMarkers,
+                  ...loadedMarkers,
+                ]));
               })
               .catch(handleSaveError);
           })
@@ -101,16 +124,19 @@ const handleRequests = (req, res) => {
       });
     }
     else if (urlPath.endsWith('/load-all')) {
-      loadMarkers()
+      loadMarkers(USER_MARKERS_PATH)
         .then((loadedMarkers) => {
           res.setHeader(...contentTypeJSON);
-          res.end(JSON.stringify(loadedMarkers));
+          res.end(JSON.stringify([
+            ...defaultMarkers,
+            ...loadedMarkers,
+          ]));
         })
         .catch(handleLoadError);
     }
     else if (urlPath.endsWith('/save')) {
       parseReq(req).then((marker) => {
-        loadMarkers()
+        loadMarkers(USER_MARKERS_PATH)
           .then((loadedMarkers) => {
             const markers = loadedMarkers.reduce((arr, m) => {
               if (m.data.uid !== marker.data.uid) arr.push(m);
@@ -122,7 +148,10 @@ const handleRequests = (req, res) => {
               .then((savedMarkers) => {
                 console.log('[SAVED] Marker', marker);
                 res.setHeader(...contentTypeJSON);
-                res.end(savedMarkers);
+                res.end(JSON.stringify([
+                  ...defaultMarkers,
+                  ...markers,
+                ]));
               })
               .catch(handleSaveError);
           })
@@ -130,11 +159,12 @@ const handleRequests = (req, res) => {
       });
     }
     else if (urlPath.endsWith('/update')) {
-      parseReq(req).then(({ data, ndx }) => {
-        loadMarkers()
+      parseReq(req).then(({ data, uid }) => {
+        loadMarkers(USER_MARKERS_PATH)
           .then((loadedMarkers) => {
+            const { marker, ndx } = getMarkerById(loadedMarkers, uid);
             const updatedMarker = {
-              ...loadedMarkers[ndx],
+              ...marker,
               ...data,
             };
             loadedMarkers[ndx] = updatedMarker;
@@ -143,7 +173,10 @@ const handleRequests = (req, res) => {
               .then((savedMarkers) => {
                 console.log('[UPDATED] Marker', updatedMarker);
                 res.setHeader(...contentTypeJSON);
-                res.end(savedMarkers);
+                res.end(JSON.stringify([
+                  ...defaultMarkers,
+                  ...loadedMarkers,
+                ]));
               })
               .catch(handleSaveError);
           })
@@ -153,10 +186,18 @@ const handleRequests = (req, res) => {
   }
   // Root document
   else {
-    readFile(`${PUBLIC_PATH}/index.html`, (err, file) => {
-      if (err) console.error('[ERROR]', err);
-      else res.end(file);
-    });
+    loadMarkers(DEFAULT_MARKERS_PATH)
+      .then((markers) => {
+        defaultMarkers = markers;
+        
+        readFile(`${PUBLIC_PATH}/index.html`, (err, file) => {
+          if (err) console.error('[ERROR]', err);
+          else res.end(file);
+        });
+      })
+      .catch((err) => {
+        console.error('[ERROR]', err);
+      });
   }
 }
 
