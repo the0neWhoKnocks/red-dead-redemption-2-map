@@ -693,6 +693,8 @@ function init() {
     document.body.prepend(mapWrapper);
     
     lsData = JSON.parse(window.localStorage.getItem(LS_KEY) || '{}');
+    if (!lsData.completedMarkers) lsData.completedMarkers = [];
+    if (!lsData.hiddenOverlays) lsData.hiddenOverlays = [];
     completedMarkers = lsData.completedMarkers;
     markers = loadedMarkers;
     mapBoundary = L.latLngBounds(L.latLng(-144, 0), L.latLng(0, 176));
