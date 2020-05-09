@@ -195,17 +195,17 @@ const createMarker = ({
   
   marker.bindPopup(popupContent);
   
-  if (previewing) {
-    marker.addTo(mapInst);
-    marker.openPopup();
-  }
-  else typesLayerGroups[markerType].addLayer(marker);
-  
   marker.customData = {
     markerSubType,
     markerType,
     uid,
   };
+  
+  if (previewing) {
+    marker.addTo(mapInst);
+    marker.openPopup();
+  }
+  else typesLayerGroups[markerType].addLayer(marker);
   
   return marker;
 };
@@ -241,6 +241,7 @@ function openMarkerCreator({
   `;
   const FLYOUT_WIDTH = 300;
   const MODIFIER__PREVIEWING_MARKER = 'is--previewing-marker';
+  const UID = (editData && editData.uid) || `${performance.now()}`.replace('.', '');
   const visibleTypeLayerGroups = [...MARKER_TYPES.keys()]
     .filter(type => hiddenOverlays[type] === undefined)
     .map(type => typesLayerGroups[type]);
@@ -420,8 +421,7 @@ function openMarkerCreator({
   
   markerFlyout.shadowRoot.querySelector('#createMarker').addEventListener('click', () => {
     const formData = formDataToObj(markerFlyout.shadowRoot.querySelector('#markerCreator'));
-    const uid = (editData && editData.uid) || `${performance.now()}`.replace('.', '');
-    const data = { ...formData, editable: true, uid };
+    const data = { ...formData, editable: true, uid: UID };
     
     (data.markerCustomSubType)
       ? delete data.markerSubType
@@ -448,7 +448,7 @@ function openMarkerCreator({
     const formData = formDataToObj(markerFlyout.shadowRoot.querySelector('#markerCreator'));
     
     if (window.previewMarker) window.previewMarker.remove();
-    window.previewMarker = createMarker({ ...formData, lat, lng, previewing: true });
+    window.previewMarker = createMarker({ ...formData, lat, lng, previewing: true, uid: UID });
     markerFlyout.classList.add(MODIFIER__PREVIEWING_MARKER);
     
     document.body.addEventListener('mousemove', () => {
