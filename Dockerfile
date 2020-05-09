@@ -23,6 +23,7 @@ RUN npm i --only=production --quiet
 COPY --chown=node:node ./public/index.html ./public/
 COPY --chown=node:node ./public/markers.default.json ./public/
 COPY --chown=node:node ./public/imgs/icons ./public/imgs/icons/
+COPY --chown=node:node ./public/imgs/markers ./public/imgs/markers/
 COPY --chown=node:node ./server.js ./
 COPY --chown=node:node ./public/css ./public/css/
 COPY --chown=node:node ./public/js ./public/js/

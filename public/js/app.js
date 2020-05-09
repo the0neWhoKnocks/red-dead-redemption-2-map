@@ -10,18 +10,6 @@ let filteredSubTypes = [];
 let lsData, mapBoundary, mapInst, mapLayers, markers, markerCreatorToggle, 
   subTypeFilterInput, subTypeFilterWrapper, typesLayerGroups;
 
-const svgMarker = ({ markerSubType, markerType, uid }) => {
-  const ICON_ID = markerType.toLowerCase().replace(/\s/g, '-');
-  const COMPLETED = (lsData.completedMarkers.includes(uid)) ? MODIFIER__COMPLETED : '';
-  const LEGENDARY = (/legendary/i.test(markerSubType)) ? MODIFIER__LEGENDARY : '';
-  
-  return `
-    <svg class="marker-icon is--${ICON_ID} ${LEGENDARY} ${COMPLETED}">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#marker-icon__${ICON_ID}"></use>
-    </svg>
-  `;
-};
-
 const _fetch = (url, opts = {}) => {
   const defaultOpts = {
     method: 'GET',
@@ -159,15 +147,21 @@ const createMarker = ({
   rating,
   uid
 }) => {
-  const iconRadius = 30;
-  const icon = L.divIcon({
-    className: 'marker-icon-wrapper',
-    html: svgMarker({ markerSubType, markerType, uid }),
-    iconAnchor: [iconRadius/2, iconRadius],
-    iconSize: [iconRadius, iconRadius],
-    popupAnchor: [0, -iconRadius],
+  const ICON_NAME = markerType.toLowerCase().replace(/\s/g, '-');
+  const COMPLETED = (lsData.completedMarkers.includes(uid)) ? MODIFIER__COMPLETED : '';
+  const LEGENDARY = (/legendary/i.test(markerSubType)) ? '-legendary' : '';
+  const ICON_RADIUS = 30;
+  const BaseIcon = L.Icon.extend({
+    options: {
+      className: `marker-icon ${COMPLETED}`,
+      iconAnchor: [ICON_RADIUS/2, ICON_RADIUS],
+      iconSize: [ICON_RADIUS, ICON_RADIUS],
+      popupAnchor: [0, -ICON_RADIUS],
+    }
   });
-  const marker = L.marker([lat, lng], { icon });
+  const marker = L.marker([lat, lng], {
+    icon: new BaseIcon({ iconUrl: `/imgs/markers/${ICON_NAME}${LEGENDARY}.png` }),
+  });
   let navMarkup = '';
   let ratingMarkup = '';
   
