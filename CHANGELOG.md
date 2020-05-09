@@ -1,6 +1,12 @@
 # Changelog
 ---
 
+## v1.1.3
+
+- [8727450](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/8727450) Reordered Dockerfile COPY commands
+
+---
+
 ## v1.1.2
 
 - [0883e39](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/0883e39) bugfix: Layers control overlaps Filter input on Mobile
