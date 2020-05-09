@@ -1,6 +1,12 @@
 # Changelog
 ---
 
+## v1.1.2
+
+- [0883e39](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/0883e39) bugfix: Layers control overlaps Filter input on Mobile
+
+---
+
 ## v1.1.1
 
 - [e817010](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/e817010) Leveage Docker caching better so tiles isn't downloaded every time.

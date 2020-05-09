@@ -1,6 +1,6 @@
 {
   "name": "red-dead-redemption-2-map",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A dynamic Red Dead Redemption 2 map that allows a user to place custom markers with descriptions.",
   "main": "index.js",
   "scripts": {
