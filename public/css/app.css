@@ -82,6 +82,8 @@ custom-flyout {
   text-align: center;
 }
 .marker-icon {
+  width: 30px;
+  height: 30px;
   stroke: #000;
 }
 .marker-icon.is--completed {
@@ -249,59 +251,59 @@ custom-flyout {
 
 .filter-input-wrapper .filter-tag__icon[data-sub-type*="Legendary"],
 .marker-popup__icon[data-sub-type*="Legendary"],
-.marker-icon[data-sub-type*="Legendary"] {
+.marker-icon.is--legendary {
   border-color: var(--color__legendary);
   stroke: var(--color__legendary);
 }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Animal"],
 .marker-popup__icon[data-type="Animal"] { background: var(--color__animal); }
-.marker-icon[data-type="Animal"] { fill: var(--color__animal); }
+.marker-icon.is--animal { fill: var(--color__animal); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Cigarette Card"],
 .marker-popup__icon[data-type="Cigarette Card"] { background: var(--color__cig-card); }
-.marker-icon[data-type="Cigarette Card"] { fill: var(--color__cig-card); }
+.marker-icon.is--cigarette-card { fill: var(--color__cig-card); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Dino Bones"],
 .marker-popup__icon[data-type="Dino Bones"] { background: var(--color__dino-bones); }
-.marker-icon[data-type="Dino Bones"] { fill: var(--color__dino-bones); }
+.marker-icon.is--dino-bones { fill: var(--color__dino-bones); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Dreamcatcher"],
 .marker-popup__icon[data-type="Dreamcatcher"] { background: var(--color__dreamcatcher); }
-.marker-icon[data-type="Dreamcatcher"] { fill: var(--color__dreamcatcher); }
+.marker-icon.is--dreamcatcher { fill: var(--color__dreamcatcher); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Fish"],
 .marker-popup__icon[data-type="Fish"] { background: var(--color__fish); }
-.marker-icon[data-type="Fish"] { fill: var(--color__fish); }
+.marker-icon.is--fish { fill: var(--color__fish); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Hat"],
 .marker-popup__icon[data-type="Hat"] { background: var(--color__hat); }
-.marker-icon[data-type="Hat"] { fill: var(--color__hat); }
+.marker-icon.is--hat { fill: var(--color__hat); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Plant"],
 .marker-popup__icon[data-type="Plant"] { background: var(--color__plant); }
-.marker-icon[data-type="Plant"] { fill: var(--color__plant); }
+.marker-icon.is--plant { fill: var(--color__plant); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Point of Interest"],
 .marker-popup__icon[data-type="Point of Interest"] { background: var(--color__poi); }
-.marker-icon[data-type="Point of Interest"] { fill: var(--color__poi); }
+.marker-icon.is--point-of-interest { fill: var(--color__poi); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Rare Item"],
 .marker-popup__icon[data-type="Rare Item"] { background: var(--color__rare-item); }
-.marker-icon[data-type="Rare Item"] { fill: var(--color__rare-item); }
+.marker-icon.is--rare-item { fill: var(--color__rare-item); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Rock Carving"],
 .marker-popup__icon[data-type="Rock Carving"] { background: var(--color__rock-carving); }
-.marker-icon[data-type="Rock Carving"] { fill: var(--color__rock-carving); }
+.marker-icon.is--rock-carving { fill: var(--color__rock-carving); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Treasure"],
 .marker-popup__icon[data-type="Treasure"] { background: var(--color__treasure); }
-.marker-icon[data-type="Treasure"] { fill: var(--color__treasure); }
+.marker-icon.is--treasure { fill: var(--color__treasure); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Treasure Map"],
 .marker-popup__icon[data-type="Treasure Map"] { background: var(--color__treasure-map); }
-.marker-icon[data-type="Treasure Map"] { fill: var(--color__treasure-map); }
+.marker-icon.is--treasure-map { fill: var(--color__treasure-map); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Weapon"],
 .marker-popup__icon[data-type="Weapon"] { background: var(--color__weapon); }
-.marker-icon[data-type="Weapon"] { fill: var(--color__weapon); }
+.marker-icon.is--weapon { fill: var(--color__weapon); }
