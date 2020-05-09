@@ -713,6 +713,8 @@ function init() {
           allLayersToggle.title = 'Click to toggle all layers on or off';
     layersControlList.prepend(allLayersToggle);
     allLayersToggle.addEventListener('click', () => {
+      allLayersToggle.disabled = true;
+      
       const checkboxLabels = [...layersControlList.querySelectorAll('label')];
       const layerCheckboxes = [...layersControlList.querySelectorAll('input[type="checkbox"]')];
       const numberOfVisibleLayers = layerCheckboxes.reduce((count, checkbox) => {
@@ -720,10 +722,39 @@ function init() {
         return count;
       }, 0);
       
-      checkboxLabels.forEach((label) => {
+      const toggleLayer = (label) => new Promise((resolve) => {
         const checkbox = label.querySelector('input[type="checkbox"]');
-        if (numberOfVisibleLayers > 0 && checkbox.checked) label.click();
-        else if (numberOfVisibleLayers === 0 && !checkbox.checked) label.click();
+        const markerType = label.innerText.trim();
+        
+        if (numberOfVisibleLayers > 0 && checkbox.checked) {
+          label.click();
+          resolve();
+        }
+        else if (numberOfVisibleLayers === 0 && !checkbox.checked) {
+          // NOTE - The interval and layer 'add' logic is hacky, but the only
+          // solution that worked on lower-spec Mobile devices. Otherwise, when
+          // I triggered a label click, only some layers would turn back on,
+          // while the rest seemingly faded away, never to be heard from again.
+          const layer = typesLayerGroups[markerType];
+          const int = setInterval(() => {
+            if (!checkbox.checked) label.click();
+          }, 10);
+          const handler = () => {
+            clearInterval(int);
+            layer.off('add', handler);
+            resolve();
+          }
+          
+          layer.on('add', handler);
+          label.click();
+        }
+        else resolve();
+      });
+      
+      Promise.all([
+        ...checkboxLabels.map(label => toggleLayer(label))
+      ]).then(() => {
+        allLayersToggle.disabled = false;
       });
     });
     
