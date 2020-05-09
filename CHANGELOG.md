@@ -1,6 +1,12 @@
 # Changelog
 ---
 
+## v1.2.1
+
+- [a5476ef](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/a5476ef) bugfix: 'Toggle All' button doesn't re-enable all layers on Mobile
+
+---
+
 ## v1.2.0
 
 - [8f9d680](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/8f9d680) bugfix: Marker Creator not hiding on Preview click
