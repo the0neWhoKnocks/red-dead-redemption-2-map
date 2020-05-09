@@ -25,7 +25,8 @@ html, body {
 }
 
 .filter-input-wrapper {
-  width: 50vmax;
+  width: 70vw;
+  max-width: 600px;
   display: flex;
   flex-wrap: wrap;
   position: fixed;
