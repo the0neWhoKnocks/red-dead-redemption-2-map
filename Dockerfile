@@ -9,8 +9,15 @@ COPY --chown=node:node ./package*.json ./
 COPY --chown=node:node ./bin/copy-assets-to-public.sh ./bin/
 # Install production dependencies
 RUN npm i --only=production --quiet
-# Copy local code to the image
-COPY --chown=node:node ./public ./public/
+# Copy local code to the image. In order to ensure users don't have to re-download
+# an unchanged folder (like tiles) anytime something changes in public, copy
+# over individual folders separately to leverage Docker's caching.
+COPY --chown=node:node ./public/css ./public/css/
+COPY --chown=node:node ./public/imgs/icons ./public/imgs/icons/
+COPY --chown=node:node ./public/imgs/tiles ./public/imgs/tiles/
+COPY --chown=node:node ./public/js ./public/js/
+COPY --chown=node:node ./public/index.html ./public/
+COPY --chown=node:node ./public/markers.default.json ./public/
 COPY --chown=node:node ./server.js ./
 # List off contents of final image
 RUN ls -la $APP
