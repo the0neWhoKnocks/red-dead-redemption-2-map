@@ -1,6 +1,15 @@
 # Changelog
 ---
 
+## v1.2.0
+
+- [8f9d680](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/8f9d680) bugfix: Marker Creator not hiding on Preview click
+- [3bf02b3](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/3bf02b3) Switched from SVG Marker icons to images for Mobile performance
+- [80e4cbb](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/80e4cbb) Adjusted styling for Completed input in pop-up
+- [44b78dd](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/44b78dd) Switched over to SVG references for Marker icons
+
+---
+
 ## v1.1.3
 
 - [8727450](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/8727450) Reordered Dockerfile COPY commands
