@@ -523,19 +523,23 @@ function renderMarkers(filter) {
   
   if (filter) {
     markers.forEach(({ data, lat, lng }, i) => {
-      const { markerSubType, markerType } = data;
+      const { markerCustomSubType, markerSubType, markerType } = data;
+      const subType = markerCustomSubType || markerSubType;
+      
       // clear out all layers based on marker types that have been added
       if (!clearedGroups.includes(markerType)) {
         typesLayerGroups[markerType].clearLayers();
         clearedGroups.push(markerType);
       }
+      
       // add a reference to the filter
       if (
-        markerSubType === filter
-        && !filteredSubTypes.includes(markerSubType)
-      ) filteredSubTypes.push(markerSubType);
+        subType === filter
+        && !filteredSubTypes.includes(subType)
+      ) filteredSubTypes.push(subType);
+      
       // only add Markers that are filtered
-      if (filteredSubTypes.includes(markerSubType)) createMarker({ ...data, lat, lng });
+      if (filteredSubTypes.includes(subType)) createMarker({ ...data, lat, lng });
     });
   }
   else {
@@ -633,11 +637,13 @@ function setFilterItems() {
   const added = [];
   const itemGroups = {};
   
-  markers.forEach(({ data: { markerSubType, markerType } }) => {
-    if (!added.includes(`${markerType}_${markerSubType}`)) {
+  markers.forEach(({ data: { markerCustomSubType, markerSubType, markerType } }) => {
+    const subType = markerCustomSubType || markerSubType;
+    
+    if (!added.includes(`${markerType}_${subType}`)) {
       if (!itemGroups[markerType]) itemGroups[markerType] = [];
-      itemGroups[markerType].push(markerSubType);
-      added.push(`${markerType}_${markerSubType}`);
+      itemGroups[markerType].push(subType);
+      added.push(`${markerType}_${subType}`);
     }
   });
   
@@ -810,7 +816,7 @@ function init() {
       button[data-type="Treasure"] .filter-icon { background: var(--color__treasure); }
       button[data-type="Treasure Map"] .filter-icon { background: var(--color__treasure-map); }
       button[data-type="Weapon"] .filter-icon { background: var(--color__weapon); }
-    `,
+    `;
     subTypeFilterWrapper.appendChild(subTypeFilterInput);
     subTypeFilterWrapper.addEventListener('click', handleFilterRemoval);
     document.body.appendChild(subTypeFilterWrapper);
