@@ -1,6 +1,12 @@
 # Changelog
 ---
 
+## v1.2.2
+
+- [b457c5b](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/b457c5b) bugfix: Custom Marker subType not always accounted for
+
+---
+
 ## v1.2.1
 
 - [a5476ef](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/a5476ef) bugfix: 'Toggle All' button doesn't re-enable all layers on Mobile
