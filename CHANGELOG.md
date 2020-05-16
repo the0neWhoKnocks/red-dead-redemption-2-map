@@ -1,6 +1,14 @@
 # Changelog
 ---
 
+## v2.0.0
+
+- [7c17887](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/7c17887) Updated default marker data
+- [81e3d74](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/81e3d74) Added new Mission Item markerType
+- [9b8a622](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/9b8a622) Added new Bird markerType
+
+---
+
 ## v1.2.2
 
 - [b457c5b](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/b457c5b) bugfix: Custom Marker subType not always accounted for
