@@ -264,15 +264,6 @@
     "data": {
       "markerType": "Animal",
       "markerSubType": "Legendary Beaver",
-      "uid": "4676738079999981"
-    },
-    "lat": -53.9752197265625,
-    "lng": 148.9419403076172
-  },
-  {
-    "data": {
-      "markerType": "Animal",
-      "markerSubType": "Legendary Beaver",
       "uid": "4676738109999977"
     },
     "lat": -53.9285888671875,
@@ -807,7 +798,7 @@
   },
   {
     "data": {
-      "markerType": "Point of Interest",
+      "markerType": "Mission Item",
       "markerSubType": "Davey Callander grave",
       "uid": "46767398799999505"
     },
@@ -888,21 +879,57 @@
   },
   {
     "data": {
-      "markerType": "Point of Interest",
-      "markerSubType": "Grave Site",
-      "uid": "4676740144999988"
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Eagle Flies' grave",
+      "uid": "3352738099999995"
     },
-    "lat": -33.71702575683546,
-    "lng": 119.32353210449219
+    "lat": -33.69977688789368,
+    "lng": 119.04227137565613
   },
   {
     "data": {
-      "markerType": "Point of Interest",
-      "markerSubType": "Grave Site",
-      "uid": "4676740174999984"
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Hosea Matthews' & Lenny Summers' grave",
+      "uid": "31246515999999973"
     },
-    "lat": -74.06146240234375,
-    "lng": 150.72905731201075
+    "lat": -73.15401792526245,
+    "lng": 151.4097375869751
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Sean McGuire's grave",
+      "uid": "28996814999999986"
+    },
+    "lat": -78.84598159790039,
+    "lng": 121.880859375
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Kieran Duffy's grave",
+      "uid": "3009461199999998"
+    },
+    "lat": -93.1484375,
+    "lng": 138.140625
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Miss Susan Grimshaw's grave",
+      "uid": "34334870999999987"
+    },
+    "lat": -51.18191981315613,
+    "lng": 144.6700611114502
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Arthur Morgan's grave",
+      "uid": "3875749999999971"
+    },
+    "lat": -35.890625,
+    "lng": 123.890625
   },
   {
     "data": {
@@ -933,7 +960,7 @@
   },
   {
     "data": {
-      "markerType": "Point of Interest",
+      "markerType": "Mission Item",
       "markerSubType": "Jenny Kirk Grave Site",
       "uid": "4676740289999987"
     },
