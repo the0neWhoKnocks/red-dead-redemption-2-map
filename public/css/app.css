@@ -7,6 +7,7 @@
   --color__fish: #42d3ff;
   --color__hat: #b96cff;
   --color__legendary: yellow;
+  --color__mission-item: #efebe8;
   --color__plant: #4bff00;
   --color__poi: #ff8181;
   --color__rare-item: #1060f2;
@@ -271,6 +272,9 @@ custom-flyout {
 
 .filter-input-wrapper .filter-tag__icon[data-type="Hat"],
 .marker-popup__icon[data-type="Hat"] { background: var(--color__hat); }
+
+.filter-input-wrapper .filter-tag__icon[data-type="Mission Item"],
+.marker-popup__icon[data-type="Mission Item"] { background: var(--color__mission-item); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Plant"],
 .marker-popup__icon[data-type="Plant"] { background: var(--color__plant); }

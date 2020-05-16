@@ -37,7 +37,8 @@ ENTER, all items that were filtered down, are returned. May have to add some
 sort of submit button for Mobile.
 - Add new `markerType`s
   - [x] Bird
-  - [ ] Mission Item
+  - [x] Mission Item
+- [ ] Look into scraping/creating better map tiles
 
 ---
 

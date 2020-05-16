@@ -810,6 +810,7 @@ function init() {
       button[data-type="Dreamcatcher"] .filter-icon { background: var(--color__dreamcatcher); }
       button[data-type="Fish"] .filter-icon { background: var(--color__fish); }
       button[data-type="Hat"] .filter-icon { background: var(--color__hat); }
+      button[data-type="Mission Item"] .filter-icon { background: var(--color__mission-item); }
       button[data-type="Plant"] .filter-icon { background: var(--color__plant); }
       button[data-type="Point of Interest"] .filter-icon { background: var(--color__poi); }
       button[data-type="Rare Item"] .filter-icon { background: var(--color__rare-item); }

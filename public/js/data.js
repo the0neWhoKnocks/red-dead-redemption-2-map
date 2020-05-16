@@ -456,6 +456,9 @@ const HATS = [
   "Wide Slouch",
   "Worn Stovepipe Top",
 ];
+const MISSION_ITEMS = [
+  "Alligator Eggs",
+];
 const PLANTS = [
   "Acuna's Star Orchid",
   "Alaskan Ginseng",
@@ -632,6 +635,7 @@ const MARKER_TYPES = new Map([
   ['Dreamcatcher', DREAMCATCHERS],
   ['Fish', FISH],
   ['Hat', HATS],
+  ['Mission Item', MISSION_ITEMS],
   ['Plant', PLANTS],
   ['Point of Interest', POINT_OF_INTEREST],
   ['Rare Item', RARE_ITEMS],
