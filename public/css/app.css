@@ -1,5 +1,6 @@
 :root {
   --color__animal: #c84a00;
+  --color__bird: #da0036;
   --color__cig-card: #ccc;
   --color__dino-bones: #fff;
   --color__dreamcatcher: #638cff;
@@ -252,6 +253,9 @@ custom-flyout {
 
 .filter-input-wrapper .filter-tag__icon[data-type="Animal"],
 .marker-popup__icon[data-type="Animal"] { background: var(--color__animal); }
+
+.filter-input-wrapper .filter-tag__icon[data-type="Bird"],
+.marker-popup__icon[data-type="Bird"] { background: var(--color__bird); }
 
 .filter-input-wrapper .filter-tag__icon[data-type="Cigarette Card"],
 .marker-popup__icon[data-type="Cigarette Card"] { background: var(--color__cig-card); }

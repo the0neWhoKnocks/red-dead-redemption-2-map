@@ -804,6 +804,7 @@ function init() {
       
       button[data-sub-type*="Legendary"] .filter-icon { border-color: var(--color__legendary); }
       button[data-type="Animal"] .filter-icon { background: var(--color__animal); }
+      button[data-type="Bird"] .filter-icon { background: var(--color__bird); }
       button[data-type="Cigarette Card"] .filter-icon { background: var(--color__cig-card); }
       button[data-type="Dino Bones"] .filter-icon { background: var(--color__dino-bones); }
       button[data-type="Dreamcatcher"] .filter-icon { background: var(--color__dreamcatcher); }

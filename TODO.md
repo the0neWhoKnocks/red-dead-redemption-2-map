@@ -35,6 +35,9 @@ those together during `loadMarkers`.
 - [x] Add ability to type a partial item in the Filter input, and after hitting
 ENTER, all items that were filtered down, are returned. May have to add some
 sort of submit button for Mobile.
+- Add new `markerType`s
+  - [x] Bird
+  - [ ] Mission Item
 
 ---
 
