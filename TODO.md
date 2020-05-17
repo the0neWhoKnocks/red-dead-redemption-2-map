@@ -43,6 +43,7 @@ sort of submit button for Mobile.
   - [x] Figure out how to combine and render all Markers at once to maintain
   proper z-indexing. May have to create a custom Layers control that doesn't
   rely on layer groups, but rather just simulate layer groups.
+  - [x] Ensure Marker popup's are consistently positioned. 
 
 ---
 

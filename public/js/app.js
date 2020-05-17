@@ -44,6 +44,9 @@ function handlePopupOpen(ev) {
   const completedToggle = popup._wrapper.querySelector('.marker-popup__completed input');
   let markerNdx;
   
+  // Ensures popup stays centered to Marker
+  popup.setLatLng(marker._latlng);
+  
   for (let i=0; i<markers.length; i++) {
     if (markers[i].data.uid === marker.customData.uid) {
       markerNdx = i;
@@ -157,7 +160,7 @@ function createMarker({
   const LEGENDARY = (/legendary/i.test(markerSubType)) ? '-legendary' : '';
   const ICON_RADIUS = 30;
   const ICON_OFFSET_VERTICAL = 0.01;
-  const POPUP_OFFSET = [0, -ICON_RADIUS / 2];
+  const POPUP_OFFSET = [0, -ICON_RADIUS / 1.5];
   const _lat = lat + ICON_OFFSET_VERTICAL;
   const marker = L.canvasMarker([_lat, lng], {
     img: {
