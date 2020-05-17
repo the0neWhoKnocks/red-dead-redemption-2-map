@@ -1,6 +1,15 @@
 # Changelog
 ---
 
+## v2.1.0
+
+- [a8ffd8b](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/a8ffd8b) Switched to canvas-based Markers
+- [1b69cc1](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/1b69cc1) Switched arrow functions over to standard functions
+- [3f8c498](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/3f8c498) Style updates for Marker popup
+- [ada95d2](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/ada95d2) Updated README
+
+---
+
 ## v2.0.0
 
 - [7c17887](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/7c17887) Updated default marker data
