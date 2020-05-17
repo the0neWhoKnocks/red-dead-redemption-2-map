@@ -1,7 +1,9 @@
-# [WIP] Red Dead Redemption 2 Map
+# Red Dead Redemption 2 Map
 
 A dynamic map for Red Dead Redemption 2 that allows a user to place custom 
 markers with descriptions.
+
+![rdr2-map](https://user-images.githubusercontent.com/344140/81726445-38cb0800-943c-11ea-8f90-d251ddf795a0.gif)
 
 There are many maps online, but they:
 - Require a log in
@@ -10,7 +12,15 @@ There are many maps online, but they:
 - Are sprinkled with ads
 - Load slow
 
-Currently everything runs without external requests.
+Features of this App:
+- Layer settings are retained per-device after reload
+- Completed items are retained
+- Markers can be added by any User
+- Custom sub-types for Markers can be added
+- Auto-complete filtering for Markers so you can easily isolate and view groups
+of Markers.
+- Can toggle all layers on or off to speed up toggling just the layer(s) you
+want to view.
 
 ---
 
