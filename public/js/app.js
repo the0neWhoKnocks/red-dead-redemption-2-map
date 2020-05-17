@@ -10,7 +10,7 @@ let filteredSubTypes = [];
 let lsData, mapBoundary, mapInst, mapLayers, markers, markerCreatorToggle, 
   subTypeFilterInput, subTypeFilterWrapper, typesLayerGroups;
 
-const _fetch = (url, opts = {}) => {
+function _fetch(url, opts = {}) {
   const defaultOpts = {
     method: 'GET',
     headers: { 'Content-Type': 'application/json' },
@@ -19,19 +19,25 @@ const _fetch = (url, opts = {}) => {
     .then(resp => resp.json())
     .catch(err => alert(`fetch: ${err.stack}`));
 }
-const deleteMarker = (uid) => _fetch(
-  `${API_BASE}/delete`,
-  { method: 'DELETE', body: JSON.stringify({ uid }) }
-);
-const loadMarkers = () => _fetch(`${API_BASE}/load-all`);
-const saveMarker = (marker) => _fetch(
-  `${API_BASE}/save`,
-  { method: 'POST', body: JSON.stringify(marker) }
-);
-const updateMarker = (uid, data) => _fetch(
-  `${API_BASE}/update`,
-  { method: 'POST', body: JSON.stringify({ data, uid }) }
-);
+function deleteMarker(uid) {
+  return _fetch(
+    `${API_BASE}/delete`,
+    { method: 'DELETE', body: JSON.stringify({ uid }) }
+  );
+}
+function loadMarkers() { return _fetch(`${API_BASE}/load-all`); }
+function saveMarker(marker) {
+  return _fetch(
+    `${API_BASE}/save`,
+    { method: 'POST', body: JSON.stringify(marker) }
+  );
+}
+function updateMarker(uid, data) {
+  return _fetch(
+    `${API_BASE}/update`,
+    { method: 'POST', body: JSON.stringify({ data, uid }) }
+  );
+}
 
 function handlePopupOpen(ev) {
   const popup = ev.popup;
@@ -135,7 +141,8 @@ function handlePopupOpen(ev) {
     moveToggle.addEventListener('change', moveHandler);
   }
 }
-const createMarker = ({
+
+function createMarker({
   editable,
   lat,
   lng,
@@ -146,7 +153,7 @@ const createMarker = ({
   previewing,
   rating,
   uid
-}) => {
+}) {
   const ICON_NAME = markerType.toLowerCase().replace(/\s/g, '-');
   const COMPLETED = (lsData.completedMarkers.includes(uid)) ? MODIFIER__COMPLETED : '';
   const LEGENDARY = (/legendary/i.test(markerSubType)) ? '-legendary' : '';
@@ -208,9 +215,9 @@ const createMarker = ({
   else typesLayerGroups[markerType].addLayer(marker);
   
   return marker;
-};
+}
 
-const saveMapState = () => {
+function saveMapState() {
   const data = {
     completedMarkers,
     hiddenOverlays,
@@ -220,10 +227,13 @@ const saveMapState = () => {
   window.localStorage.setItem(LS_KEY, JSON.stringify(data));
   lsData = data;
 };
-const formDataToObj = (form) => [...(new FormData(form)).entries()].reduce((obj, arr) => {
-  obj[arr[0]] = arr[1];
-  return obj;
-}, {});
+
+function formDataToObj(form) {
+  return [...(new FormData(form)).entries()].reduce((obj, arr) => {
+    obj[arr[0]] = arr[1];
+    return obj;
+  }, {});
+}
 
 function openMarkerCreator({
   data: editData,
