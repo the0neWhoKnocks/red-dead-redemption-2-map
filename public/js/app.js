@@ -1,7 +1,6 @@
 const API_BASE = '/api/marker';
 const DOM_ID = 'mapContainer';
 const LS_KEY = 'rdr2';
-const MODIFIER__COMPLETED = 'is--completed';
 const MODIFIER__LEGENDARY = 'is--legendary';
 const TILES_ABS_PATH = '/imgs/tiles';
 const hiddenOverlays = {};
@@ -155,19 +154,19 @@ function createMarker({
   uid
 }) {
   const ICON_NAME = markerType.toLowerCase().replace(/\s/g, '-');
-  const COMPLETED = (lsData.completedMarkers.includes(uid)) ? MODIFIER__COMPLETED : '';
   const LEGENDARY = (/legendary/i.test(markerSubType)) ? '-legendary' : '';
   const ICON_RADIUS = 30;
-  const BaseIcon = L.Icon.extend({
-    options: {
-      className: `marker-icon ${COMPLETED}`,
-      iconAnchor: [ICON_RADIUS/2, ICON_RADIUS],
-      iconSize: [ICON_RADIUS, ICON_RADIUS],
-      popupAnchor: [0, -ICON_RADIUS],
-    }
-  });
-  const marker = L.marker([lat, lng], {
-    icon: new BaseIcon({ iconUrl: `/imgs/markers/${ICON_NAME}${LEGENDARY}.png` }),
+  const ICON_OFFSET_VERTICAL = 0.01;
+  const POPUP_OFFSET = [0, -ICON_RADIUS / 2];
+  const _lat = lat + ICON_OFFSET_VERTICAL;
+  const marker = L.canvasMarker([_lat, lng], {
+    img: {
+      offsetY: -ICON_RADIUS/2.5,
+      opacity: (lsData.completedMarkers.includes(uid)) ? 0.3 : 1,
+      size: [ICON_RADIUS, ICON_RADIUS],
+      url: `/imgs/markers/${ICON_NAME}${LEGENDARY}.png`,
+    },
+    radius: ICON_RADIUS / 1.5,
   });
   let navMarkup = '';
   let ratingMarkup = '';
@@ -200,7 +199,9 @@ function createMarker({
     ${navMarkup}
   `;
   
-  marker.bindPopup(popupContent);
+  marker.bindPopup(popupContent, {
+    offset: POPUP_OFFSET,
+  });
   
   marker.customData = {
     markerSubType,

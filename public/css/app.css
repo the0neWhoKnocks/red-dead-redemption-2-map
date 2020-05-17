@@ -84,9 +84,6 @@ custom-flyout {
   width: 30px;
   height: 30px;
 }
-.marker-icon.is--completed {
-  opacity: 0.3;
-}
 
 .map-wrapper,
 .map-container {

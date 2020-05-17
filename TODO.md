@@ -39,6 +39,10 @@ sort of submit button for Mobile.
   - [x] Bird
   - [x] Mission Item
 - [ ] Look into scraping/creating better map tiles
+- [x] Switch over to canvas for Markers for better performance
+  - [ ] Figure out how to combine and render all Markers at once to maintain
+  proper z-indexing. May have to create a custom Layers control that doesn't
+  rely on layer groups, but rather just simulate layer groups.
 
 ---
 
