@@ -1,6 +1,16 @@
 # Changelog
 ---
 
+## v3.0.0
+
+- [d4f919f0](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/d4f919f0) Adjustments for new tiles
+- [61827c30](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/61827c30) Added new tiles
+- [46ba09a2](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/46ba09a2) Removed old tiles
+- [adc620db](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/adc620db) Ensure Marker popup's are consistently positioned
+- [354c04c2](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/354c04c2) Canvas Markers now have proper z-indexing
+
+---
+
 ## v2.1.0
 
 - [a8ffd8b](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/a8ffd8b) Switched to canvas-based Markers
