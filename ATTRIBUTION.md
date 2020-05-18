@@ -2,7 +2,7 @@
 
 ---
 
-- Map tiles were scraped from Rockstar's Server via [bin/scrape-tiles.sh](./bin/scrape-tiles.sh).
+- Map tiles were scraped from IGN's Server via [bin/scrape-tiles.sh](./bin/scrape-tiles.sh).
 - Default Marker data was scraped from https://www.ign.com/maps/red-dead-redemption-2/world via this code
   ```js
   var s = new Set();

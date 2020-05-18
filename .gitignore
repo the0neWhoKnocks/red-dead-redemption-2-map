@@ -1,4 +1,5 @@
 # Files
+.DS_Store
 .dockercreds
 *.log
 public/*/leaflet*

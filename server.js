@@ -75,9 +75,11 @@ const handleRequests = (req, res) => {
         res.end();
       }
       else {
+        const etag = require('etag');
         const mime = require('mime-types');
         
         res.setHeader('Content-Type', mime.lookup(`${PUBLIC_PATH}${urlPath}`));
+        res.setHeader('ETag', etag(file));
         if (filePath.includes('/imgs')) {
           res.setHeader('Cache-Control', `max-age=${60 * 60 * 24 * 365}`);
         }

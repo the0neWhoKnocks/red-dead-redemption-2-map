@@ -694,7 +694,7 @@ function init() {
     if (!lsData.hiddenOverlays) lsData.hiddenOverlays = [];
     completedMarkers = lsData.completedMarkers;
     markers = loadedMarkers;
-    mapBoundary = L.latLngBounds(L.latLng(-144, 0), L.latLng(0, 176));
+    mapBoundary = L.latLngBounds(L.latLng(-190, 0), L.latLng(0, 256));    
     mapLayers = {
       'default': L.tileLayer(
         `${TILES_ABS_PATH}/{z}/{x}_{y}.jpg`,
@@ -711,7 +711,7 @@ function init() {
       attributionControl: false,
       crs: L.CRS.Simple,
       layers: [mapLayers['default']],
-      maxZoom: 7,
+      maxZoom: 8,
       minZoom: 2,
       preferCanvas: true,
       zoomControl: false,
