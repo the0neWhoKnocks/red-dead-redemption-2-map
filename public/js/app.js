@@ -110,28 +110,56 @@ function handlePopupOpen(ev) {
         });
       }
     };
-    const moveHandler = (ev) => {
-      if (ev.currentTarget.checked) {
-        marker.dragging.enable();
+    
+    const enableMove = () => {
+      marker.move.enable();
+      marker.on('dragend', marker.dragEndHandler);
+      marker.on('dragstart', marker.dragStartHandler);
+    };
+    const disableMove = () => {
+      marker.move.disable();
+      marker.off('dragend', marker.dragEndHandler);
+      marker.off('dragstart', marker.dragStartHandler);
+    };
+    
+    marker.dragEndHandler = () => {
+      console.debug('[MOVE] dragEnd');
+      
+      marker._popup._container.style.opacity = 1;
+      marker._popup._map = null; // disable auto-close of popup
+      requestAnimationFrame(() => {
+        marker._popup._map = mapInst;
         
-        const dragEndHandler = () => {
-          marker.dragging.disable();
-          marker.off('dragend', dragEndHandler);
-          
-          if (markerNdx !== undefined) {
-            const { lat, lng } = marker._latlng;
-            const { uid } = marker.customData;
-            updateMarker(uid, { lat, lng })
-              .then((newMarkers) => { markers = newMarkers; })
-              .catch((err) => { alert(`updateMarker: ${err.stack}`); });
-          }
-        };
-        marker.on('dragend', dragEndHandler);
-      }
-      else {
-        marker.dragging.disable();
+        if (markerNdx !== undefined) {
+          const { lat, lng } = marker._latlng;
+          const { uid } = marker.customData;
+          updateMarker(uid, { lat, lng })
+            .then((newMarkers) => { markers = newMarkers; })
+            .catch((err) => { alert(`updateMarker: ${err.stack}`); });
+        }
+      });
+    };
+    marker.dragStartHandler = () => {
+      console.debug('[MOVE] dragStart');
+      marker._popup._container.style.opacity = 0;
+    };
+    
+    const moveHandler = (ev) => {
+      if (ev.currentTarget.checked) enableMove();
+      else disableMove();
+    };
+    
+    console.debug('[POPUP] opened');
+    
+    const handlePopupClose = () => {
+      if (!marker.isBeingMoved) {
+        marker.move.disable();
+        marker.off('dragend', marker.dragEndHandler);
+        marker.off('dragstart', marker.dragStartHandler);
+        mapInst.off('popupclose', handlePopupClose);
       }
     };
+    mapInst.on('popupclose', handlePopupClose);
     
     // ensure events don't get bound multiple times
     deleteBtn.removeEventListener('click', deleteHandler);

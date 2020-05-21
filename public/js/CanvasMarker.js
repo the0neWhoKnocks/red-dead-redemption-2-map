@@ -7,8 +7,39 @@
     rotate: 0,
     size: [DEFAULT_IMG_RADIUS, DEFAULT_IMG_RADIUS],
   };
-
-  class CanvasMarker extends L.CircleMarker {
+    
+  function enableMove() {
+    const marker = this;
+    const map = marker._map;
+    
+    map.dragging.disable();
+    marker.mouseMoveHandler = ({ latlng }) => {
+      marker.setLatLng(latlng);
+    };
+    marker.mouseDownHandler = () => {
+      marker.isBeingMoved = true;
+      map.on('mouseup', marker.mouseUpHandler);
+      map.on('mousemove', marker.mouseMoveHandler);
+      marker.fire('dragstart');
+    };
+    marker.mouseUpHandler = () => {
+      marker.isBeingMoved = false;
+      map.off('mouseup', marker.mouseUpHandler);
+      map.off('mousemove', marker.mouseMoveHandler);
+      marker.fire('dragend');
+    };
+    marker.on('mousedown', marker.mouseDownHandler);
+  }
+  
+  function disableMove() {
+    const marker = this;
+    const map = marker._map;
+    
+    map.dragging.enable();
+    marker.off('mousedown', marker.mouseDownHandler);
+  }
+  
+  const CanvasMarker = L.CircleMarker.extend({
     _updatePath() {
       const marker = this;
       const { img, prevLatlng } = marker.options;
@@ -29,7 +60,19 @@
         imgEl.onload = () => { marker.redraw(); };
         imgEl.onerror = () => { marker.options.img = null; };
       }
-    }
+    },
+    
+    initialize: function(latlng, options) {
+      L.setOptions(this, options);
+      this._enabled = false;
+      this._latlng = L.latLng(latlng);
+      this._radius = this.options.radius;
+      this.name = 'CanvasMarker';
+      this.move = {
+        disable: disableMove.bind(this),
+        enable: enableMove.bind(this),
+      };
+    },
     
     angleCrds(map, prevLatlng, latlng) {
       if (!latlng || !prevLatlng) return 0;
@@ -38,8 +81,8 @@
       const pxEnd = map.project(latlng);
       
       return Math.atan2(pxStart.y - pxEnd.y, pxStart.x - pxEnd.x) / Math.PI * 180 - 90;
-    }
-  }
+    },
+  });
   
   L.Canvas.include({
     getEvents() {
