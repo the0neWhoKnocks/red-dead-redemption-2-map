@@ -1,6 +1,12 @@
 # Changelog
 ---
 
+## v3.0.1
+
+- [5369c978](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/5369c978) bugfix: Can't move Markers anymore
+
+---
+
 ## v3.0.0
 
 - [d4f919f0](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/d4f919f0) Adjustments for new tiles
