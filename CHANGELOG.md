@@ -1,6 +1,12 @@
 # Changelog
 ---
 
+## v3.0.2
+
+- [4c4eaed8](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/4c4eaed8) Added in a bunch of new default Markers
+
+---
+
 ## v3.0.1
 
 - [5369c978](https://github.com/the0neWhoKnocks/red-dead-redemption-2-map/commit/5369c978) bugfix: Can't move Markers anymore
