@@ -1384,7 +1384,7 @@
   {
     "data": {
       "markerType": "Fish",
-      "markerSubType": "Legendary muskie",
+      "markerSubType": "Legendary Muskie",
       "uid": "4676741724999971"
     },
     "lat": -76.45150961303776,
@@ -3489,5 +3489,3043 @@
     },
     "lat": -70.64343206787238,
     "lng": 205.788804977417
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Cow",
+      "uid": "35604499999999825"
+    },
+    "lat": -78.972328125,
+    "lng": 178.4889954442978
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Goat",
+      "uid": "37920700000000215"
+    },
+    "lat": -79.76704994916916,
+    "lng": 178.26657714605332
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Sheep",
+      "uid": "4207911000000022"
+    },
+    "lat": -78.66252138805389,
+    "lng": 177.98874120855334
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Angus Bull",
+      "uid": "4785156999999963"
+    },
+    "lat": -70.02534375,
+    "lng": 102.988015625
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Bull",
+      "uid": "7812085999999981"
+    },
+    "lat": -65.99336347389222,
+    "lng": 165.83023568344117
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Bull",
+      "uid": "9581388000000006"
+    },
+    "lat": -119.369953125,
+    "lng": 107.443875
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Beaver",
+      "uid": "1637230999999956"
+    },
+    "lat": -72.48284579944611,
+    "lng": 199.4545628247261
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Muskrat",
+      "uid": "22187629999999626"
+    },
+    "lat": -73.57839504361152,
+    "lng": 200.88699055910112
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Blue Jay",
+      "markerDescription": "Perches on a rock near river",
+      "uid": "3987751999999964"
+    },
+    "lat": -84.78083324861527,
+    "lng": 124.28964453125
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "American Bullfrog",
+      "uid": "8984981999999946"
+    },
+    "lat": -112.68590625,
+    "lng": 159.56320116710663
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Green Iguana",
+      "uid": "9133446999999941"
+    },
+    "lat": -111.030609375,
+    "lng": 158.78735741710665
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Cuban Land Crab",
+      "uid": "11198724999999977"
+    },
+    "lat": -111.55443749999999,
+    "lng": 159.04796875000002
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Snowy Egret",
+      "uid": "12128580999999978"
+    },
+    "lat": -119.56601491999626,
+    "lng": 194.12344563245773
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Bay Bolete",
+      "uid": "23193970999999945"
+    },
+    "lat": -78.301828125,
+    "lng": 133.42415625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Blackberry",
+      "uid": "2395811999999998"
+    },
+    "lat": -78.469453125,
+    "lng": 136.35978125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Evergreen Huckleberry",
+      "uid": "2446117499999993"
+    },
+    "lat": -107.05250819778442,
+    "lng": 166.36381639671328
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Wild Mint",
+      "uid": "25835118000000003"
+    },
+    "lat": -84.3991875,
+    "lng": 91.47841925811768
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Ram's Head",
+      "uid": "2627840699999993"
+    },
+    "lat": -37.21275,
+    "lng": 206.15276822280885
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Yarrow",
+      "uid": "26927072999999947"
+    },
+    "lat": -85.49174257278442,
+    "lng": 152.70230078125002
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Yarrow",
+      "uid": "2734281299999995"
+    },
+    "lat": -120.38468340110778,
+    "lng": 182.24876757335664
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Northern Cardinal",
+      "markerDescription": "Perch on rocks around lake",
+      "uid": "927528999999995"
+    },
+    "lat": -93.6963885755539,
+    "lng": 100.4670849633217
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "North American Beaver",
+      "rating": "3",
+      "uid": "1644226000000017"
+    },
+    "lat": -96.321515625,
+    "lng": 98.5718470067978
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Hooded Oriole",
+      "markerDescription": "Perches on rocks around lake",
+      "uid": "26380689999999956"
+    },
+    "lat": -93.9223828125,
+    "lng": 100.55564030504227
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Red Raspberry",
+      "uid": "10226598999999987"
+    },
+    "lat": -91.7432578125,
+    "lng": 97.45226562500001
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Common Bulrush",
+      "uid": "14159121999999988"
+    },
+    "lat": -91.61903534889221,
+    "lng": 92.7110813817978
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "North American Beaver",
+      "markerDescription": "Spawn around 6pm",
+      "uid": "17778400000000002"
+    },
+    "lat": -102.21682710027694,
+    "lng": 106.32167252445221
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "American Muskrat",
+      "markerDescription": "Spawns around 12am",
+      "uid": "18971349000000008"
+    },
+    "lat": -101.09583491277695,
+    "lng": 105.97568814945221
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Hummingbird Sage",
+      "uid": "20347501999999986"
+    },
+    "lat": -102.32757978916167,
+    "lng": 107.961541015625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Blackberry",
+      "uid": "20968119000000006"
+    },
+    "lat": -101.96089946222305,
+    "lng": 109.4611809911728
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Indian Tobacco",
+      "uid": "21959856"
+    },
+    "lat": -101.80375070500374,
+    "lng": 109.5948567724228
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Creeping Thyme",
+      "uid": "22872740999999987"
+    },
+    "lat": -102.15396804499626,
+    "lng": 109.48570671129228
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Western Moose",
+      "rating": "2",
+      "markerDescription": "Spawns around 10am,just eating grass in a field",
+      "uid": "24125606000000006"
+    },
+    "lat": -103.25251018166541,
+    "lng": 111.17949543952943
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "American Ginseng",
+      "uid": "25295393000000003"
+    },
+    "lat": -103.22407338666916,
+    "lng": 110.94359700202942
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Wintergreen Berry",
+      "uid": "2828138900000002"
+    },
+    "lat": -78.5068692369461,
+    "lng": 118.33676627445222
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Burdock Root",
+      "uid": "3028366600000001"
+    },
+    "lat": -81.11553393888474,
+    "lng": 125.42682486820222
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Wild Mint",
+      "uid": "30886954000000004"
+    },
+    "lat": -80.52884643888473,
+    "lng": 125.63651236820222
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Creeping Thyme",
+      "uid": "32482921999999997"
+    },
+    "lat": -76.18705910611152,
+    "lng": 123.95040038585664
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Oregano",
+      "uid": "32604939999999986"
+    },
+    "lat": -76.3995838880539,
+    "lng": 123.9073391942978
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Sparrow's Egg Orchid",
+      "markerDescription": "In gully under bridge",
+      "uid": "4136754100000002"
+    },
+    "lat": -62.46425883722305,
+    "lng": 193.7952467479706
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Sparrow's Egg Orchid",
+      "uid": "4232837100000001"
+    },
+    "lat": -50.937046875,
+    "lng": 197.51514062500002
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Evergreen Huckleberry",
+      "uid": "43461145"
+    },
+    "lat": -47.84945478916168,
+    "lng": 207.4468391942978
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Wild Carrot",
+      "uid": "44052504"
+    },
+    "lat": -48.18470478916168,
+    "lng": 207.4573235692978
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "American Ginseng",
+      "uid": "4414388500000001"
+    },
+    "lat": -47.96020683860779,
+    "lng": 207.5908121752739
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Golden Currant",
+      "uid": "44514376000000015"
+    },
+    "lat": -48.12184477472305,
+    "lng": 207.7203688206673
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Alaskan Ginseng",
+      "uid": "4585967199999999"
+    },
+    "lat": -40.77478125,
+    "lng": 208.32453125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Wild Mint",
+      "uid": "4594781600000002"
+    },
+    "lat": -41.0576484375,
+    "lng": 208.32453125
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Western Moose",
+      "rating": "3",
+      "markerDescription": "Just place some herbivore bait at the marker, put some cover scent on and wait above the \"n\" ",
+      "uid": "14986563000000024"
+    },
+    "lat": -39.18982710027694,
+    "lng": 129.3408665380478
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Golden Currant",
+      "uid": "4770894499999998"
+    },
+    "lat": -45.194394338607786,
+    "lng": 198.04066960191727
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Scarlet Tanager Songbird",
+      "uid": "54779499999996915"
+    },
+    "lat": -54.24464677333832,
+    "lng": 184.4092972044945
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Western Tanager Songbird",
+      "uid": "7366519999999582"
+    },
+    "lat": -54.45417866277695,
+    "lng": 184.37634667730333
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Western Bull Moose",
+      "rating": "2",
+      "markerDescription": "Ride NW on the train tracks, saw the Moose in the trees to the right of the tracks",
+      "uid": "1609965599999996"
+    },
+    "lat": -39.93964946222305,
+    "lng": 208.71451253294947
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady Slipper Orchid",
+      "uid": "6342023999999947"
+    },
+    "lat": -70.297734375,
+    "lng": 117.759189453125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady Slipper Orchid",
+      "uid": "7182780000000057"
+    },
+    "lat": -70.339640625,
+    "lng": 102.27507812500001
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady Slipper Orchid",
+      "uid": "7586186000000016"
+    },
+    "lat": -79.39397311210632,
+    "lng": 95.10798001289368
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady Slipper Orchid",
+      "uid": "819671399999992"
+    },
+    "lat": -80.95539133000374,
+    "lng": 95.7094254565239
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady Slipper Orchid",
+      "uid": "9547911000000022"
+    },
+    "lat": -84.99162948131561,
+    "lng": 97.14474046230316
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady Slipper Orchid",
+      "uid": "10043199999999924"
+    },
+    "lat": -86.82366061210632,
+    "lng": 94.27566957473755
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Devon Ox",
+      "uid": "3085783999999985"
+    },
+    "lat": -79.22526191139221,
+    "lng": 178.24448502445222
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Leghorn Rooster",
+      "markerDescription": "In the pen with the goats",
+      "uid": "19383000000000175"
+    },
+    "lat": -79.957125,
+    "lng": 178.36898681759834
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Yarrow",
+      "uid": "27346940000000177"
+    },
+    "lat": -94.58989023971557,
+    "lng": 170.63694759035113
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Indian Tobacco",
+      "uid": "33682420000000275"
+    },
+    "lat": -94.3474317369461,
+    "lng": 170.44411002445221
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Yarrow",
+      "uid": "10282486000000063"
+    },
+    "lat": -89.99816201305389,
+    "lng": 173.5480465502739
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Red Raspberry",
+      "uid": "10391823000000004"
+    },
+    "lat": -90.1972167005539,
+    "lng": 173.3149563817978
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Alpine Goat",
+      "rating": "3",
+      "uid": "12582090000000026"
+    },
+    "lat": -80.57374590110778,
+    "lng": 170.6047454442978
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Yarrow",
+      "uid": "13128090000000084"
+    },
+    "lat": -79.58595645332336,
+    "lng": 169.4776751317978
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Alaskan Ginseng",
+      "uid": "20005054999999993"
+    },
+    "lat": -49.44787807416916,
+    "lng": 143.02072948980333
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Wild Carrot",
+      "uid": "20109453999999969"
+    },
+    "lat": -49.65740932416916,
+    "lng": 142.7061982398033
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Western Bull Moose",
+      "rating": "3",
+      "markerDescription": "Head North from the fork in the road that's between the \"I\" & \"N\". The Moose will be out of bounds, shoot the ground left of the Moose to get it to eventually run down. ",
+      "uid": "23608039000000064"
+    },
+    "lat": -42.615662398338316,
+    "lng": 168.6464140625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Wild Carrot",
+      "uid": "2779216800000009"
+    },
+    "lat": -51.314203125,
+    "lng": 171.010640625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Wild Carrot",
+      "uid": "28783502000000007"
+    },
+    "lat": -96.92915624999999,
+    "lng": 129.42717513656618
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Indian Tobacco",
+      "uid": "2919030899999998"
+    },
+    "lat": -96.2481796875,
+    "lng": 126.15848437500001
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Burdock Root",
+      "uid": "29712244000000064"
+    },
+    "lat": -82.09883420777321,
+    "lng": 123.66919401359559
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Angus Ox",
+      "rating": "2",
+      "uid": "30393591000000015"
+    },
+    "lat": -78.59517123556137,
+    "lng": 131.2012814947367
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Big China Pig",
+      "uid": "3079381900000008"
+    },
+    "lat": -78.5846953125,
+    "lng": 131.33982503294945
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Old Spot Pig",
+      "uid": "31306956999999965"
+    },
+    "lat": -78.7897364244461,
+    "lng": 131.3104313158989
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Alpine Goat",
+      "rating": "3",
+      "uid": "31848040000000037"
+    },
+    "lat": -77.76752279806136,
+    "lng": 131.730180906415
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerCustomSubType": "Creeping Thyme, Indian Tobacco, Wild Carrot",
+      "uid": "3362012600000002"
+    },
+    "lat": -78.0967870130539,
+    "lng": 134.0187701807022
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerCustomSubType": "Blackberry, Wild Carrot",
+      "uid": "34491634999999953"
+    },
+    "lat": -75.65125781249999,
+    "lng": 137.22998437500002
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Blackberry",
+      "uid": "36918554000000004"
+    },
+    "lat": -72.94082101750374,
+    "lng": 139.06680924797058
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Oregano",
+      "uid": "3744896600000007"
+    },
+    "lat": -73.15035226750373,
+    "lng": 138.71034049797058
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Creeping Thyme",
+      "uid": "3841771500000003"
+    },
+    "lat": -72.40502004361153,
+    "lng": 137.58869954824448
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Oregano",
+      "uid": "39510443000000087"
+    },
+    "lat": -72.6759140625,
+    "lng": 138.44429964232447
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Indian Tobacco",
+      "uid": "40449677999999984"
+    },
+    "lat": -71.9889510755539,
+    "lng": 137.8513707690239
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "American Ginseng",
+      "uid": "40669468000000054"
+    },
+    "lat": -71.76594973111152,
+    "lng": 138.03409847044946
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerCustomSubType": "Bay Bolete, Creeping Thyme, Indian Tobacco",
+      "uid": "41642405"
+    },
+    "lat": -71.59533119916915,
+    "lng": 138.51675391101838
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Virginia Opossum",
+      "uid": "25116229999999632"
+    },
+    "lat": -84.47102715110779,
+    "lng": 93.91977995109559
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Hummingbird Sage",
+      "uid": "3221042999999918"
+    },
+    "lat": -84.06094492721557,
+    "lng": 92.6245852880478
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Wild Carrot",
+      "uid": "38903839999999036"
+    },
+    "lat": -83.74365356111527,
+    "lng": 92.85748828125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Ram's Head",
+      "uid": "5105466999999917"
+    },
+    "lat": -81.86385873556137,
+    "lng": 92.29488900136948
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Creeping Thyme",
+      "uid": "5339219000000012"
+    },
+    "lat": -82.06291342306137,
+    "lng": 92.59893587636948
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady Slipper Orchid",
+      "markerDescription": "May only spawn in the morning ",
+      "uid": "8834085999999952"
+    },
+    "lat": -82.701984375,
+    "lng": 92.83689388179779
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Western Bull Moose",
+      "rating": "2",
+      "markerDescription": "Spawns in the lake along with a wolf around noon",
+      "uid": "1053782899999991"
+    },
+    "lat": -95.55223770332336,
+    "lng": 98.84575162363053
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerCustomSubType": "American Ginseng, Creeping Thyme, Oregano, Rasberry, Wild Carrot, Yarrow ",
+      "uid": "12912305999999954"
+    },
+    "lat": -119.38940996360779,
+    "lng": 181.432109375
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Indian Tobacco",
+      "uid": "2159675099999993"
+    },
+    "lat": -126.24257876443863,
+    "lng": 185.6711666698456
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerCustomSubType": "Evergreen Huckleberry, Hummingbird Sage",
+      "uid": "2304397700000001"
+    },
+    "lat": -128.39626050138475,
+    "lng": 181.8995999388695
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Florida Panther",
+      "rating": "3",
+      "uid": "2399169299999994"
+    },
+    "lat": -129.2059490261078,
+    "lng": 180.60459245109558
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerCustomSubType": "American Ginseng, Chanterelles",
+      "uid": "25205613999999915"
+    },
+    "lat": -129.42445959305763,
+    "lng": 180.37843000745775
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Ghost Orchid",
+      "uid": "26444839999999967"
+    },
+    "lat": -126.91307780528068,
+    "lng": 191.331793453455
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Clamshell Orchid",
+      "uid": "27492953999999883"
+    },
+    "lat": -126.91307780528068,
+    "lng": 192.04473095345497
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Alligator Eggs",
+      "uid": "29100104999999893"
+    },
+    "lat": -126.52245210027695,
+    "lng": 191.6068206419945
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Alligator Eggs",
+      "uid": "3018590599999996"
+    },
+    "lat": -125.43438620638847,
+    "lng": 192.49387402105333
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Milkweed",
+      "uid": "31009948999999906"
+    },
+    "lat": -125.25029789972305,
+    "lng": 192.3491520190239
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Evergreen Huckleberry",
+      "uid": "34486771000000006"
+    },
+    "lat": -125.4942520494461,
+    "lng": 192.19862662363053
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Alligator Eggs",
+      "uid": "34614861999999993"
+    },
+    "lat": -125.23533119916915,
+    "lng": 192.8162685523033
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Clamshell Orchid",
+      "uid": "3672784699999989"
+    },
+    "lat": -124.72197963666916,
+    "lng": 192.37985644292831
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Snowy Egret",
+      "uid": "37724006999999983"
+    },
+    "lat": -124.36128669333458,
+    "lng": 193.74245068240168
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Clamshell Orchid",
+      "uid": "38606017999999896"
+    },
+    "lat": -124.10236616277695,
+    "lng": 192.9656705760956
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Milkweed",
+      "uid": "3937245299999995"
+    },
+    "lat": -123.5291484375,
+    "lng": 192.48226627445223
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Snowy Egret",
+      "uid": "424965449999999"
+    },
+    "lat": -118.66353393888473,
+    "lng": 192.3308043627739
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Reddish Egret",
+      "uid": "4258812399999995"
+    },
+    "lat": -118.09480571222305,
+    "lng": 192.3263108763695
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Alligator Eggs",
+      "uid": "3645792999999976"
+    },
+    "lat": -99.07086513805389,
+    "lng": 207.88418750000002
+  },
+  {
+    "data": {
+      "markerType": "Rare Item",
+      "markerCustomSubType": "Lockbox",
+      "markerDescription": "In hole next to tree, contains Braithwaite letter",
+      "uid": "4215755999999965"
+    },
+    "lat": -97.92293308138846,
+    "lng": 207.22442089605332
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Milkweed",
+      "uid": "6984090999999898"
+    },
+    "lat": -96.85881384444237,
+    "lng": 203.68781640625002
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Yarrow",
+      "uid": "15811718999999866"
+    },
+    "lat": -97.92742289972306,
+    "lng": 202.65566715455057
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Florida Panther",
+      "rating": "3",
+      "markerDescription": "Found it around 8pm,it pops up around the edge of the forest and hides in the bushes. Apply cover scent and have rifle ready. ",
+      "uid": "17967279999999884"
+    },
+    "lat": -97.71789133000374,
+    "lng": 200.38935693717005
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "1936676299999992"
+    },
+    "lat": -98.85534746360779,
+    "lng": 198.75529263925554
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Oleander Sage",
+      "uid": "20009720999999992"
+    },
+    "lat": -99.29386552333831,
+    "lng": 198.483634765625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Evergreen Huckleberry",
+      "uid": "20706196999999955"
+    },
+    "lat": -99.01698508000374,
+    "lng": 199.15220068717005
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Rat Tail Orchid",
+      "uid": "21281968999999953"
+    },
+    "lat": -99.57074692583083,
+    "lng": 199.2272763695717
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Acuna's Star Orchid",
+      "uid": "240758679999999"
+    },
+    "lat": -100.42243301868439,
+    "lng": 198.32938051223755
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Rat Tail Orchid",
+      "uid": "24944682999999933"
+    },
+    "lat": -100.56751633000374,
+    "lng": 199.38285693717003
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "2552962699999989"
+    },
+    "lat": -101.15420383000374,
+    "lng": 199.81271631217004
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Rat Tail Orchid",
+      "uid": "2802425299999988"
+    },
+    "lat": -101.48325884342194,
+    "lng": 198.4486607313156
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "29366731"
+    },
+    "lat": -102.64187634444237,
+    "lng": 199.7726510448456
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Rat Tail Orchid",
+      "uid": "29880384999999953"
+    },
+    "lat": -103.11332133722306,
+    "lng": 200.4805335326195
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerCustomSubType": "Milkweed, Oleander Sage",
+      "uid": "30670818"
+    },
+    "lat": -103.59524321222305,
+    "lng": 200.0426240210533
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerCustomSubType": "Milkweed, Oleander Sage",
+      "uid": "3556126199999999"
+    },
+    "lat": -103.45455840110779,
+    "lng": 198.31307601666452
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "3845080099999992"
+    },
+    "lat": -104.88535668611526,
+    "lng": 199.1024000658989
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Evergreen Huckleberry",
+      "uid": "3973801299999992"
+    },
+    "lat": -104.96767353916168,
+    "lng": 198.54878727889061
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "4055055899999992"
+    },
+    "lat": -104.5381351161003,
+    "lng": 197.18787809681893
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerCustomSubType": "Evergreen Huckleberry, Milkweed",
+      "uid": "41343911999999983"
+    },
+    "lat": -104.22832710027694,
+    "lng": 197.34102506589892
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "44697413999999985"
+    },
+    "lat": -104.52316745638848,
+    "lng": 194.83750618410113
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Oleander Sage",
+      "uid": "4679575799999991"
+    },
+    "lat": -100.7890213880539,
+    "lng": 193.57582373404503
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Channel Catfish",
+      "uid": "4896730199999991"
+    },
+    "lat": -98.6158828125,
+    "lng": 192.971474609375
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Alpine Goat",
+      "rating": "3",
+      "uid": "5229758699999991"
+    },
+    "lat": -98.20729751443862,
+    "lng": 193.95213834238052
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "5308915699999997"
+    },
+    "lat": -97.24794454193115,
+    "lng": 191.752666015625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Evergreen Huckleberry",
+      "uid": "5408095600000001"
+    },
+    "lat": -95.37712839388847,
+    "lng": 190.74410660767558
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Milkweed",
+      "uid": "5707695199999987"
+    },
+    "lat": -102.94569793581962,
+    "lng": 188.75432226085664
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "5813576699999991"
+    },
+    "lat": -102.64636776137351,
+    "lng": 186.3137093091011
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Snowy Egret",
+      "uid": "6035373799999987"
+    },
+    "lat": -102.97862454915047,
+    "lng": 185.20835676765444
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "6255660099999994"
+    },
+    "lat": -101.36523232555389,
+    "lng": 183.1232763695717
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerCustomSubType": "Evergreen Huckleberry, Oleander Sage",
+      "uid": "6298798599999995"
+    },
+    "lat": -100.87283388805389,
+    "lng": 183.5845888695717
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Alligator Eggs",
+      "uid": "6404648099999991"
+    },
+    "lat": -101.83667763805389,
+    "lng": 182.3684013695717
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "648850009999999"
+    },
+    "lat": -102.30213588666916,
+    "lng": 182.11209602785112
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "6602690099999992"
+    },
+    "lat": -102.77657505083084,
+    "lng": 182.37420540285112
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Spider Orchid",
+      "uid": "6688973299999998"
+    },
+    "lat": -103.277953125,
+    "lng": 182.97331250000002
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "67983946"
+    },
+    "lat": -103.068421875,
+    "lng": 183.36441731452942
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Spider Orchid",
+      "uid": "6903175499999997"
+    },
+    "lat": -102.96515285611153,
+    "lng": 183.7197623729706
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "7099579099999988"
+    },
+    "lat": -104.05321875,
+    "lng": 183.3792073607445
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Spider Orchid",
+      "uid": "7995800499999997"
+    },
+    "lat": -104.10260835027694,
+    "lng": 182.61646923947336
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "8102137299999988"
+    },
+    "lat": -104.86141098833083,
+    "lng": 182.4623863940239
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "8172168899999989"
+    },
+    "lat": -104.6982754869461,
+    "lng": 183.33727018070223
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Alligator Eggs",
+      "uid": "8287263399999997"
+    },
+    "lat": -103.75089504361152,
+    "lng": 184.47688443613055
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "8374017899999992"
+    },
+    "lat": -103.78980808138847,
+    "lng": 184.69331184577942
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "85150542"
+    },
+    "lat": -104.16696465110779,
+    "lng": 185.03311783695221
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "8572068199999994"
+    },
+    "lat": -104.37649526166916,
+    "lng": 184.95542122077944
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Spider Orchid",
+      "uid": "87813851"
+    },
+    "lat": -104.2103671875,
+    "lng": 185.80409375000002
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Alligator Eggs",
+      "uid": "8828374100000001"
+    },
+    "lat": -104.83896093749999,
+    "lng": 185.86231965827943
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "8987919999999998"
+    },
+    "lat": -104.93624321222305,
+    "lng": 186.61906705093384
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "93660861"
+    },
+    "lat": -104.66684579944611,
+    "lng": 186.8225758471489
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerCustomSubType": "Little Egret, Redish Egret, Snowy Egret",
+      "uid": "9629123899999991"
+    },
+    "lat": -104.45982146263123,
+    "lng": 185.35532915592194
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "9888311600000001"
+    },
+    "lat": -107.46708183860778,
+    "lng": 187.0103584008217
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "99621167"
+    },
+    "lat": -107.24258388805389,
+    "lng": 187.49432486820223
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "10128248099999998"
+    },
+    "lat": -109.25558017444611,
+    "lng": 184.9458728821278
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "10299103799999997"
+    },
+    "lat": -107.46857748556137,
+    "lng": 183.53179296398164
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerCustomSubType": "Redish Egret, Snowy Egret",
+      "uid": "10739473999999987"
+    },
+    "lat": -101.48795786333083,
+    "lng": 182.43561393070223
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerCustomSubType": "Redish Egret, Snowy Egret",
+      "uid": "10793470099999992"
+    },
+    "lat": -110.34214946222305,
+    "lng": 185.29541470718385
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "10881142399999997"
+    },
+    "lat": -108.27377683138847,
+    "lng": 191.12042089605333
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "4982972000000009"
+    },
+    "lat": -111.93191957473755,
+    "lng": 195.38113844394684
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Milkweed",
+      "uid": "6626539000000048"
+    },
+    "lat": -111.2232141494751,
+    "lng": 195.42696702480316
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Milkweed",
+      "uid": "3647439999999915"
+    },
+    "lat": -111.18805801868439,
+    "lng": 194.3910435438156
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "10724749999999949"
+    },
+    "lat": -108.81250011920929,
+    "lng": 191.6148158311844
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Milkweed",
+      "uid": "17079979999999888"
+    },
+    "lat": -108.14732146263123,
+    "lng": 191.63588166236877
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "21543379999999888"
+    },
+    "lat": -108.27845990657806,
+    "lng": 191.53236615657806
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "3692608999999993"
+    },
+    "lat": -107.546875,
+    "lng": 191.94140625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Vanilla Flower",
+      "uid": "4632398999999987"
+    },
+    "lat": -107.078125,
+    "lng": 192.33858811855316
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "7671394999999993"
+    },
+    "lat": -106.55970990657806,
+    "lng": 186.8955775499344
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "15649786999999997"
+    },
+    "lat": -103.84375,
+    "lng": 183.5
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerSubType": "Alligator Eggs",
+      "uid": "18602011000000003"
+    },
+    "lat": -105.04799103736877,
+    "lng": 181.9388951063156
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Little Egret",
+      "uid": "20025481"
+    },
+    "lat": -103.8515625,
+    "lng": 183.96875
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Little Egret",
+      "uid": "24020055999999987"
+    },
+    "lat": -102.96651840209961,
+    "lng": 185.2279577255249
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "24999359999999995"
+    },
+    "lat": -104.1830358505249,
+    "lng": 187.38295197486877
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "2650126699999999"
+    },
+    "lat": -104.63058042526245,
+    "lng": 188.73186373710632
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerSubType": "Alligator Eggs",
+      "uid": "32331029"
+    },
+    "lat": -106.18526792526245,
+    "lng": 185.31780123710632
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "3291581400000001"
+    },
+    "lat": -106.28683042526245,
+    "lng": 185.34514498710632
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Sean McGuire's grave",
+      "uid": "45325457"
+    },
+    "lat": -105.6328125,
+    "lng": 163.328125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Rat Tail Orchid",
+      "uid": "25155500000000757"
+    },
+    "lat": -103.65346002578735,
+    "lng": 196.16252785921097
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerCustomSubType": "Cigar Orchid, Rat Tail Orchid",
+      "uid": "3368912299999996"
+    },
+    "lat": -102.98460905528069,
+    "lng": 197.8558828125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Rat Tail Orchid",
+      "uid": "22133879999999772"
+    },
+    "lat": -99.86383926868439,
+    "lng": 198.73172426223755
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Hereford Bull",
+      "rating": "3",
+      "uid": "8753629000000001"
+    },
+    "lat": -100.56584811210632,
+    "lng": 203.11635053157806
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Cigar Orchid",
+      "uid": "838493599999998"
+    },
+    "lat": -92.4921875,
+    "lng": 201.5078125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Rat Tail Orchid",
+      "uid": "24379599999992934"
+    },
+    "lat": -95.03292417526245,
+    "lng": 196.28982973098755
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "8065241999999998"
+    },
+    "lat": -110.02734410762787,
+    "lng": 189.8104771375656
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "8628033999999971"
+    },
+    "lat": -108.9520092010498,
+    "lng": 189.1697126030922
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Angus Ox",
+      "uid": "9285331999999981"
+    },
+    "lat": -110.30580389499664,
+    "lng": 188.8508649468422
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "11283157999999966"
+    },
+    "lat": -110.1467638015747,
+    "lng": 190.48800230026245
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady of the Night Orchid",
+      "uid": "1219511599999998"
+    },
+    "lat": -110.5998888015747,
+    "lng": 191.51918244361877
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "19310418999999966"
+    },
+    "lat": -77.87723207473755,
+    "lng": 201.85721266269684
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "2151851499999997"
+    },
+    "lat": -75.94140613079071,
+    "lng": 204.66866636276245
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "23748813999999985"
+    },
+    "lat": -75.86607122421265,
+    "lng": 200.74539637565613
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "24886686999999946"
+    },
+    "lat": -74.29687476158142,
+    "lng": 196.85456210374832
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "2613040699999998"
+    },
+    "lat": -72.41015625,
+    "lng": 197.98828125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "29630306999999955"
+    },
+    "lat": -70.55970978736877,
+    "lng": 201.08077561855316
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerCustomSubType": "Creeping Thyme, Evergreen Huckleberry, Hummingbird Sage",
+      "uid": "31839447999999975"
+    },
+    "lat": -70.4609375,
+    "lng": 201.890625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Wild Carrot",
+      "uid": "33540797999999993"
+    },
+    "lat": -70.62109375,
+    "lng": 202.13671875
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "3503166299999997"
+    },
+    "lat": -70.99888384342194,
+    "lng": 202.32742750644684
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Chanterelles",
+      "uid": "36046771999999983"
+    },
+    "lat": -71.72098207473755,
+    "lng": 202.04422438144684
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Indian Tobacco",
+      "uid": "38894400999999996"
+    },
+    "lat": -73.07979917526245,
+    "lng": 202.46142578125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "4080305199999995"
+    },
+    "lat": -71.46986603736877,
+    "lng": 203.13874173164368
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "4356923899999995"
+    },
+    "lat": -70.42410719394684,
+    "lng": 203.41929411888123
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "4451142199999995"
+    },
+    "lat": -69.92578125,
+    "lng": 202.515625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "4572372799999997"
+    },
+    "lat": -69.0697546005249,
+    "lng": 202.3178013563156
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "4656826299999993"
+    },
+    "lat": -69.10212063789368,
+    "lng": 203.7626255750656
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "47587106999999955"
+    },
+    "lat": -67.88169646263123,
+    "lng": 204.01395082473755
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Java Chicken, Java Rooster",
+      "uid": "4871734799999998"
+    },
+    "lat": -69.140625,
+    "lng": 203.38671875
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerSubType": "Alpine Goat",
+      "uid": "4995533199999998"
+    },
+    "lat": -69.18136143684387,
+    "lng": 203.35512000322342
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "5141511999999995"
+    },
+    "lat": -68.05803561210632,
+    "lng": 201.68722105026245
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Moccasin Flower Orchid",
+      "uid": "5228783299999995"
+    },
+    "lat": -69.54910707473755,
+    "lng": 201.61879193782806
+  },
+  {
+    "data": {
+      "markerType": "Treasure",
+      "markerCustomSubType": "Misc.",
+      "markerDescription": "Gold nugget & jewelry bag in chimney.",
+      "uid": "5570709599999995"
+    },
+    "lat": -67.54073691368103,
+    "lng": 199.70263671875
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady Slipper Orchid",
+      "uid": "6197025599999994"
+    },
+    "lat": -90.46484375,
+    "lng": 119.91015625
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "American Crow",
+      "markerDescription": "They perch on the rocks",
+      "uid": "7022918299999998"
+    },
+    "lat": -85.6484375,
+    "lng": 97.97265625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady Slipper Orchid",
+      "uid": "9321117999999988"
+    },
+    "lat": -111.8515625,
+    "lng": 103.828125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady Slipper Orchid",
+      "uid": "10103378000000012"
+    },
+    "lat": -111.9966516494751,
+    "lng": 102.97488832473755
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Bay Bolete",
+      "uid": "10670676999999997"
+    },
+    "lat": -112.2935266494751,
+    "lng": 103.00613832473755
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady Slipper Orchid",
+      "uid": "11912776000000013"
+    },
+    "lat": -112.13616073131561,
+    "lng": 101.83984380960464
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Lady Slipper Orchid",
+      "markerDescription": "Next to the wagon",
+      "uid": "14727488000000012"
+    },
+    "lat": -115.83147323131561,
+    "lng": 97.53745824098587
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerCustomSubType": "Heron",
+      "uid": "18761786999999967"
+    },
+    "lat": -103.73046875,
+    "lng": 194.98828125
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerCustomSubType": "Heron",
+      "uid": "2290928599999999"
+    },
+    "lat": -98.70145094394684,
+    "lng": 205.95926332473755
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerCustomSubType": "Heron",
+      "uid": "2499679100000001"
+    },
+    "lat": -101.8560266494751,
+    "lng": 185.63232427835464
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Spider Orchid",
+      "uid": "21297320000000036"
+    },
+    "lat": -100.71651780605316,
+    "lng": 185.2554408311844
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Spider Orchid",
+      "uid": "593087400000004"
+    },
+    "lat": -105.64955353736877,
+    "lng": 185.0023716688156
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Roseate Spoonbill",
+      "uid": "6867318999999989"
+    },
+    "lat": -106.24386167526245,
+    "lng": 184.44008088111877
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Spider Orchid",
+      "uid": "8454192000000039"
+    },
+    "lat": -106.89955353736877,
+    "lng": 183.41015625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Spider Orchid",
+      "uid": "979514900000002"
+    },
+    "lat": -109.62890625,
+    "lng": 184.10546875
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Spider Orchid",
+      "uid": "10653770000000005"
+    },
+    "lat": -109.25390625,
+    "lng": 185.16796875
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Spider Orchid",
+      "uid": "11406612999999998"
+    },
+    "lat": -107.83203125,
+    "lng": 185.61328125
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerCustomSubType": "Egret",
+      "uid": "16221437000000007"
+    },
+    "lat": -98.72767877578735,
+    "lng": 191.43275690078735
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Roseate Spoonbill",
+      "uid": "17977546"
+    },
+    "lat": -98.28348231315613,
+    "lng": 190.03397047519684
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Cigar Orchid",
+      "uid": "21341893000000054"
+    },
+    "lat": -96.90234375,
+    "lng": 201.421875
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Acuna's Star Orchid",
+      "uid": "2219302100000008"
+    },
+    "lat": -100.28515625,
+    "lng": 201.4453125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Night Scented Orchid",
+      "uid": "2462268799999998"
+    },
+    "lat": -122.3744421005249,
+    "lng": 191.05915188789368
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Night Scented Orchid",
+      "uid": "28083584000000046"
+    },
+    "lat": -122.81640625,
+    "lng": 188.1875
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Night Scented Orchid",
+      "uid": "29998422000000062"
+    },
+    "lat": -124.11997759342194,
+    "lng": 185.35023725032806
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Night Scented Orchid",
+      "uid": "3195955999999998"
+    },
+    "lat": -127.17243313789368,
+    "lng": 184.00711488723755
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Night Scented Orchid",
+      "uid": "32908020000000033"
+    },
+    "lat": -124.91573667526245,
+    "lng": 181.6572265625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Night Scented Orchid",
+      "uid": "3413801500000009"
+    },
+    "lat": -127.58984375,
+    "lng": 181.81640625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Night Scented Orchid",
+      "uid": "35848433000000003"
+    },
+    "lat": -127.7868299484253,
+    "lng": 179.4867467880249
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Night Scented Orchid",
+      "uid": "39281636999999974"
+    },
+    "lat": -129.9464282989502,
+    "lng": 178.06968486309052
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Night Scented Orchid",
+      "uid": "4009166799999999"
+    },
+    "lat": -132.38671875,
+    "lng": 177.9765625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Night Scented Orchid",
+      "uid": "4195436600000008"
+    },
+    "lat": -132.09765625,
+    "lng": 174.59828400611877
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Roseate Spoonbill",
+      "uid": "45059236000000015"
+    },
+    "lat": -89.43749952316284,
+    "lng": 209.95968198776245
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Roseate Spoonbill",
+      "uid": "4660595500000003"
+    },
+    "lat": -100.03515625,
+    "lng": 205.54296875
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerSubType": "Roseate Spoonbill",
+      "uid": "5062337099999997"
+    },
+    "lat": -106.97712063789368,
+    "lng": 185.66964292526245
+  },
+  {
+    "data": {
+      "markerType": "Bird",
+      "markerCustomSubType": "Egret",
+      "uid": "5079316599999999"
+    },
+    "lat": -107.09430813789368,
+    "lng": 185.58370542526245
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Queen's Orchid",
+      "uid": "5739563799999996"
+    },
+    "lat": -100.0625,
+    "lng": 199.85546875
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Queen's Orchid",
+      "uid": "5916225599999998"
+    },
+    "lat": -96.34375,
+    "lng": 198.8203125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Queen's Orchid",
+      "uid": "5927571799999998"
+    },
+    "lat": -95.28236603736877,
+    "lng": 198.37151217460632
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Queen's Orchid",
+      "uid": "5952758999999998"
+    },
+    "lat": -97.2979907989502,
+    "lng": 196.7670202255249
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Queen's Orchid",
+      "uid": "5968302600000002"
+    },
+    "lat": -96.3995532989502,
+    "lng": 196.1420202255249
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Queen's Orchid",
+      "uid": "59889363999999985"
+    },
+    "lat": -99.29129457473755,
+    "lng": 195.4335938692093
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Queen's Orchid",
+      "uid": "6008150000000002"
+    },
+    "lat": -99.54910707473755,
+    "lng": 194.5429688692093
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Queen's Orchid",
+      "uid": "6047602900000005"
+    },
+    "lat": -101.90625,
+    "lng": 197.046875
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Queen's Orchid",
+      "uid": "6087489999999998"
+    },
+    "lat": -101.50111603736877,
+    "lng": 194.48186373710632
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Sparrow's Egg Orchid",
+      "uid": "6573667800000003"
+    },
+    "lat": -62.97265625,
+    "lng": 200.16015625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Sparrow's Egg Orchid",
+      "uid": "6737319500000005"
+    },
+    "lat": -62.484375,
+    "lng": 198.87109375
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Sparrow's Egg Orchid",
+      "uid": "6887682099999998"
+    },
+    "lat": -60.55245542526245,
+    "lng": 199.4735630750656
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Sparrow's Egg Orchid",
+      "uid": "7029963500000006"
+    },
+    "lat": -58.578125,
+    "lng": 199.15625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Sparrow's Egg Orchid",
+      "uid": "7172660299999996"
+    },
+    "lat": -57.7109375,
+    "lng": 201.92578125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Sparrow's Egg Orchid",
+      "uid": "7232603200000005"
+    },
+    "lat": -57.56584823131561,
+    "lng": 204.30252504348755
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Sparrow's Egg Orchid",
+      "uid": "7294187100000002"
+    },
+    "lat": -59.9575891494751,
+    "lng": 205.22837615013123
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Sparrow's Egg Orchid",
+      "uid": "7350509299999998"
+    },
+    "lat": -55.01785683631897,
+    "lng": 203.97000551223755
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Sparrow's Egg Orchid",
+      "uid": "7403096700000002"
+    },
+    "lat": -58.762834787368774,
+    "lng": 196.6397180557251
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Sparrow's Egg Orchid",
+      "uid": "7435499400000008"
+    },
+    "lat": -61.592633962631226,
+    "lng": 196.7568359375
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Dragon's Mouth Orchid",
+      "uid": "7846027999999998"
+    },
+    "lat": -53.06808042526245,
+    "lng": 189.11648988723755
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Dragon's Mouth Orchid",
+      "uid": "8032683200000007"
+    },
+    "lat": -49.165178656578064,
+    "lng": 184.49148988723755
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Wintergreen Berry",
+      "uid": "8274321000000004"
+    },
+    "lat": -50.692522406578064,
+    "lng": 181.43443071842194
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Violet Snowdrops",
+      "uid": "838812290000001"
+    },
+    "lat": -50.555803656578064,
+    "lng": 181.05161821842194
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Dragon's Mouth Orchid",
+      "uid": "8522104200000009"
+    },
+    "lat": -50.669084906578064,
+    "lng": 181.64536821842194
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Dragon's Mouth Orchid",
+      "uid": "8622683200000007"
+    },
+    "lat": -56.88504457473755,
+    "lng": 182.23311936855316
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Dragon's Mouth Orchid",
+      "uid": "8766643700000009"
+    },
+    "lat": -55.32421875,
+    "lng": 184.16015625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Dragon's Mouth Orchid",
+      "uid": "9131231999999996"
+    },
+    "lat": -61.811383962631226,
+    "lng": 189.70737999677658
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Prairie Poppy",
+      "uid": "2640030000000843"
+    },
+    "lat": -115.01171875,
+    "lng": 126.40625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Parasol Mushroom",
+      "uid": "22891969999999856"
+    },
+    "lat": -92.66964268684387,
+    "lng": 141.2470005750656
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Red Raspberry",
+      "uid": "2809570999999996"
+    },
+    "lat": -92.41350436210632,
+    "lng": 141.28208708763123
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Wild Feverfew",
+      "uid": "4453536000000022"
+    },
+    "lat": -134.52232134342194,
+    "lng": 77.73360764980316
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Red Sage",
+      "uid": "5799707000000053"
+    },
+    "lat": -155.5078125,
+    "lng": 63.9765625
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "English Mace",
+      "uid": "7157970000000205"
+    },
+    "lat": -162.8125,
+    "lng": 54.17578125
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Desert Sage",
+      "uid": "8409141999999993"
+    },
+    "lat": -152.17578125,
+    "lng": 30.45047417283058
+  },
+  {
+    "data": {
+      "markerType": "Plant",
+      "markerSubType": "Blackcurrant",
+      "uid": "8890409999999974"
+    },
+    "lat": -141.55412936210632,
+    "lng": 34.40157639980316
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - White Arabian",
+      "uid": "15771150000000035"
+    },
+    "lat": -49.530134201049805,
+    "lng": 109.00990509986877
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - American Paint",
+      "uid": "22504460000000018"
+    },
+    "lat": -155.6339282989502,
+    "lng": 30.47879409790039
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - Nokota",
+      "uid": "2827665999999999"
+    },
+    "lat": -145.75,
+    "lng": 75.75
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - Kentucky Saddler",
+      "uid": "3343797000000004"
+    },
+    "lat": -117.53125,
+    "lng": 118.8125
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - Kentucky Saddler",
+      "uid": "3641184000000003"
+    },
+    "lat": -115.9375,
+    "lng": 102.3125
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - Hungarian Halfbred",
+      "uid": "39785450000000035"
+    },
+    "lat": -108.32143020629883,
+    "lng": 119.54464197158813
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - Appaloosa",
+      "uid": "4538173000000006"
+    },
+    "lat": -43.84375,
+    "lng": 157.625
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - Mustang",
+      "uid": "5628629000000001"
+    },
+    "lat": -83.29017639160156,
+    "lng": 160.63894939422607
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - Morgan",
+      "uid": "6120326000000004"
+    },
+    "lat": -75.4620532989502,
+    "lng": 110.81975436210632
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - American Standardbred",
+      "uid": "6394643000000005"
+    },
+    "lat": -75.8058032989502,
+    "lng": 111.30412936210632
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - Tennessee Walker",
+      "uid": "8628838000000005"
+    },
+    "lat": -108.37276792526245,
+    "lng": 118.68582534790039
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - Morgan",
+      "uid": "15783353000000007"
+    },
+    "lat": -145.5089282989502,
+    "lng": 72.11411809921265
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - American Paint",
+      "uid": "18093603000000003"
+    },
+    "lat": -148.4910717010498,
+    "lng": 71.92829251289368
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - Tennessee Walker",
+      "uid": "5287669999999998"
+    },
+    "lat": -83.10714149475098,
+    "lng": 161.93303394317627
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - Appaloosa",
+      "uid": "2899061500000001"
+    },
+    "lat": -154.2622766494751,
+    "lng": 71.60030686855316
+  },
+  {
+    "data": {
+      "markerType": "Animal",
+      "markerCustomSubType": "Horse - Tiger-striped Bay Mustang",
+      "uid": "4033430000000044"
+    },
+    "lat": -161.59933042526245,
+    "lng": 67.87862706184387
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Bluegill",
+      "uid": "20611899999999878"
+    },
+    "lat": -98.3599328994751,
+    "lng": 192.97195863723755
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Chain Pickerel",
+      "uid": "56961599999998725"
+    },
+    "lat": -98.7622766494751,
+    "lng": 192.93289613723755
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Longnose Gar",
+      "uid": "13686287999999986"
+    },
+    "lat": -96.44140625,
+    "lng": 193.76171875
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Largemouth Bass",
+      "uid": "15260936"
+    },
+    "lat": -96.6953125,
+    "lng": 193.90625
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Perch",
+      "uid": "4246450000000186"
+    },
+    "lat": -76.82421875,
+    "lng": 212.46484375
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Muskie",
+      "uid": "9621669999999722"
+    },
+    "lat": -76.8984375,
+    "lng": 212.40234375
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Lake Sturgeon",
+      "uid": "4464705000000031"
+    },
+    "lat": -98.45870530605316,
+    "lng": 194.73800218105316
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Bullhead Catfish",
+      "uid": "6038130999999994"
+    },
+    "lat": -108.37946426868439,
+    "lng": 182.96470421552658
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Rock Bass",
+      "uid": "10697599999999511"
+    },
+    "lat": -93.3359375,
+    "lng": 99.9921875
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Muskie",
+      "uid": "5798630000000412"
+    },
+    "lat": -93.3515625,
+    "lng": 99.53125
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Perch",
+      "uid": "6861839999999938"
+    },
+    "lat": -93.6015625,
+    "lng": 100.109375
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Redfin Pickerel",
+      "uid": "16557800000002317"
+    },
+    "lat": -103.2890625,
+    "lng": 123.26346272230148
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Smallmouth Bass",
+      "uid": "5367320000000473"
+    },
+    "lat": -103.27734375,
+    "lng": 123.09549397230148
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Steelhead Trout",
+      "uid": "3549858000000022"
+    },
+    "lat": -97.8984375,
+    "lng": 139.42578125
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Sockeye Salmon",
+      "uid": "42959440000000177"
+    },
+    "lat": -78.3515625,
+    "lng": 125.84375
+  },
+  {
+    "data": {
+      "markerType": "Fish",
+      "markerSubType": "Northern Pike",
+      "uid": "6443882000000012"
+    },
+    "lat": -62.4609375,
+    "lng": 141.171875
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Weapons Expert 9",
+      "markerDescription": "Park horse in this clearing",
+      "uid": "3610880000000179"
+    },
+    "lat": -123.77566957473755,
+    "lng": 186.9089702963829
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Weapons Expert 9",
+      "markerDescription": "Crouch walk to here",
+      "uid": "13154170000000158"
+    },
+    "lat": -124.07756686210632,
+    "lng": 187.56689423322678
+  },
+  {
+    "data": {
+      "markerType": "Mission Item",
+      "markerCustomSubType": "Weapons Expert 9",
+      "markerDescription": "There will be a guy with his back turned next to the house. Mark his head while in Dead Eye, kill him and ride away to reset the hideout. Do the same 8 more times.",
+      "uid": "42343330000000424"
+    },
+    "lat": -124.3671875,
+    "lng": 188.51974058151245
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerCustomSubType": "Elemental Trail Map 2",
+      "uid": "15702059999998892"
+    },
+    "lat": -152.19140625,
+    "lng": 91.53592360019684
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerCustomSubType": "Elemental Trail Map 1",
+      "uid": "22216719999999623"
+    },
+    "lat": -157.83314728736877,
+    "lng": 17.78613293170929
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerCustomSubType": "Landmarks of Riches Map 2",
+      "markerDescription": "Bell on top of church",
+      "uid": "9942105999999912"
+    },
+    "lat": -100.73046875,
+    "lng": 199.68359375
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerCustomSubType": "Landmarks of Riches Map 1",
+      "markerDescription": "Behind Obelisk",
+      "uid": "7532579999999871"
+    },
+    "lat": -88.23270094394684,
+    "lng": 87.92034041881561
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerCustomSubType": "Landmarks of Riches Map 3",
+      "markerDescription": "On house, in window",
+      "uid": "11340823999999994"
+    },
+    "lat": -47.26339340209961,
+    "lng": 164.96707582473755
+  },
+  {
+    "data": {
+      "markerType": "Treasure",
+      "markerCustomSubType": "Landmarks of Riches",
+      "markerDescription": "Under rock on sundial",
+      "uid": "14481049999999958"
+    },
+    "lat": -83.6791296005249,
+    "lng": 104.83419370651245
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerCustomSubType": "Elemental Trail Map 3",
+      "markerDescription": "Climb up on wooden track, walk until you get Search prompt ",
+      "uid": "6373845000000001"
+    },
+    "lat": -157.0390625,
+    "lng": 40.68359375
+  },
+  {
+    "data": {
+      "markerType": "Treasure",
+      "markerCustomSubType": "Elemental Trail",
+      "markerDescription": "Grave with wooden cross under tree",
+      "uid": "6054336999999941"
+    },
+    "lat": -144.45424127578735,
+    "lng": 80.4428014755249
+  },
+  {
+    "data": {
+      "markerType": "Treasure Map",
+      "markerCustomSubType": "Landmarks of Riches Map 4",
+      "markerDescription": "In bottom of tree on mound",
+      "uid": "12936728999999906"
+    },
+    "lat": -123.57645094394684,
+    "lng": 180.5687779188156
   }
 ]
